@@ -1,0 +1,3955 @@
+{
+  "qProperty": {
+    "qInfo": {
+      "qId": "c500deaa-6e8b-4929-987a-73eadc1eb306",
+      "qType": "sheet"
+    },
+    "qMetaDef": {
+      "title": "Machines Detailed Analysis v3.55",
+      "description": ""
+    },
+    "rank": 29.8125,
+    "thumbnail": {
+      "qStaticContentUrlDef": {}
+    },
+    "columns": 24,
+    "rows": 12,
+    "cells": [
+      {
+        "name": "41e198da-3fe8-4cbe-a69e-c13ecdb42f51",
+        "type": "filterpane",
+        "col": 0,
+        "row": 0,
+        "colspan": 2,
+        "rowspan": 1
+      },
+      {
+        "name": "7c90a1ad-9668-43fa-878d-895bfda7ca70",
+        "type": "filterpane",
+        "col": 3,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "ee7efecf-7b1a-4fa9-ac8a-f12a4341ca8d",
+        "type": "filterpane",
+        "col": 2,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "8de8176c-ad9c-4d07-8d3c-8cda5902e9af",
+        "type": "filterpane",
+        "col": 4,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "795e0681-0318-41f4-982e-b67890773397",
+        "type": "filterpane",
+        "col": 5,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "ba4d872f-826a-43e5-8931-888769d29de8",
+        "type": "filterpane",
+        "col": 6,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "aa3edebe-5f37-46f5-9b8c-430c4d07af50",
+        "type": "filterpane",
+        "col": 7,
+        "row": 0,
+        "colspan": 2,
+        "rowspan": 1
+      },
+      {
+        "name": "6b1e8771-9acf-4788-9031-6638dbf3d03e",
+        "type": "filterpane",
+        "col": 9,
+        "row": 0,
+        "colspan": 2,
+        "rowspan": 1
+      },
+      {
+        "name": "a1284124-bf1f-4858-8922-ca397ca820ec",
+        "type": "filterpane",
+        "col": 11,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "81564dd7-645e-49da-b5d5-fe7d42dec65c",
+        "type": "filterpane",
+        "col": 12,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "575a6970-3b75-4631-93eb-150c6a55e699",
+        "type": "variable",
+        "col": 2,
+        "row": 6,
+        "colspan": 2,
+        "rowspan": 1
+      },
+      {
+        "name": "ae1b5e43-1eae-4a43-a557-717dbcc0b001",
+        "type": "filterpane",
+        "col": 13,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "fad8dc56-125f-482a-b6c9-5a95beed3046",
+        "type": "variable",
+        "col": 21,
+        "row": 0,
+        "colspan": 3,
+        "rowspan": 1
+      },
+      {
+        "name": "85993a5d-1c6a-4f80-8f1d-74a17519d12c",
+        "type": "variable",
+        "col": 16,
+        "row": 0,
+        "colspan": 4,
+        "rowspan": 1
+      },
+      {
+        "name": "1523f558-68e1-4397-8fd0-a27302176657",
+        "type": "linechart",
+        "col": 14,
+        "row": 1,
+        "colspan": 10,
+        "rowspan": 3
+      },
+      {
+        "name": "c6013614-9bad-4e23-abf0-09909c2455ce",
+        "type": "scatterplot",
+        "col": 4,
+        "row": 1,
+        "colspan": 10,
+        "rowspan": 6
+      },
+      {
+        "name": "ebe1b894-c115-402f-a802-cf333994f3e4",
+        "type": "variable",
+        "col": 0,
+        "row": 6,
+        "colspan": 2,
+        "rowspan": 1
+      },
+      {
+        "name": "d7d5c015-f25a-4a6e-84d0-01b744a29ca1",
+        "type": "combochart",
+        "col": 14,
+        "row": 4,
+        "colspan": 10,
+        "rowspan": 3
+      },
+      {
+        "name": "29c41662-c6e8-4539-90ff-da059af5538b",
+        "type": "pivot-table",
+        "col": 0,
+        "row": 1,
+        "colspan": 4,
+        "rowspan": 5
+      },
+      {
+        "name": "49750898-e4ca-4db4-b679-92dde5e8cd3a",
+        "type": "pivot-table",
+        "col": 0,
+        "row": 7,
+        "colspan": 24,
+        "rowspan": 5
+      }
+    ],
+    "navPoints": []
+  },
+  "qChildren": [
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "29c41662-c6e8-4539-90ff-da059af5538b",
+          "qType": "pivot-table"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qLibraryId": "nnkwKsQ",
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [],
+                "qFieldLabels": [],
+                "qSortCriterias": [
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  },
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  },
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "vJMtLHD",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Production",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "(\n\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]={\"<=$(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output FG Qty Kg])\n\t+\n\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]={\"<=$(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t+\n\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]={\"<=$(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t+\n\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]={\"<=$(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n)\n/\n(\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<=$(v_Max_Month_ID_LY)\"}, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<=$(v_Max_Month_ID_LY)\"}, Quarter=, Month=,[Month Day]=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<=$(v_Max_Month_ID_LY)\"}, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<=$(v_Max_Month_ID_LY)\"}, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0%",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "XEDzmbm",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Waste %",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "(\n\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Waste Qty MT])\n\t/\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t)\n)\n/\n(\n\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Waste Qty MT])\n\t/\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=,Month= ,[Month Day]=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=,Month= ,[Month Day]=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t)\n)-1",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0%",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "HtExQb",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(255,0,0)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            -1
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 50,
+              "qHeight": 50
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "P",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": 1,
+          "qMaxStackedCells": 5000,
+          "qShowTotalsAbove": true,
+          "qIndentMode": true,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "columnWidths": [
+            [
+              119
+            ],
+            [
+              null
+            ]
+          ],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "showTitles": true,
+        "title": "Index versus Last Year",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": true,
+        "visualization": "pivot-table"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "6b1e8771-9acf-4788-9031-6638dbf3d03e",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "3ad9a198-dbd3-4f08-8c7f-532b726ab9e9",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Product Line]"
+                ],
+                "qFieldLabels": [
+                  "=[Product Line]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Product Line",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "ebe1b894-c115-402f-a802-cf333994f3e4",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": true,
+        "title": "Time Dimension",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Switch_Production_Custom_1",
+        "style": "material",
+        "width": "",
+        "customwidth": "",
+        "render": "s",
+        "alternatives": [
+          {
+            "value": "1",
+            "label": "Day(s)",
+            "cId": "jkskJ"
+          },
+          {
+            "value": "2",
+            "label": "Hour(s)",
+            "cId": "pHGJ"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Switch_Production_Custom_1"
+          }
+        },
+        "version": "2.2.0",
+        "extensionMeta": {
+          "name": "Variable",
+          "description": "Variable extension",
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg",
+          "icon": "extension",
+          "template": "variable",
+          "isLibraryItem": true,
+          "isThirdParty": true,
+          "templateIconClassName": "icon-puzzle"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "41e198da-3fe8-4cbe-a69e-c13ecdb42f51",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "a737768f-7604-4b66-b4b6-1ea8312a0f08",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Business Unit]"
+                ],
+                "qFieldLabels": [
+                  "=[Business Unit]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Business Unit",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "7c90a1ad-9668-43fa-878d-895bfda7ca70",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "4720ca6c-79ff-40ac-908d-b0cba49c675f",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=Machine"
+                ],
+                "qFieldLabels": [
+                  "=Machine"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Machine",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "ee7efecf-7b1a-4fa9-ac8a-f12a4341ca8d",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "3886e151-4055-4851-9408-2e012df3b47c",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Machine Group]"
+                ],
+                "qFieldLabels": [
+                  "=[Machine Group]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Section",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "8de8176c-ad9c-4d07-8d3c-8cda5902e9af",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "943466be-50cb-41d5-bd35-1bf1da52187a",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=Year"
+                ],
+                "qFieldLabels": [
+                  "=Year"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Year",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "795e0681-0318-41f4-982e-b67890773397",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "76ef47d9-e147-405e-b42c-25686236f3f2",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Quarter Year]"
+                ],
+                "qFieldLabels": [
+                  "=[Quarter Year]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Quarter",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "ba4d872f-826a-43e5-8931-888769d29de8",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "77fff088-8800-4ace-8f5b-acc17fdbb093",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Month Year]"
+                ],
+                "qFieldLabels": [
+                  "=[Month Year]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Month",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "aa3edebe-5f37-46f5-9b8c-430c4d07af50",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "908003ae-68f8-4e0d-8687-b268542d00c2",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Building Block]"
+                ],
+                "qFieldLabels": [
+                  "=[Building Block]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Building Block",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "49750898-e4ca-4db4-b679-92dde5e8cd3a",
+          "qType": "pivot-table"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=Pick($(v_Switch_Production_Custom_3)\n\t\n    ,[Year]\n    ,[Quarter Year]\n    ,[Month Year]\n    ,[Month Day]\n)"
+                ],
+                "qFieldLabels": [
+                  "Dimension"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qSortByExpression": -1,
+                    "qExpression": {
+                      "qv": "=Pick($(v_Switch_Production_Custom_3)\n\t\n    ,[Year]\n    ,[Quarter Year]\n    ,[Month Year]\n    ,[Month Day]\n)"
+                    }
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "rjwABkj",
+                "othersLabel": "Others"
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Production Job NB]"
+                ],
+                "qFieldLabels": [
+                  "WO"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "RkAjTH",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Item Name]"
+                ],
+                "qFieldLabels": [
+                  "Item Name"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "BGskm",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Item Code]"
+                ],
+                "qFieldLabels": [
+                  ""
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "NKyCBUk",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {
+                "qv": "Totals"
+              },
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Available",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Pick($(v_Switch_Production_Custom_1)\n\t,Num(\n\t\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Year=, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])\n\t\t/60\n        /24\n        ,if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Year=, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])<44640\n        \t,Text('#,##0.0')&' day'\n        \t,Text('#,##0')&' day'\n        )\n        ,'.'\n        ,','\n\t)\n\t,Num(\n    \tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Year=, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])\n\t\t/60\n        ,Text('#,##0')&' hr'\n        ,'.'\n        ,','\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 10,
+                  "qUseThou": 0
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "pkgKEv",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(200,150,100)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Idle",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Pick($(v_Switch_Production_Custom_1)\n\t,Num(\n\t\t(\n        \tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])\n\t\t\t-\n            Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])\n\t\t)\n\t\t/60\n\t\t/ 24 \n         ,if(\n         \t(\n        \t\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])\n\t\t\t\t-\n            \tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])\n\t\t\t)<44640\n        \t,Text('#,##0.0')&' day'\n        \t,Text('#,##0')&' day'\n\t\t)\n        ,'.'\n        ,','\n\t)\n\t,Num(\n    \t(\n        \tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])\n\t\t\t-\n            Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])\n\t\t)\n\t\t/60\n        ,Text('#,##0')&' hr'\n        ,'.'\n        ,','\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "QPPPfB",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(200,150,100)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Schedule",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Pick($(v_Switch_Production_Custom_1)\n\t,Num(\n\t\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes]) \n\t\t/60\n\t\t/24 \n        ,if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])<44640\n        \t,Text('#,##0.0')&' day'\n        \t,Text('#,##0')&' day'\n        )\n        ,'.'\n        ,','\n\t)\n\t,Num(\n    \tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes]) \n\t\t/60\n        ,if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])< 1440\n\t\t  \t,Text('#,##0.0')&' hr'\n            ,Text('#,##0')&' hr'\n\t\t)\n        ,'.'\n        ,','\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "rRjhTuM",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(200,150,100)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Loading",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])<>0\n\t,\n\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes]) \n\t/\n\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])\n    ,0\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0.0%",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "fjsaq",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(200,150,150)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Uptime",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Pick($(v_Switch_Production_Custom_1)\n\t,Num(\n\t\tSum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n        /60\n        /24\n        ,if(Sum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])<44640\n        \t,Text('#,##0.0')&' day'\n        \t,Text('#,##0')&' day'\n        )\n        ,'.'\n        ,','\n\t)\n\t,Num(\n    \tSum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n        /60\n        ,if(Sum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])<1440\n\t\t  \t,Text('#,##0.0')&' hr'\n            ,Text('#,##0')&' hr'\n\t\t)\n        ,'.'\n        ,','\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "mCjeR",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(200,150,100)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Utilization",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])<>0\n\t,\n    Sum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n\t/\n\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])\n    ,0\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0.0%",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "jtrpgCL",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(200,150,150)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Production",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(\n\t(\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t)<10\n\t,Num(\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t\t,Text('#,##0.0')&' tn'\n\t\t,'.'\n\t\t,','\n\t)\n\t,Num(\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t\t,Text('#,##0')&' tn'\n\t\t,'.'\n\t\t,','\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "upnWjv",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(0,176,80)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Output",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,0\n    ,\n\t(\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n\t)\n\t/\n\tPick($(v_Switch_Production_Custom_2)\n\t\t,Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])\n\t    ,Sum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n\t)\n)*60",
+                "qNumFormat": {
+                  "qType": "R",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0 kg/hr",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "YMLcz",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(0,176,80)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Mileage",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(\n\t(\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t)<=2000000\n\t,Num(\n\t\t(\n        \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t\t+\n\t\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t\t+\n\t\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t\t+\n\t\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t\t)/1000\n\t\t,Text('#,##0')&' k.mtr'\n\t\t,'.'\n\t\t,','\n\t)\n\t,Num(\n\t\t(\n        \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t\t+\n\t\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t\t+\n\t\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t\t+\n\t\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t\t)/1000000\n\t\t,Text('#,##0.00')&' m.mtr'\n\t\t,'.'\n\t\t,','\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "UPMFXnJ",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,Blue()\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Speed",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,0\n    ,\n\t(\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t)\n\t/\n\tPick($(v_Switch_Production_Custom_2)\n\t\t,Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])\n\t    ,Sum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "R",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0 m/min",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "xbmqNh",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,Blue()\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Waste",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty Kg])< 200\n\t,Num(\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty Kg])\n\t\t,Text('#,##0')&' Kg'\n\t\t,'.'\n\t\t,','\n\t)\n    ,Num(\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty MT])\n\t\t,Text('#,##0.0')&' tn'\n\t\t,'.'\n\t\t,','\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "U",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "JshYNr",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(255,0,0)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Waste %",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "if(Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,0\n    ,\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty MT])\n\t/\n\t(\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0.0%",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "HtExQb",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(200,200,200)\n\t,if(even([Day])=0,rgb(240,240,240))\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                },
+                {
+                  "qExpression": "if(Sum({$< [Month ID]={\"<= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])=0\n\t,rgb(170,170,170)\n    ,rgb(255,0,0)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  }
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1,
+            2,
+            3,
+            -1
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 50,
+              "qHeight": 50
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "P",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": 4,
+          "qMaxStackedCells": 5000,
+          "qShowTotalsAbove": true,
+          "qIndentMode": true,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "columnWidths": [
+            [
+              360
+            ],
+            [
+              null,
+              null
+            ]
+          ],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "showTitles": true,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": true,
+        "visualization": "pivot-table"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "a1284124-bf1f-4858-8922-ca397ca820ec",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "3ad7d973-d7c0-44e1-9e4d-b96869c55c13",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Item Name]"
+                ],
+                "qFieldLabels": [
+                  "=[Item Name]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Name",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "81564dd7-645e-49da-b5d5-fe7d42dec65c",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "cd63cddb-bf47-44bd-ada5-4c2d918b2dbd",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Item Code]"
+                ],
+                "qFieldLabels": [
+                  "=[Item Code]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Code",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "575a6970-3b75-4631-93eb-150c6a55e699",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": true,
+        "title": "Output Base",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Switch_Production_Custom_2",
+        "style": "material",
+        "width": "",
+        "customwidth": "",
+        "render": "s",
+        "alternatives": [
+          {
+            "value": "1",
+            "label": "Scheduled",
+            "cId": "jkskJ"
+          },
+          {
+            "value": "2",
+            "label": "Uptime",
+            "cId": "pHGJ"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Switch_Production_Custom_2"
+          }
+        },
+        "version": "2.2.0",
+        "extensionMeta": {
+          "name": "Variable",
+          "description": "Variable extension",
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg",
+          "icon": "extension",
+          "template": "variable",
+          "isLibraryItem": true,
+          "isThirdParty": true,
+          "templateIconClassName": "icon-puzzle"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "ae1b5e43-1eae-4a43-a557-717dbcc0b001",
+          "qType": "filterpane"
+        },
+        "qMetaDef": {},
+        "qChildListDef": {
+          "qData": {
+            "info": "/qInfo"
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "visualization": "filterpane"
+      },
+      "qChildren": [
+        {
+          "qProperty": {
+            "qInfo": {
+              "qId": "96d969ba-f721-4ce1-8868-a8b8839ac5b0",
+              "qType": "listbox"
+            },
+            "qMetaDef": {},
+            "qListObjectDef": {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=[Week Day]"
+                ],
+                "qFieldLabels": [
+                  "=[Week Day]"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByState": 1,
+                    "qSortByNumeric": 1,
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true
+              },
+              "qFrequencyMode": "N",
+              "qShowAlternatives": true,
+              "qInitialDataFetch": [],
+              "qExpressions": []
+            },
+            "title": "Day Name",
+            "visualization": "listbox"
+          },
+          "qChildren": []
+        }
+      ]
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "85993a5d-1c6a-4f80-8f1d-74a17519d12c",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": true,
+        "title": "Measures",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Switch_Production_Custom_4",
+        "style": "material",
+        "width": "",
+        "customwidth": "",
+        "render": "s",
+        "alternatives": [
+          {
+            "value": "3",
+            "label": "Production vs.  Waste",
+            "cId": "GVwntXV"
+          },
+          {
+            "value": "1",
+            "label": "Output (kg/hr):  Uptime vs. Scheduled",
+            "cId": "jkskJ"
+          },
+          {
+            "value": "2",
+            "label": "Speed(mtr/min) :  Uptime vs. Scheduled",
+            "cId": "pHGJ"
+          },
+          {
+            "value": "4",
+            "label": "Loading: Schedule vs. Available",
+            "cId": "pSkwuHN"
+          },
+          {
+            "value": "5",
+            "label": "Utilization: Uptime vs. Schedule",
+            "cId": "PxrSF"
+          },
+          {
+            "value": "6",
+            "label": "Capacity - MT",
+            "cId": "aUfwc"
+          },
+          {
+            "value": "7",
+            "label": "Capacity - mtr",
+            "cId": "mTNJwW"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Switch_Production_Custom_4"
+          }
+        },
+        "version": "2.2.0",
+        "extensionMeta": {
+          "name": "Variable",
+          "description": "Variable extension",
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg",
+          "icon": "extension",
+          "template": "variable",
+          "isLibraryItem": true,
+          "isThirdParty": true,
+          "templateIconClassName": "icon-puzzle"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "1523f558-68e1-4397-8fd0-a27302176657",
+          "qType": "linechart"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=Pick($(v_Switch_Production_Custom_3)\n\t\n    ,[Year]\n    ,[Quarter Year]\n    ,[Month Year]\n    ,[Month Day]\n)"
+                ],
+                "qFieldLabels": [
+                  "Dimension"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "jUHAx",
+                "othersLabel": "Others"
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Upper",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Pick($(v_Switch_Production_Custom_4)\n\t\n    ,//Output vs. planned hours\n    (\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n\t)*60\n    /\n\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])\n\t\n    ,//Speed vs. planned hours\n\t(\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t)\n    /\n\tSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])\n    \n    ,//Gorss Otput - including waste\n    (\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t    +\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty MT])\n\t)\n    *\n    Pick($(v_Switch_Production_Custom_3)\n    \t,1\n\t\t,1\n        ,1\n        ,1000\n\t)\n    \n    ,// Available Days\n    Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Year=, Quarter=, Month=, [Month Year]=>} [Full Day Minutes])\n\t/60\n\t/24\n    \n\t,// Planned days/hours\n    Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes])\n    /\n    Pick($(v_Switch_Production_Custom_3)\n    \t,1440\n        ,1440\n        ,1440\n        ,60\n\t)\n\n)\n",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "dvuhEMD",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "Pick($(v_Switch_Production_Custom_4)\n\t,rgb(50,180,50)\n    ,rgb(102,204,255)\n    ,rgb(250,50,50)\n    ,rgb(200,200,120)\n    ,rgb(200,200,120)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  },
+                  "id": "colorByExpression"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Lower",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Pick($(v_Switch_Production_Custom_4)\n\n\t,// Ouput vs. run hours\n    (\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n\t)*60\n    /\n\tSum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n\n\t,// Speed vs. run hours\n    (\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t)\n\t/\n\tSum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n\n\t,//Waste\n    Sum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty MT])\n    *\n    Pick($(v_Switch_Production_Custom_3)\n    \t,1\n\t\t,1\n        ,1\n        ,1000\n\t)\n    \n    ,// Planned days\n    Sum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Shift Planned Time Minutes]) \n\t/60\n\t/24\n\n\t,// Run days/hours\n    Sum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n\t/\n    Pick($(v_Switch_Production_Custom_3)\n    \t,1440\n        ,1440\n        ,1440\n        ,60\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "tXNvXG",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1,
+            2
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 17,
+              "qHeight": 500
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "S",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": -1,
+          "qAlwaysFullyExpanded": true,
+          "qMaxStackedCells": 5000,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "refLine": {
+          "refLines": []
+        },
+        "showTitles": true,
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": true,
+        "lineType": "area",
+        "stackedArea": false,
+        "separateStacking": true,
+        "scrollStartPos": 1,
+        "nullMode": "gap",
+        "dataPoint": {
+          "show": true,
+          "showLabels": true
+        },
+        "gridLine": {
+          "auto": true,
+          "spacing": 2
+        },
+        "color": {
+          "auto": false,
+          "mode": "byExpression",
+          "useBaseColors": "off",
+          "singleColor": 6,
+          "paletteColor": {
+            "index": 2,
+            "color": "#46c646"
+          },
+          "persistent": false,
+          "expressionIsColor": true,
+          "expressionLabel": "",
+          "measureScheme": "sg",
+          "reverseScheme": false,
+          "dimensionScheme": "12",
+          "autoMinMax": true,
+          "measureMin": 0,
+          "measureMax": 10,
+          "byMeasureDef": {
+            "label": "Planned",
+            "key": "Pick($(v_Switch_Production_Custom_4)\n\t,\n    (\n    \tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n\t)/60\n\t,\n\t(\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t+\n\t\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t)\n)\n/\nSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])",
+            "type": "expression"
+          },
+          "altLabel": "Planned",
+          "colorExpression": "Pick($(v_Switch_Production_Custom_4)\n\t,rgb(50,180,50)\n    ,rgb(102,204,255)\n    ,rgb(250,50,50)\n    ,rgb(200,200,120)\n    ,rgb(200,200,120)\n)"
+        },
+        "legend": {
+          "show": true,
+          "dock": "auto",
+          "showTitle": true
+        },
+        "dimensionAxis": {
+          "continuousAuto": false,
+          "show": "labels",
+          "label": "auto",
+          "dock": "near"
+        },
+        "preferContinuousAxis": false,
+        "measureAxis": {
+          "show": "none",
+          "dock": "near",
+          "spacing": 1,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10,
+          "logarithmic": false
+        },
+        "visualization": "linechart"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "d7d5c015-f25a-4a6e-84d0-01b744a29ca1",
+          "qType": "combochart"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=Pick($(v_Switch_Production_Custom_3)\n\t\n    ,[Year]\n    ,[Quarter Year]\n    ,[Month Year]\n    ,[Month Day]\n)"
+                ],
+                "qFieldLabels": [
+                  "Dimension"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "Dnsuj",
+                "othersLabel": "Others"
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Production",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Sum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "rZpsjn",
+                "numFormatFromTemplate": true,
+                "series": {
+                  "type": "bar",
+                  "axis": 0,
+                  "marker": "circle",
+                  "markerFill": true
+                }
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [
+                {
+                  "qExpression": "if($('Waste')\n\t,rgb(50,180,50)\n    ,rgb(0,102,255)\n)",
+                  "qNumFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  },
+                  "id": "colorByExpression"
+                }
+              ],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Waste %",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "Sum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty MT])\n/\n(\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "0.0%",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "vhFDmP",
+                "numFormatFromTemplate": true,
+                "series": {
+                  "type": "line",
+                  "axis": 1,
+                  "marker": "circle",
+                  "markerFill": true
+                }
+              },
+              "qSortBy": {
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            1,
+            2
+          ],
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 17,
+              "qHeight": 500
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "S",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": -1,
+          "qMaxStackedCells": 5000,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [
+                {
+                  "qDef": {
+                    "qLabel": "Waste",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "Sum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Waste Qty MT])",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0.0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "fzARXQv",
+                    "numFormatFromTemplate": true,
+                    "series": {
+                      "type": "line",
+                      "axis": 1,
+                      "marker": "circle",
+                      "markerFill": true
+                    }
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                },
+                {
+                  "qDef": {
+                    "qLabel": "Output ( Uptime )",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "(\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty Kg])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n)\n/\nSum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])\n*60",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "jnfrdbF",
+                    "numFormatFromTemplate": true,
+                    "series": {
+                      "type": "bar",
+                      "axis": 0,
+                      "marker": "circle",
+                      "markerFill": true
+                    }
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                },
+                {
+                  "qDef": {
+                    "qLabel": "Output ( Schedule )",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "(\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty Kg])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n)\n/\nSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])\n*60",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "rPPeH",
+                    "numFormatFromTemplate": true,
+                    "series": {
+                      "type": "bar",
+                      "axis": 0,
+                      "marker": "circle",
+                      "markerFill": true
+                    }
+                  },
+                  "qSortBy": {
+                    "qSortByNumeric": -1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                },
+                {
+                  "qDef": {
+                    "qLabel": "Speed ( Uptime )",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "(\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n)\n/\nSum({$<[Production Running Mode Type] = {'Run'}, [Month ID]={\"= $(v_Max_Month_ID)\"}, Year =, Quarter=, Month=, [Month Year]=>} [Production Running Mode Minutes])",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "VSfSHJ",
+                    "numFormatFromTemplate": true,
+                    "series": {
+                      "type": "line",
+                      "axis": 1,
+                      "marker": "circle",
+                      "markerFill": true
+                    }
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                },
+                {
+                  "qDef": {
+                    "qLabel": "Speed ( Schedule )",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "(\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t+\n\tSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])\n)\n/\nSum({$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]=>} [Production Shift Planned Time Minutes])",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "PmPeGk",
+                    "numFormatFromTemplate": true,
+                    "series": {
+                      "type": "line",
+                      "axis": 1,
+                      "marker": "circle",
+                      "markerFill": true
+                    }
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                },
+                {
+                  "qDef": {
+                    "qLabel": "Mileage",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "Sum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty LM])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty LM])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty LM])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty LM])",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "xmxZ",
+                    "numFormatFromTemplate": true,
+                    "series": {
+                      "type": "bar",
+                      "axis": 0,
+                      "marker": "circle",
+                      "markerFill": true
+                    }
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                }
+              ],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": true,
+        "barGrouping": {
+          "grouping": "grouped"
+        },
+        "orientation": "vertical",
+        "scrollStartPos": 1,
+        "nullMode": "gap",
+        "dataPoint": {
+          "show": true
+        },
+        "color": {
+          "auto": false,
+          "mode": "byMultiple",
+          "useBaseColors": "off",
+          "singleColor": 7,
+          "paletteColor": {
+            "index": 10,
+            "color": "#f93f17"
+          },
+          "persistent": false,
+          "expressionIsColor": true,
+          "expressionLabel": "",
+          "measureScheme": "sg",
+          "reverseScheme": false,
+          "dimensionScheme": "100",
+          "autoMinMax": true,
+          "measureMin": 0,
+          "measureMax": 10,
+          "byMeasureDef": {
+            "label": "Production",
+            "key": "Sum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output FG Qty MT])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production Output WIP Qty MT])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold FG Qty MT])\n+\nSum( {$< [Month ID]={\"= $(v_Max_Month_ID)\"}, Quarter=, Month=, [Month Year]= >} [Production On Hold WIP Qty MT])",
+            "type": "expression"
+          },
+          "altLabel": "Production",
+          "colorExpression": "if($('Waste')\n\t,rgb(50,180,50)\n    ,rgb(0,102,255)\n)"
+        },
+        "legend": {
+          "show": false,
+          "dock": "auto",
+          "showTitle": true
+        },
+        "dimensionAxis": {
+          "continuousAuto": true,
+          "show": "labels",
+          "label": "auto",
+          "dock": "near"
+        },
+        "preferContinuousAxis": true,
+        "measureAxes": [
+          {
+            "show": "all",
+            "dock": "near",
+            "spacing": 0.5,
+            "autoMinMax": true,
+            "minMax": "min",
+            "min": 0,
+            "max": 10
+          },
+          {
+            "show": "all",
+            "dock": "far",
+            "spacing": 0.5,
+            "autoMinMax": true,
+            "minMax": "min",
+            "min": 0,
+            "max": 10
+          }
+        ],
+        "visualization": "combochart"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "fad8dc56-125f-482a-b6c9-5a95beed3046",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": true,
+        "title": "Time Scale",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Switch_Production_Custom_3",
+        "style": "material",
+        "width": "",
+        "customwidth": "",
+        "render": "s",
+        "alternatives": [
+          {
+            "value": "1",
+            "label": "Year",
+            "cId": "jkskJ"
+          },
+          {
+            "value": "2",
+            "label": "Quarter",
+            "cId": "pHGJ"
+          },
+          {
+            "value": "3",
+            "label": "Month",
+            "cId": "pSKpj"
+          },
+          {
+            "value": "4",
+            "label": "Day",
+            "cId": "jJcLWf"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Switch_Production_Custom_3"
+          }
+        },
+        "version": "2.2.0",
+        "extensionMeta": {
+          "name": "Variable",
+          "description": "Variable extension",
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg",
+          "icon": "extension",
+          "template": "variable",
+          "isLibraryItem": true,
+          "isThirdParty": true,
+          "templateIconClassName": "icon-puzzle"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "c6013614-9bad-4e23-abf0-09909c2455ce",
+          "qType": "scatterplot"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qLibraryId": "nnkwKsQ",
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [],
+                "qFieldLabels": [],
+                "qSortCriterias": [
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  },
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  },
+                  {
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "jhFmAX",
+                "othersLabel": "Others"
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [
+                {
+                  "qLibraryId": "nnkwKsQ",
+                  "qSortBy": {
+                    "qSortByAscii": 1,
+                    "qExpression": {}
+                  },
+                  "id": "colorByAlternative"
+                }
+              ],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Waste %",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "(\n\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Waste Qty MT])\n\t/\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t)\n)\n/\n(\n\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production Waste Qty MT])\n\t/\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=,Month= ,[Month Day]=, [Month Year]= >} [Production Output FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=,Month= ,[Month Day]=, [Month Year]= >} [Production Output WIP Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold FG Qty MT])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month= ,[Month Day]=, [Month Year]= >} [Production On Hold WIP Qty MT])\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0.0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "YQw",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            },
+            {
+              "qDef": {
+                "qLabel": "Output ( kg/hr )",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "(\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n\t)\n\t/\n\tPick($(v_Switch_Production_Custom_2)\n\t\t,Sum({$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Shift Planned Time Minutes])\n\t    ,Sum({$<[Production Running Mode Type] = {'Run'}, [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Running Mode Minutes])\n\t)\n)\n/\n(\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=,[Month Day]=, [Month Year]= >} [Production Output WIP Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold FG Qty Kg])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold WIP Qty Kg])\n\t)\n\t/\n\tPick($(v_Switch_Production_Custom_2)\n\t\t,Sum({$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Shift Planned Time Minutes])\n\t    ,Sum({$<[Production Running Mode Type] = {'Run'}, [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Running Mode Minutes])\n\t)\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0.0",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "mUVtjAh",
+                "numFormatFromTemplate": true
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              }
+            }
+          ],
+          "qInterColumnSortOrder": [
+            2,
+            1,
+            0
+          ],
+          "qSuppressZero": true,
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [],
+          "qReductionMode": "N",
+          "qMode": "S",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": -1,
+          "qMaxStackedCells": 5000,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [
+                {
+                  "qDef": {
+                    "qLabel": "Speed (mtr/min)",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "(\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t)\n\t/\n\tPick($(v_Switch_Production_Custom_2)\n\t\t,Sum({$< [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Shift Planned Time Minutes])\n\t    ,Sum({$<[Production Running Mode Type] = {'Run'}, [Year]={$(v_Max_Year)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Running Mode Minutes])\n\t)\n)\n/\n(\n\t(\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production Output FG Qty LM])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=,[Month Day]=, [Month Year]= >} [Production Output WIP Qty LM])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold FG Qty LM])\n\t\t+\n\t\tSum( {$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]= >} [Production On Hold WIP Qty LM])\n\t)\n\t/\n\tPick($(v_Switch_Production_Custom_2)\n\t\t,Sum({$< [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Shift Planned Time Minutes])\n\t    ,Sum({$<[Production Running Mode Type] = {'Run'}, [Year]={$(v_Max_Year_LY)}, [Month ID]=, Quarter=, Month=, [Month Day]=, [Month Year]=>} [Production Running Mode Minutes])\n\t)\n)",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0.0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "egScfDw",
+                    "numFormatFromTemplate": true
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                },
+                {
+                  "qDef": {
+                    "qLabel": "Loading %",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "(\n\tSum({$< [Year]={$(v_Max_Year)}, [Month ID]={\"<$(v_Max_Month_ID)\"}, Month=, Quarter=, [Month Year]= >} [Production Shift Planned Time Minutes])\n\t/\n\tSum({$< [Year]={$(v_Max_Year)}, [Month ID]={\"<$(v_Max_Month_ID)\"}, Month=, Quarter=, [Month Year]=>} [Full Day Minutes])\n)\n/\n(\n\tSum({$< [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<$(v_Max_Month_ID_LY)\"}, Month=, Quarter=, [Month Year]= >} [Production Shift Planned Time Minutes])\n\t/\n\tSum({$< [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<$(v_Max_Month_ID_LY)\"}, Month=, Quarter=, [Month Year]=>} [Full Day Minutes])\n)",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0.0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "HqCpfaE",
+                    "numFormatFromTemplate": true
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                },
+                {
+                  "qDef": {
+                    "qLabel": "Utilisation %",
+                    "qTags": [],
+                    "qGrouping": "N",
+                    "qDef": "(\n\tSum({$< [Production Running Mode Type] = {'Run'}, [Year]={$(v_Max_Year)}, [Month ID]={\"<$(v_Max_Month_ID)\"}, Month=, Quarter=, [Month Year]= >} [Production Running Mode Minutes])\n\t/\n\tSum({$< [Year]={$(v_Max_Year)}, [Month ID]={\"<$(v_Max_Month_ID)\"}, Month=, Quarter=, [Month Year]=>} [Production Shift Planned Time Minutes])\n)\n/\n(\n\tSum({$< [Production Running Mode Type] = {'Run'}, [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<$(v_Max_Month_ID_LY)\"}, Month=, Quarter=, [Month Year]= >} [Production Running Mode Minutes])\n\t/\n\tSum({$< [Year]={$(v_Max_Year_LY)}, [Month ID]={\"<$(v_Max_Month_ID_LY)\"}, Month=, Quarter=, [Month Year]=>} [Production Shift Planned Time Minutes])\n)",
+                    "qNumFormat": {
+                      "qType": "F",
+                      "qnDec": 2,
+                      "qUseThou": 0,
+                      "qFmt": "#,##0.0",
+                      "qDec": ".",
+                      "qThou": ","
+                    },
+                    "qAccumulate": 0,
+                    "qActiveExpression": 0,
+                    "qExpressions": [],
+                    "autoSort": true,
+                    "cId": "LwHyXjk",
+                    "numFormatFromTemplate": true
+                  },
+                  "qSortBy": {
+                    "qExpression": {}
+                  },
+                  "qAttributeExpressions": [],
+                  "qAttributeDimensions": [],
+                  "qCalcCond": {},
+                  "qCalcCondition": {
+                    "qCond": {},
+                    "qMsg": {}
+                  },
+                  "qTrendLines": [],
+                  "qMiniChartDef": {
+                    "qSortBy": {
+                      "qExpression": {}
+                    },
+                    "qOtherTotalSpec": {
+                      "qOtherMode": "OTHER_OFF",
+                      "qOtherCounted": {},
+                      "qOtherLimit": {},
+                      "qOtherLimitMode": "OTHER_GT_LIMIT",
+                      "qForceBadValueKeeping": true,
+                      "qApplyEvenWhenPossiblyWrongResult": true,
+                      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                      "qTotalMode": "TOTAL_OFF",
+                      "qReferencedExpression": {}
+                    },
+                    "qMaxNumberPoints": -1,
+                    "qAttributeExpressions": []
+                  }
+                }
+              ],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "refLine": {
+          "refLinesX": [
+            {
+              "show": true,
+              "label": "",
+              "color": 7,
+              "refLineExpr": {
+                "value": 1,
+                "label": "1"
+              },
+              "cId": "DCXEsmT"
+            }
+          ],
+          "refLinesY": [
+            {
+              "show": true,
+              "label": "",
+              "color": 7,
+              "refLineExpr": {
+                "value": 1,
+                "label": "1"
+              },
+              "cId": "CTfJRJ"
+            }
+          ]
+        },
+        "showTitles": false,
+        "title": "Performance",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": true,
+        "navigation": false,
+        "dataPoint": {
+          "bubbleSizes": 20,
+          "rangeBubbleSizes": [
+            2,
+            8
+          ]
+        },
+        "labels": {
+          "mode": 1
+        },
+        "compressionResolution": 5,
+        "gridLine": {
+          "auto": true,
+          "spacing": 3
+        },
+        "color": {
+          "auto": false,
+          "mode": "byDimension",
+          "useBaseColors": "off",
+          "singleColor": 3,
+          "paletteColor": {
+            "index": 6
+          },
+          "persistent": false,
+          "expressionIsColor": true,
+          "expressionLabel": "",
+          "measureScheme": "sg",
+          "reverseScheme": false,
+          "dimensionScheme": "100",
+          "autoMinMax": true,
+          "measureMin": 0,
+          "measureMax": 10,
+          "byDimDef": {
+            "label": "BU=Section-Machine",
+            "key": "nnkwKsQ",
+            "type": "libraryItem"
+          },
+          "altLabel": "BU=Section-Machine",
+          "byMeasureDef": {
+            "label": "XUJmCS",
+            "key": "XUJmCS",
+            "type": "libraryItem"
+          }
+        },
+        "legend": {
+          "show": false,
+          "dock": "auto",
+          "showTitle": true
+        },
+        "xAxis": {
+          "show": "all",
+          "dock": "near",
+          "spacing": 0.5,
+          "autoMinMax": true,
+          "minMax": "minMax",
+          "min": 10,
+          "max": 0
+        },
+        "yAxis": {
+          "show": "all",
+          "dock": "near",
+          "spacing": 0.5,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10
+        },
+        "visualization": "scatterplot"
+      },
+      "qChildren": []
+    }
+  ]
+}

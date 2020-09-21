@@ -1,0 +1,625 @@
+[
+  {
+    "qInfo": {
+      "qId": "2712ee59-82bd-42a4-8797-248ab517e2cc",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Printing Type"
+      ],
+      "qFieldLabels": [
+        "Printing Type"
+      ],
+      "title": "Printing Type"
+    },
+    "qMetaDef": {
+      "title": "Printing Type",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "28b7f6c4-d71f-4c13-8260-af7ea970f816",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Business Unit",
+        "Machine"
+      ],
+      "qFieldLabels": [],
+      "title": "BU - Machine Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "BU - Machine Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "2c2ea7a1-8742-43fb-87d3-fa6237bf223a",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "=If ([Customer Relation]='Internal','Internal Customer','External Customer')"
+      ],
+      "qFieldLabels": [
+        "Customer Relation"
+      ],
+      "title": "Customer Relation"
+    },
+    "qMetaDef": {
+      "title": "Customer Relation",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "413e9a68-be31-410c-94a6-bdc7b0959fb9",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Market Sector"
+      ],
+      "qFieldLabels": [
+        "Market Sector"
+      ],
+      "title": "Market Sector"
+    },
+    "qMetaDef": {
+      "title": "Market Sector",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "4b7860ba-3142-47bd-bddc-dd1abc002da9",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Business Unit"
+      ],
+      "qFieldLabels": [
+        "Business Unit"
+      ],
+      "title": "Business Unit"
+    },
+    "qMetaDef": {
+      "title": "Business Unit",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "4bf88a28-409e-4b02-845c-5c4d5f35f6bf",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Machine Group"
+      ],
+      "qFieldLabels": [
+        "Machine Group"
+      ],
+      "title": "Machine Group"
+    },
+    "qMetaDef": {
+      "title": "Machine Group",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "71a27ab8-5037-4250-a3a6-2a82340be42a",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Division Machine Group",
+        "Machine Group",
+        "Business Unit",
+        "Machine"
+      ],
+      "qFieldLabels": [],
+      "title": "Division Machine Group Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "Division Machine Group Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "85c334f7-0f21-4ddb-9de7-a6763a27831b",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "=If([Market Group]='AGRICULTURE','AGRICULTURE','INDUSTRIAL')"
+      ],
+      "qFieldLabels": [
+        "SIC Parent"
+      ],
+      "title": "SIC Parent"
+    },
+    "qMetaDef": {
+      "title": "SIC Parent",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "AJvMPj",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Month",
+        "Business Unit",
+        "Machine Group"
+      ],
+      "qFieldLabels": [],
+      "title": "Month-BU-Machine Group",
+      "coloring": {
+        "changeHash": "0.42988111538896967"
+      }
+    },
+    "qMetaDef": {
+      "title": "Month-BU-Machine Group",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MxAFUN",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Sector",
+        "Industry",
+        "Sub Industry"
+      ],
+      "qFieldLabels": [],
+      "title": "Sectors Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "Sectors Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PPvcn",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Year",
+        "Quarter Year",
+        "Month Year",
+        "Month Day"
+      ],
+      "qFieldLabels": [],
+      "title": "Time=Dimension"
+    },
+    "qMetaDef": {
+      "title": "Time=Dimension",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SgKtjD",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Machine Group Converting",
+        "Machine"
+      ],
+      "qFieldLabels": [],
+      "title": "Machine Group Converting Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "Machine Group Converting Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SgyAB",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Business Unit"
+      ],
+      "qFieldLabels": [
+        "Business Unit"
+      ],
+      "title": "Business Unit"
+    },
+    "qMetaDef": {
+      "title": "Business Unit",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "VwPZZP",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Machine Group",
+        "Business Unit",
+        "Machine"
+      ],
+      "qFieldLabels": [],
+      "title": "Machine Group Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "Machine Group Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Xjqp",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Business Unit",
+        "Machine Group",
+        "Machine"
+      ],
+      "qFieldLabels": [],
+      "title": "BU-MachineGrp-Machine",
+      "coloring": {
+        "changeHash": "0.007652967067604877"
+      }
+    },
+    "qMetaDef": {
+      "title": "BU-MachineGrp-Machine",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b9a78c95-1929-4086-9f40-77795a7b0d76",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Geographical Country"
+      ],
+      "qFieldLabels": [
+        "Country"
+      ],
+      "title": "Country"
+    },
+    "qMetaDef": {
+      "title": "Country",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dd921da9-b5e7-4da4-aa1e-424dfe1f1a3c",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Quarter"
+      ],
+      "qFieldLabels": [
+        "Quarter"
+      ],
+      "title": "Quarter"
+    },
+    "qMetaDef": {
+      "title": "Quarter",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e46b82b1-80d6-4e6b-a133-202249c6db92",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Style"
+      ],
+      "qFieldLabels": [
+        "Product Style"
+      ],
+      "title": "Product Style"
+    },
+    "qMetaDef": {
+      "title": "Product Style",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "eb3ec073-a57c-43b7-b94e-b3baff650d0a",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "%SynCostLossMatrixYDimensions",
+        "Business Unit",
+        "Machine Group",
+        "Machine",
+        "Item Key"
+      ],
+      "qFieldLabels": [],
+      "title": "Loss-BU-MachineGrp-Machine",
+      "coloring": {
+        "changeHash": "0.18742949896035643",
+        "colorMapRef": "eb3ec073-a57c-43b7-b94e-b3baff650d0a"
+      }
+    },
+    "qMetaDef": {
+      "title": "Loss-BU-MachineGrp-Machine",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ee4824f5-d9da-48a1-976f-cf0b60dffd6c",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Building Block",
+        "Product Line"
+      ],
+      "qFieldLabels": [],
+      "title": "Building Blocks Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "Building Blocks Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "fb378c5f-ac48-4729-873b-31e9d954b20b",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Month"
+      ],
+      "qFieldLabels": [
+        "Month"
+      ],
+      "title": "Month"
+    },
+    "qMetaDef": {
+      "title": "Month",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "fnrYp",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Branch"
+      ],
+      "qFieldLabels": [
+        "Branch"
+      ],
+      "title": "Branch"
+    },
+    "qMetaDef": {
+      "title": "Branch",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jSxPuqe",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Production Downtime Reason Category",
+        "Production Downtime Reason"
+      ],
+      "qFieldLabels": [],
+      "title": "Downtime Reason Category Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "Downtime Reason Category Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "kxqp",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Machine"
+      ],
+      "qFieldLabels": [
+        "Machine"
+      ],
+      "title": "Machine"
+    },
+    "qMetaDef": {
+      "title": "Machine",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ngUAv",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Market Group"
+      ],
+      "qFieldLabels": [
+        "Market Group"
+      ],
+      "title": "Market Group"
+    },
+    "qMetaDef": {
+      "title": "Market Group",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "nnkwKsQ",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Business Unit",
+        "Machine Group",
+        "Machine"
+      ],
+      "qFieldLabels": [],
+      "title": "BU=Section-Machine"
+    },
+    "qMetaDef": {
+      "title": "BU=Section-Machine",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "qpBaaqv",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "N",
+      "qFieldDefs": [
+        "Year"
+      ],
+      "qFieldLabels": [
+        "Year"
+      ],
+      "title": "Year"
+    },
+    "qMetaDef": {
+      "title": "Year",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "uajNHGs",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Business Unit",
+        "Non Conformance - Type",
+        "Non Conformance - Problem Type ID"
+      ],
+      "qFieldLabels": [],
+      "title": "Non Conf. Hierarchy",
+      "coloring": {
+        "changeHash": "0.04579455345030148",
+        "colorMapRef": "uajNHGs"
+      }
+    },
+    "qMetaDef": {
+      "title": "Non Conf. Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "wehnFqp",
+      "qType": "dimension"
+    },
+    "qDim": {
+      "qGrouping": "H",
+      "qFieldDefs": [
+        "Division",
+        "Business Unit",
+        "Machine"
+      ],
+      "qFieldLabels": [],
+      "title": "Division - BU - Machine Hierarchy"
+    },
+    "qMetaDef": {
+      "title": "Division - BU - Machine Hierarchy",
+      "description": "",
+      "tags": []
+    }
+  }
+]

@@ -1,0 +1,3445 @@
+[
+  {
+    "qInfo": {
+      "qId": "467038bb-34b5-4842-8d58-b283d57246ad",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "Waste MT",
+      "description": "",
+      "annotation": ""
+    },
+    "creationDate": "2018-08-28T04:11:42.815Z",
+    "qSelectionInfo": {},
+    "qLibraryId": "",
+    "qDef": {
+      "autoSort": true,
+      "cId": "",
+      "othersLabel": "Others"
+    },
+    "qNullSuppression": false,
+    "qOtherTotalSpec": {
+      "qOtherMode": "OTHER_OFF",
+      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+      "qOtherCounted": {
+        "qv": "10"
+      },
+      "qOtherLimitMode": "OTHER_GE_LIMIT",
+      "qOtherLimit": {
+        "qv": "0"
+      },
+      "qSuppressOther": false
+    },
+    "qOtherLabel": "Others",
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 1,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Waste MT",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 1277.5506424442112,
+          "qMax": 1277.5506424442112,
+          "qAttrExprInfo": [
+            {
+              "qMin": "NaN",
+              "qMax": "NaN",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              }
+            }
+          ],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "baseColor": {
+            "color": "#f8981d",
+            "index": 9
+          },
+          "autoSort": true,
+          "cId": "PuPwDA",
+          "numFormatFromTemplate": true,
+          "autoFormatTemplate": "0A",
+          "labelColor": "#FFFFFF",
+          "valueColor": "#FFFFFF",
+          "useLink": false,
+          "kpiLink": "",
+          "hideLabel": false,
+          "hideValue": false,
+          "groupByDimension": false,
+          "groupByDimensionValue": "",
+          "ovParams": false,
+          "size": " ",
+          "labelOrientation": "",
+          "labelOrder": "first",
+          "fontStyles": "bold",
+          "textAlignment": "center",
+          "valueIcon": "",
+          "iconPosition": "label",
+          "iconOrder": "first",
+          "iconSize": "",
+          "infographic": false,
+          "embeddedItem": ""
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "1,278",
+          "qNum": 1277.5506424442112,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "1,278",
+                "qNum": 1277.5506424442112,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": "NaN"
+                    }
+                  ]
+                }
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "Waste MT",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "options": {
+      "dimShowAs": "segment",
+      "dimDivideBy": "auto",
+      "dimensionsOrientation": "horizontal",
+      "dimLabelOrientation": "top attached",
+      "dimLabelSize": "huge",
+      "dimHideLabels": false,
+      "dimCenteredLabels": false,
+      "dimHideBorders": false,
+      "dimHideInternalBorders": false,
+      "labelOrientation": "",
+      "labelOrder": "first",
+      "size": "tiny",
+      "autoSize": false,
+      "divideBy": "auto",
+      "backgroundColor": "#009c95",
+      "verticalAlign": "stretched-items",
+      "styles": ""
+    },
+    "visualization": "qsSimpleKPI",
+    "version": 1.1,
+    "extensionMeta": {
+      "name": "Simple KPI",
+      "description": "Simple KPI",
+      "preview": "preview.png",
+      "icon": "kpi",
+      "type": "visualization",
+      "version": "1.1.2",
+      "author": "Alexander Nerush",
+      "previewIconURL": "../extensions/qsSimpleKPI/preview.png",
+      "template": "qsSimpleKPI",
+      "isLibraryItem": true,
+      "isThirdParty": true,
+      "templateIconClassName": "icon-kpi"
+    },
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 886,
+          "h": 78
+        }
+      },
+      "rtl": false,
+      "parent": {
+        "h": 1098.75,
+        "w": 2400
+      }
+    },
+    "visualizationType": "qsSimpleKPI",
+    "sourceObjectId": "Wgkhmd",
+    "sheetId": "jkPhfh",
+    "timestamp": 1535429502792,
+    "isClone": false,
+    "supportExport": true
+  },
+  {
+    "qInfo": {
+      "qId": "7e1fdf5f-3b3c-4a6a-9485-fc60fa267fbd",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "creationDate": "2018-07-04T14:35:13.369Z",
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 11,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Solar Time",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 4344,
+          "qMax": 4344,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "pmzWzJe",
+          "numFormatFromTemplate": true,
+          "valueType": "SUBTOTAL",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Lack Of Orders",
+          "qApprMaxGlyphCount": 2,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 81.30111111239876,
+          "qMax": 81.30111111239876,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "MffqmaT",
+          "numFormatFromTemplate": true,
+          "valueType": "INVERSE",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Load",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 4262.698888887601,
+          "qMax": 4262.698888887601,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "rCUZQw",
+          "numFormatFromTemplate": true,
+          "valueType": "SUBTOTAL",
+          "subtotal": {
+            "enable": true,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Setup DT",
+          "qApprMaxGlyphCount": 1,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 2,
+          "qMax": 2,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "KmfDa",
+          "numFormatFromTemplate": true,
+          "valueType": "INVERSE",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Production DT",
+          "qApprMaxGlyphCount": 3,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 225.58333333333334,
+          "qMax": 225.58333333333334,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "HqUqjU",
+          "numFormatFromTemplate": true,
+          "valueType": "INVERSE",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Maintenance DT",
+          "qApprMaxGlyphCount": 3,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 127.5,
+          "qMax": 127.5,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "PAZDrPh",
+          "numFormatFromTemplate": true,
+          "valueType": "INVERSE",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Preventive DT",
+          "qApprMaxGlyphCount": 2,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 25.833333333333332,
+          "qMax": 25.833333333333332,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "sZXpm",
+          "numFormatFromTemplate": true,
+          "valueType": "INVERSE",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Other DT",
+          "qApprMaxGlyphCount": 1,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 0.5,
+          "qMax": 0.5,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "HZMabRE",
+          "numFormatFromTemplate": true,
+          "valueType": "INVERSE",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Speed Loss",
+          "qApprMaxGlyphCount": 4,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": -498.8061011709301,
+          "qMax": -498.8061011709301,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "fpMab",
+          "numFormatFromTemplate": true,
+          "valueType": "NORMAL",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Quality Waste",
+          "qApprMaxGlyphCount": 1,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 6.648850122539131,
+          "qMax": 6.648850122539131,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "YdLmpU",
+          "numFormatFromTemplate": true,
+          "valueType": "INVERSE",
+          "subtotal": {
+            "enable": true,
+            "label": "Subtotals"
+          }
+        },
+        {
+          "qFallbackTitle": "Actual Situation",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 3881.282222220927,
+          "qMax": 3881.282222220927,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "hwKJfnP",
+          "numFormatFromTemplate": true,
+          "valueType": "SUBTOTAL",
+          "subtotal": {
+            "enable": false,
+            "label": "Subtotals"
+          }
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "4,344",
+          "qNum": 4344,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "81",
+          "qNum": 81.30111111239876,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "4,263",
+          "qNum": 4262.698888887601,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "2",
+          "qNum": 2,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "226",
+          "qNum": 225.58333333333334,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "128",
+          "qNum": 127.5,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "26",
+          "qNum": 25.833333333333332,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "1",
+          "qNum": 0.5,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "-499",
+          "qNum": -498.8061011709301,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "7",
+          "qNum": 6.648850122539131,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "3,881",
+          "qNum": 3881.282222220927,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "4,344",
+                "qNum": 4344,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "81",
+                "qNum": 81.30111111239876,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "4,263",
+                "qNum": 4262.698888887601,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "2",
+                "qNum": 2,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "226",
+                "qNum": 225.58333333333334,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "128",
+                "qNum": 127.5,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "26",
+                "qNum": 25.833333333333332,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 0.5,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "-499",
+                "qNum": -498.8061011709301,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "7",
+                "qNum": 6.648850122539131,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "3,881",
+                "qNum": 3881.282222220927,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 11,
+            "qHeight": 1
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": []
+    },
+    "qDef": {
+      "qNumFormat": {
+        "qType": "F",
+        "qnDec": 2,
+        "qDec": ".",
+        "qThou": ",",
+        "qFmt": "#,##0"
+      },
+      "numFormatFromTemplate": true,
+      "isCustomFormatted": false
+    },
+    "refLine": {
+      "refLines": []
+    },
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "gridlines": {
+      "auto": false,
+      "spacing": 3
+    },
+    "dataPoint": {
+      "showLabels": true
+    },
+    "color": {
+      "auto": false,
+      "positiveValue": {
+        "paletteColor": {
+          "index": -1,
+          "color": "#ca3921"
+        }
+      },
+      "negativeValue": {
+        "paletteColor": {
+          "index": -1,
+          "color": "#ca3921"
+        }
+      },
+      "subtotal": {
+        "paletteColor": {
+          "index": -1,
+          "color": "#00ca12"
+        }
+      }
+    },
+    "legend": {
+      "show": false,
+      "dock": "auto"
+    },
+    "measureAxis": {
+      "show": "labels",
+      "dock": "near",
+      "spacing": 1,
+      "autoMinMax": true,
+      "minMax": "min",
+      "min": 0,
+      "max": 10
+    },
+    "dimensionAxis": {
+      "show": "labels",
+      "label": "auto",
+      "dock": "near"
+    },
+    "visualization": "waterfallchart",
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 1900,
+          "h": 735
+        }
+      },
+      "rtl": false,
+      "content": {
+        "size": {
+          "w": 1900,
+          "h": 735.328
+        }
+      },
+      "parent": {
+        "h": 869,
+        "w": 1920
+      }
+    },
+    "generated": {
+      "qHyperCube": {
+        "qSize": {
+          "qcx": 0,
+          "qcy": 0
+        },
+        "qDimensionInfo": [
+          {
+            "qApprMaxGlyphCount": 0,
+            "qCardinal": 0,
+            "qSortIndicator": "N",
+            "qGroupFallbackTitles": [],
+            "qGroupPos": 0,
+            "qStateCounts": {
+              "qLocked": 0,
+              "qSelected": 0,
+              "qOption": 0,
+              "qDeselected": 0,
+              "qAlternative": 0,
+              "qExcluded": 0,
+              "qSelectedExcluded": 0,
+              "qLockedExcluded": 0
+            },
+            "qTags": [],
+            "qDimensionType": "D",
+            "qGrouping": "N",
+            "qNumFormat": {
+              "qType": "U",
+              "qnDec": 10,
+              "qUseThou": 0
+            },
+            "qGroupFieldDefs": [],
+            "qMin": 0,
+            "qMax": 0,
+            "qAttrExprInfo": [],
+            "qAttrDimInfo": [],
+            "qCardinalities": {
+              "qCardinal": 0,
+              "qHypercubeCardinal": 0,
+              "qAllValuesCardinal": -1
+            }
+          },
+          {
+            "qApprMaxGlyphCount": 0,
+            "qCardinal": 0,
+            "qSortIndicator": "N",
+            "qGroupFallbackTitles": [],
+            "qGroupPos": 0,
+            "qStateCounts": {
+              "qLocked": 0,
+              "qSelected": 0,
+              "qOption": 0,
+              "qDeselected": 0,
+              "qAlternative": 0,
+              "qExcluded": 0,
+              "qSelectedExcluded": 0,
+              "qLockedExcluded": 0
+            },
+            "qTags": [],
+            "qDimensionType": "D",
+            "qGrouping": "N",
+            "qNumFormat": {
+              "qType": "U",
+              "qnDec": 10,
+              "qUseThou": 0
+            },
+            "qGroupFieldDefs": [],
+            "qMin": 0,
+            "qMax": 0,
+            "qAttrExprInfo": [],
+            "qAttrDimInfo": [],
+            "qCardinalities": {
+              "qCardinal": 0,
+              "qHypercubeCardinal": 0,
+              "qAllValuesCardinal": -1
+            }
+          }
+        ],
+        "qMeasureInfo": [
+          {
+            "qApprMaxGlyphCount": 0,
+            "qCardinal": 0,
+            "qSortIndicator": "N",
+            "qNumFormat": {
+              "qType": "F",
+              "qnDec": 2,
+              "qUseThou": 0,
+              "qFmt": "#,##0",
+              "qDec": ".",
+              "qThou": ","
+            },
+            "qMin": 0,
+            "qMax": 4344,
+            "qAttrExprInfo": [],
+            "qAttrDimInfo": [],
+            "qTrendLines": [],
+            "isCustomFormatted": false
+          },
+          {
+            "qApprMaxGlyphCount": 0,
+            "qCardinal": 0,
+            "qSortIndicator": "N",
+            "qNumFormat": {
+              "qType": "F",
+              "qnDec": 2,
+              "qUseThou": 0,
+              "qFmt": "#,##0",
+              "qDec": ".",
+              "qThou": ","
+            },
+            "qMin": 3375.827270927465,
+            "qMax": 4344,
+            "qAttrExprInfo": [],
+            "qAttrDimInfo": [],
+            "qTrendLines": [],
+            "isCustomFormatted": false
+          },
+          {
+            "qApprMaxGlyphCount": 0,
+            "qCardinal": 0,
+            "qSortIndicator": "N",
+            "qNumFormat": {
+              "qType": "F",
+              "qnDec": 2,
+              "qUseThou": 0,
+              "qFmt": "#,##0",
+              "qDec": ".",
+              "qThou": ","
+            },
+            "qMin": 3375.827270927465,
+            "qMax": 4344,
+            "qAttrExprInfo": [],
+            "qAttrDimInfo": [],
+            "qTrendLines": [],
+            "isCustomFormatted": false
+          }
+        ],
+        "qEffectiveInterColumnSortOrder": [],
+        "qGrandTotalRow": [],
+        "qDataPages": [
+          {
+            "qMatrix": [
+              [
+                {
+                  "qText": "Solar Time",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#00ca12",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4344,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "4,344",
+                  "qNum": 4344,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Lack Of Orders",
+                  "qNum": 0,
+                  "qElemNumber": 1,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4344,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4262.698888887601,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "81",
+                  "qNum": -81.30111111239876,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Load",
+                  "qNum": 0,
+                  "qElemNumber": 2,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#00ca12",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4262.698888887601,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "4,263",
+                  "qNum": 4262.698888887601,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Setup DT",
+                  "qNum": 0,
+                  "qElemNumber": 3,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4262.698888887601,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4260.698888887601,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "2",
+                  "qNum": -2,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Production DT",
+                  "qNum": 0,
+                  "qElemNumber": 4,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4260.698888887601,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4035.1155555542678,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "226",
+                  "qNum": -225.58333333333348,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Maintenance DT",
+                  "qNum": 0,
+                  "qElemNumber": 5,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 4035.1155555542678,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3907.6155555542678,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "128",
+                  "qNum": -127.5,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Preventive DT",
+                  "qNum": 0,
+                  "qElemNumber": 6,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3907.6155555542678,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3881.7822222209343,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "26",
+                  "qNum": -25.833333333333485,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Other DT",
+                  "qNum": 0,
+                  "qElemNumber": 7,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3881.7822222209343,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3881.2822222209343,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "1",
+                  "qNum": -0.5,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Speed Loss",
+                  "qNum": 0,
+                  "qElemNumber": 8,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3881.2822222209343,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3382.476121050004,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "-499",
+                  "qNum": -498.8061011709301,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Quality Waste",
+                  "qNum": 0,
+                  "qElemNumber": 9,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#ca3921",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3382.476121050004,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3375.827270927465,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "7",
+                  "qNum": -6.648850122538988,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Subtotals",
+                  "qNum": 0,
+                  "qElemNumber": 10,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#00ca12",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3375.827270927465,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "3.4k",
+                  "qNum": 3375.827270927465,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ],
+              [
+                {
+                  "qText": "Actual Situation",
+                  "qNum": 0,
+                  "qElemNumber": 11,
+                  "qState": "L"
+                },
+                {
+                  "qText": "#00ca12",
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 0,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qNum": 3881.282222220927,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                },
+                {
+                  "qText": "3,881",
+                  "qNum": 3881.282222220927,
+                  "qElemNumber": 0,
+                  "qState": "L"
+                }
+              ]
+            ],
+            "qTails": [],
+            "qArea": {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 5,
+              "qHeight": 63
+            }
+          }
+        ],
+        "qPivotDataPages": [],
+        "qStackedDataPages": [],
+        "qMode": "S",
+        "qNoOfLeftDims": 0,
+        "qTreeNodesOnDim": [],
+        "qColumnOrder": []
+      }
+    },
+    "generatedMatrix": [
+      [
+        {
+          "qText": "Solar Time",
+          "qElemNumber": 0
+        },
+        {
+          "qText": "#00ca12"
+        },
+        {
+          "qNum": 0
+        },
+        {
+          "qNum": 4344
+        },
+        {
+          "qNum": 4344,
+          "qText": "4,344"
+        }
+      ],
+      [
+        {
+          "qText": "Lack Of Orders",
+          "qElemNumber": 1
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 4344
+        },
+        {
+          "qNum": 4262.698888887601
+        },
+        {
+          "qNum": -81.30111111239876,
+          "qText": "81"
+        }
+      ],
+      [
+        {
+          "qText": "Load",
+          "qElemNumber": 2
+        },
+        {
+          "qText": "#00ca12"
+        },
+        {
+          "qNum": 0
+        },
+        {
+          "qNum": 4262.698888887601
+        },
+        {
+          "qNum": 4262.698888887601,
+          "qText": "4,263"
+        }
+      ],
+      [
+        {
+          "qText": "Setup DT",
+          "qElemNumber": 3
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 4262.698888887601
+        },
+        {
+          "qNum": 4260.698888887601
+        },
+        {
+          "qNum": -2,
+          "qText": "2"
+        }
+      ],
+      [
+        {
+          "qText": "Production DT",
+          "qElemNumber": 4
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 4260.698888887601
+        },
+        {
+          "qNum": 4035.1155555542678
+        },
+        {
+          "qNum": -225.58333333333348,
+          "qText": "226"
+        }
+      ],
+      [
+        {
+          "qText": "Maintenance DT",
+          "qElemNumber": 5
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 4035.1155555542678
+        },
+        {
+          "qNum": 3907.6155555542678
+        },
+        {
+          "qNum": -127.5,
+          "qText": "128"
+        }
+      ],
+      [
+        {
+          "qText": "Preventive DT",
+          "qElemNumber": 6
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 3907.6155555542678
+        },
+        {
+          "qNum": 3881.7822222209343
+        },
+        {
+          "qNum": -25.833333333333485,
+          "qText": "26"
+        }
+      ],
+      [
+        {
+          "qText": "Other DT",
+          "qElemNumber": 7
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 3881.7822222209343
+        },
+        {
+          "qNum": 3881.2822222209343
+        },
+        {
+          "qNum": -0.5,
+          "qText": "1"
+        }
+      ],
+      [
+        {
+          "qText": "Speed Loss",
+          "qElemNumber": 8
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 3881.2822222209343
+        },
+        {
+          "qNum": 3382.476121050004
+        },
+        {
+          "qNum": -498.8061011709301,
+          "qText": "-499"
+        }
+      ],
+      [
+        {
+          "qText": "Quality Waste",
+          "qElemNumber": 9
+        },
+        {
+          "qText": "#ca3921"
+        },
+        {
+          "qNum": 3382.476121050004
+        },
+        {
+          "qNum": 3375.827270927465
+        },
+        {
+          "qNum": -6.648850122538988,
+          "qText": "7"
+        }
+      ],
+      [
+        {
+          "qText": "Subtotals",
+          "qElemNumber": 10
+        },
+        {
+          "qText": "#00ca12"
+        },
+        {
+          "qNum": 0
+        },
+        {
+          "qNum": 3375.827270927465
+        },
+        {
+          "qNum": 3375.827270927465,
+          "qText": "3.4k"
+        }
+      ],
+      [
+        {
+          "qText": "Actual Situation",
+          "qElemNumber": 11
+        },
+        {
+          "qText": "#00ca12"
+        },
+        {
+          "qNum": 0
+        },
+        {
+          "qNum": 3881.282222220927
+        },
+        {
+          "qNum": 3881.282222220927,
+          "qText": "3,881"
+        }
+      ]
+    ],
+    "visualizationType": "waterfallchart",
+    "sourceObjectId": "rjLuCSx",
+    "sheetId": "c090ea9f-5e6a-478e-b986-99c3c99d7786",
+    "timestamp": 1530714913366,
+    "isClone": false,
+    "supportExport": true
+  },
+  {
+    "qInfo": {
+      "qId": "DmpZke",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "Capacity Utilization",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "425f17a4-ae02-44b9-8d3c-913e7241dcaa",
+    "creationDate": "2017-09-12T13:27:09.850Z",
+    "qSelectionInfo": {
+      "qInSelections": false,
+      "qMadeSelections": false
+    },
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 3,
+        "qcy": 12
+      },
+      "qDimensionInfo": [
+        {
+          "qFallbackTitle": "Month",
+          "qApprMaxGlyphCount": 3,
+          "qCardinal": 12,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Month"
+          ],
+          "qGroupPos": 0,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 12,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 0,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$numeric",
+            "$integer"
+          ],
+          "qDimensionType": "N",
+          "qGrouping": "N",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "Month"
+          ],
+          "qMin": 1,
+          "qMax": 12,
+          "qContinuousAxes": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 0,
+            "qHypercubeCardinal": 0,
+            "qAllValuesCardinal": -1
+          },
+          "title": "Month",
+          "autoSort": true,
+          "cId": "MpJbhp",
+          "othersLabel": "Others"
+        }
+      ],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Available Hrs",
+          "qApprMaxGlyphCount": 1,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qMin": 1,
+          "qMax": 1,
+          "qIsAutoFormat": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "baseColor": {
+            "color": "#276e27",
+            "index": 3
+          },
+          "autoSort": true,
+          "cId": "aXneVz",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "Available Hrs (LY)",
+          "qApprMaxGlyphCount": 1,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qMin": 1,
+          "qMax": 1,
+          "qIsAutoFormat": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "baseColor": {},
+          "autoSort": true,
+          "cId": "cmUxhj",
+          "numFormatFromTemplate": true
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0,
+        1,
+        2
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "1",
+          "qNum": 1,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "1",
+          "qNum": 1,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "Jan",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Feb",
+                "qNum": 2,
+                "qElemNumber": 1,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Mar",
+                "qNum": 3,
+                "qElemNumber": 2,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Apr",
+                "qNum": 4,
+                "qElemNumber": 3,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "May",
+                "qNum": 5,
+                "qElemNumber": 4,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Jun",
+                "qNum": 6,
+                "qElemNumber": 5,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Jul",
+                "qNum": 7,
+                "qElemNumber": 6,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Aug",
+                "qNum": 8,
+                "qElemNumber": 7,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Sep",
+                "qNum": 9,
+                "qElemNumber": 8,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Oct",
+                "qNum": 10,
+                "qElemNumber": 9,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Nov",
+                "qNum": 11,
+                "qElemNumber": 10,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ],
+            [
+              {
+                "qText": "Dec",
+                "qNum": 12,
+                "qElemNumber": 11,
+                "qState": "O"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              },
+              {
+                "qText": "1",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L"
+              }
+            ]
+          ],
+          "qTails": [
+            {
+              "qUp": 0,
+              "qDown": 0
+            }
+          ],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 3,
+            "qHeight": 12
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "refLine": {
+      "refLines": []
+    },
+    "showTitles": false,
+    "title": "Capacity Utilization",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "lineType": "line",
+    "stackedArea": false,
+    "separateStacking": true,
+    "scrollStartPos": 0,
+    "nullMode": "gap",
+    "dataPoint": {
+      "show": true,
+      "showLabels": true
+    },
+    "gridLine": {
+      "auto": true,
+      "spacing": 2
+    },
+    "color": {
+      "auto": true,
+      "mode": "byExpression",
+      "useBaseColors": "off",
+      "singleColor": 4,
+      "paletteColor": {
+        "index": 5,
+        "color": "#7db8da"
+      },
+      "persistent": false,
+      "expressionIsColor": true,
+      "expressionLabel": "",
+      "measureScheme": "sg",
+      "reverseScheme": false,
+      "dimensionScheme": "12",
+      "autoMinMax": true,
+      "measureMin": 0,
+      "measureMax": 10,
+      "colorExpression": "magenta()"
+    },
+    "legend": {
+      "show": true,
+      "dock": "auto",
+      "showTitle": true
+    },
+    "dimensionAxis": {
+      "continuousAuto": true,
+      "show": "labels",
+      "label": "auto",
+      "dock": "near"
+    },
+    "preferContinuousAxis": true,
+    "measureAxis": {
+      "show": "none",
+      "dock": "near",
+      "spacing": 1,
+      "autoMinMax": true,
+      "minMax": "min",
+      "min": 0,
+      "max": 10,
+      "logarithmic": false
+    },
+    "visualization": "linechart",
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 786,
+          "h": 194
+        }
+      },
+      "rtl": false,
+      "content": {
+        "chartData": {
+          "legendScrollOffset": 0,
+          "scrollOffset": 0,
+          "discreteSpacing": 65.16666666666667,
+          "axisInnerOffset": 0,
+          "hasMiniChart": false,
+          "viewRange": 12
+        },
+        "size": {
+          "w": 786,
+          "h": 194
+        },
+        "components": {
+          "grid": {
+            "visible": true,
+            "dock": "center",
+            "size": {
+              "w": 782,
+              "h": 164
+            }
+          },
+          "colorLegend": {
+            "visible": false,
+            "dock": "right",
+            "size": {
+              "w": 0,
+              "h": 164
+            }
+          },
+          "continuousAxis": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 782,
+              "h": 0
+            }
+          },
+          "timeAxis": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 782,
+              "h": 0
+            }
+          },
+          "miniChart": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 782,
+              "h": 0
+            }
+          },
+          "refLineLabels": {
+            "visible": false,
+            "dock": "right",
+            "size": {
+              "w": 0,
+              "h": 164
+            }
+          },
+          "scrollArea": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 782,
+              "h": 0
+            }
+          },
+          "refLines": {
+            "visible": true,
+            "dock": "center",
+            "size": {
+              "w": 782,
+              "h": 164
+            }
+          },
+          "dataArea": {
+            "visible": true,
+            "dock": "center",
+            "size": {
+              "w": 782,
+              "h": 164
+            }
+          },
+          "measureAxis": {
+            "visible": false,
+            "dock": "left",
+            "size": {
+              "w": 0,
+              "h": 164
+            }
+          },
+          "dimensionAxis": {
+            "visible": true,
+            "dock": "bottom",
+            "size": {
+              "w": 782,
+              "h": 25
+            }
+          },
+          "dimensionAxisTitle": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 782,
+              "h": 0
+            }
+          },
+          "measureAxisTitle": {
+            "visible": false,
+            "dock": "left",
+            "size": {
+              "w": 0,
+              "h": 164
+            }
+          }
+        },
+        "v": 0.96
+      },
+      "parent": {
+        "h": 870,
+        "w": 1920
+      }
+    },
+    "visualizationType": "linechart",
+    "sourceObjectId": "mevet",
+    "timestamp": 1505222829623,
+    "isClone": false
+  },
+  {
+    "qInfo": {
+      "qId": "FveCfQ",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "Capacity Utilization",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "7f92a04f-96c0-41e1-a3a1-16e8dcacb77c",
+    "creationDate": "2017-09-12T13:29:01.249Z",
+    "qSelectionInfo": {
+      "qInSelections": false,
+      "qMadeSelections": false
+    },
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 2,
+        "qcy": 18
+      },
+      "qDimensionInfo": [
+        {
+          "qFallbackTitle": "Machine",
+          "qApprMaxGlyphCount": 21,
+          "qCardinal": 159,
+          "qSortIndicator": "A",
+          "qGroupFallbackTitles": [
+            "Division Machine Group",
+            "Machine Group",
+            "Machine"
+          ],
+          "qGroupPos": 2,
+          "qStateCounts": {
+            "qLocked": 0,
+            "qSelected": 0,
+            "qOption": 18,
+            "qDeselected": 0,
+            "qAlternative": 0,
+            "qExcluded": 141,
+            "qSelectedExcluded": 0,
+            "qLockedExcluded": 0
+          },
+          "qTags": [
+            "$ascii",
+            "$text"
+          ],
+          "qDimensionType": "D",
+          "qGrouping": "H",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qIsAutoFormat": true,
+          "qGroupFieldDefs": [
+            "Division Machine Group",
+            "Machine Group",
+            "Machine"
+          ],
+          "qMin": "NaN",
+          "qMax": "NaN",
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qCardinalities": {
+            "qCardinal": 0,
+            "qHypercubeCardinal": 0,
+            "qAllValuesCardinal": -1
+          },
+          "title": "Division Machine Group Hierarchy",
+          "autoSort": true,
+          "cId": "AHgctRc",
+          "othersLabel": "Others"
+        }
+      ],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Planned Hrs",
+          "qApprMaxGlyphCount": 3,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0.0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 1,
+          "qMax": 1,
+          "qAttrExprInfo": [
+            {
+              "qMin": 4286578816,
+              "qMax": 4286578816,
+              "qFallbackTitle": "magenta()",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              },
+              "id": "colorByExpression"
+            }
+          ],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "baseColor": {
+            "color": "#46c646",
+            "index": 2
+          },
+          "autoSort": true,
+          "cId": "YRjhezu",
+          "numFormatFromTemplate": true,
+          "series": {
+            "type": "bar",
+            "axis": 0,
+            "marker": "circle",
+            "markerFill": true
+          }
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0,
+        1
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "1.0",
+          "qNum": 1,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "Blanking DC",
+                "qNum": "NaN",
+                "qElemNumber": 71,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST 160-I",
+                "qNum": "NaN",
+                "qElemNumber": 74,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST 160-II",
+                "qNum": "NaN",
+                "qElemNumber": 85,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST 203",
+                "qNum": "NaN",
+                "qElemNumber": 80,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST I",
+                "qNum": "NaN",
+                "qElemNumber": 41,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST II",
+                "qNum": "NaN",
+                "qElemNumber": 46,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST III",
+                "qNum": "NaN",
+                "qElemNumber": 118,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST MASTERCUT 1",
+                "qNum": "NaN",
+                "qElemNumber": 86,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST MASTERCUT 2",
+                "qNum": "NaN",
+                "qElemNumber": 113,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST VISION",
+                "qNum": "NaN",
+                "qElemNumber": 2,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BOBST4",
+                "qNum": "NaN",
+                "qElemNumber": 117,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BRAUSSE 1050 FI",
+                "qNum": "NaN",
+                "qElemNumber": 66,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "BRAUSSE 1060 ER",
+                "qNum": "NaN",
+                "qElemNumber": 67,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "DC",
+                "qNum": "NaN",
+                "qElemNumber": 56,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "Debossing",
+                "qNum": "NaN",
+                "qElemNumber": 70,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "Embossing",
+                "qNum": "NaN",
+                "qElemNumber": 69,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "Hot Foil Stamping",
+                "qNum": "NaN",
+                "qElemNumber": 64,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ],
+            [
+              {
+                "qText": "MIEHLE",
+                "qNum": "NaN",
+                "qElemNumber": 44,
+                "qState": "O"
+              },
+              {
+                "qText": "1.0",
+                "qNum": 1,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": 4286578816
+                    }
+                  ]
+                }
+              }
+            ]
+          ],
+          "qTails": [
+            {
+              "qUp": 0,
+              "qDown": 0
+            }
+          ],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 2,
+            "qHeight": 18
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "Capacity Utilization",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "barGrouping": {
+      "grouping": "grouped"
+    },
+    "orientation": "vertical",
+    "scrollStartPos": 0,
+    "dataPoint": {
+      "showLabels": true,
+      "show": false
+    },
+    "color": {
+      "auto": true,
+      "mode": "byExpression",
+      "useBaseColors": "off",
+      "singleColor": 4,
+      "paletteColor": {
+        "index": 5,
+        "color": "#7db8da"
+      },
+      "persistent": false,
+      "expressionIsColor": true,
+      "expressionLabel": "",
+      "measureScheme": "sg",
+      "reverseScheme": false,
+      "dimensionScheme": "12",
+      "autoMinMax": true,
+      "measureMin": 0,
+      "measureMax": 10,
+      "colorExpression": "magenta()"
+    },
+    "legend": {
+      "show": true,
+      "dock": "auto",
+      "showTitle": true
+    },
+    "dimensionAxis": {
+      "continuousAuto": true,
+      "show": "labels",
+      "label": "auto",
+      "dock": "near"
+    },
+    "preferContinuousAxis": true,
+    "measureAxis": {
+      "min": 0,
+      "max": 10,
+      "show": "labels",
+      "dock": "near",
+      "spacing": 1,
+      "autoMinMax": true,
+      "minMax": "min",
+      "logarithmic": false
+    },
+    "visualization": "barchart",
+    "refLine": {
+      "refLines": []
+    },
+    "gridLine": {
+      "auto": true,
+      "spacing": 2
+    },
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 547,
+          "h": 194
+        }
+      },
+      "rtl": false,
+      "content": {
+        "chartData": {
+          "legendScrollOffset": 0,
+          "scrollOffset": 0,
+          "discreteSpacing": 27.944444444444443,
+          "axisInnerOffset": 0,
+          "hasMiniChart": false,
+          "viewRange": 18
+        },
+        "size": {
+          "w": 547,
+          "h": 194
+        },
+        "components": {
+          "grid": {
+            "visible": true,
+            "dock": "center",
+            "size": {
+              "w": 503,
+              "h": 132
+            }
+          },
+          "colorLegend": {
+            "visible": false,
+            "dock": "right",
+            "size": {
+              "w": 0,
+              "h": 132
+            }
+          },
+          "continuousAxis": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 503,
+              "h": 0
+            }
+          },
+          "timeAxis": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 503,
+              "h": 0
+            }
+          },
+          "miniChart": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 503,
+              "h": 0
+            }
+          },
+          "refLineLabels": {
+            "visible": false,
+            "dock": "right",
+            "size": {
+              "w": 0,
+              "h": 132
+            }
+          },
+          "scrollArea": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 503,
+              "h": 0
+            }
+          },
+          "refLines": {
+            "visible": true,
+            "dock": "center",
+            "size": {
+              "w": 503,
+              "h": 132
+            }
+          },
+          "dataArea": {
+            "visible": true,
+            "dock": "center",
+            "size": {
+              "w": 503,
+              "h": 132
+            }
+          },
+          "measureAxis": {
+            "visible": true,
+            "dock": "left",
+            "size": {
+              "w": 40,
+              "h": 132
+            }
+          },
+          "dimensionAxis": {
+            "visible": true,
+            "dock": "bottom",
+            "size": {
+              "w": 503,
+              "h": 58
+            }
+          },
+          "dimensionAxisTitle": {
+            "visible": false,
+            "dock": "bottom",
+            "size": {
+              "w": 503,
+              "h": 0
+            }
+          },
+          "measureAxisTitle": {
+            "visible": false,
+            "dock": "left",
+            "size": {
+              "w": 0,
+              "h": 132
+            }
+          }
+        },
+        "v": 0.96
+      },
+      "parent": {
+        "h": 870,
+        "w": 1920
+      }
+    },
+    "visualizationType": "barchart",
+    "sourceObjectId": "884ef81c-13d6-47b6-aa04-eaea1bd5ea28",
+    "timestamp": 1505222941179,
+    "isClone": false
+  },
+  {
+    "qInfo": {
+      "qId": "QPjDAx",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "447a8ebb-68a7-4662-86db-a0eea2140260",
+    "creationDate": "2017-11-22T15:11:16.485Z",
+    "qSelectionInfo": {},
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "props": {
+      "loadByTag": true,
+      "btnLabel": "Filters",
+      "groups": {
+        "group1": {
+          "tag": "Filter1",
+          "label": ""
+        },
+        "group2": {
+          "tag": "",
+          "label": ""
+        },
+        "group3": {
+          "tag": "",
+          "label": ""
+        },
+        "group4": {
+          "tag": "",
+          "label": ""
+        }
+      }
+    },
+    "visualization": "qssidemenu",
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 0,
+        "qcy": 0
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [],
+      "qEffectiveInterColumnSortOrder": [],
+      "qGrandTotalRow": [],
+      "qDataPages": [
+        {
+          "qMatrix": [],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 0,
+            "qHeight": 0
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": []
+    },
+    "version": "@@version",
+    "extensionMeta": {
+      "name": "QS Side Menu",
+      "description": "a filters menu",
+      "icon": "extension",
+      "type": "visualization",
+      "version": "@@version",
+      "preview": "qssidemenu.png",
+      "author": "Loris Lombardo",
+      "previewIconURL": "../extensions/qssidemenu/qssidemenu.png",
+      "template": "qssidemenu",
+      "isLibraryItem": true,
+      "isThirdParty": true,
+      "templateIconClassName": "icon-puzzle"
+    },
+    "masterVersion": 0.96,
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 203,
+          "h": 85
+        }
+      },
+      "rtl": false,
+      "parent": {
+        "h": 1185.3333740234375,
+        "w": 2560
+      }
+    },
+    "visualizationType": "qssidemenu",
+    "sourceObjectId": "kpfMjs",
+    "timestamp": 1511363476437,
+    "isClone": false
+  },
+  {
+    "qInfo": {
+      "qId": "b6f77b9b-a2d6-4578-93a9-b28074e74164",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "Waste MT",
+      "description": "",
+      "annotation": ""
+    },
+    "creationDate": "2018-08-28T04:11:40.702Z",
+    "qSelectionInfo": {},
+    "qLibraryId": "",
+    "qDef": {
+      "autoSort": true,
+      "cId": "",
+      "othersLabel": "Others"
+    },
+    "qNullSuppression": false,
+    "qOtherTotalSpec": {
+      "qOtherMode": "OTHER_OFF",
+      "qOtherSortMode": "OTHER_SORT_DESCENDING",
+      "qOtherCounted": {
+        "qv": "10"
+      },
+      "qOtherLimitMode": "OTHER_GE_LIMIT",
+      "qOtherLimit": {
+        "qv": "0"
+      },
+      "qSuppressOther": false
+    },
+    "qOtherLabel": "Others",
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 1,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "Waste MT",
+          "qApprMaxGlyphCount": 5,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "F",
+            "qnDec": 2,
+            "qUseThou": 0,
+            "qFmt": "#,##0",
+            "qDec": ".",
+            "qThou": ","
+          },
+          "qMin": 1277.5506424442112,
+          "qMax": 1277.5506424442112,
+          "qAttrExprInfo": [
+            {
+              "qMin": "NaN",
+              "qMax": "NaN",
+              "qNumFormat": {
+                "qType": "U",
+                "qnDec": 10,
+                "qUseThou": 0
+              }
+            }
+          ],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "baseColor": {
+            "color": "#f8981d",
+            "index": 9
+          },
+          "autoSort": true,
+          "cId": "PuPwDA",
+          "numFormatFromTemplate": true,
+          "autoFormatTemplate": "0A",
+          "labelColor": "#FFFFFF",
+          "valueColor": "#FFFFFF",
+          "useLink": false,
+          "kpiLink": "",
+          "hideLabel": false,
+          "hideValue": false,
+          "groupByDimension": false,
+          "groupByDimensionValue": "",
+          "ovParams": false,
+          "size": " ",
+          "labelOrientation": "",
+          "labelOrder": "first",
+          "fontStyles": "bold",
+          "textAlignment": "center",
+          "valueIcon": "",
+          "iconPosition": "label",
+          "iconOrder": "first",
+          "iconSize": "",
+          "infographic": false,
+          "embeddedItem": ""
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "1,278",
+          "qNum": 1277.5506424442112,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [
+        {
+          "qMatrix": [
+            [
+              {
+                "qText": "1,278",
+                "qNum": 1277.5506424442112,
+                "qElemNumber": 0,
+                "qState": "L",
+                "qAttrExps": {
+                  "qValues": [
+                    {
+                      "qNum": "NaN"
+                    }
+                  ]
+                }
+              }
+            ]
+          ],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 1,
+            "qHeight": 1
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "Waste MT",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "options": {
+      "dimShowAs": "segment",
+      "dimDivideBy": "auto",
+      "dimensionsOrientation": "horizontal",
+      "dimLabelOrientation": "top attached",
+      "dimLabelSize": "huge",
+      "dimHideLabels": false,
+      "dimCenteredLabels": false,
+      "dimHideBorders": false,
+      "dimHideInternalBorders": false,
+      "labelOrientation": "",
+      "labelOrder": "first",
+      "size": "tiny",
+      "autoSize": false,
+      "divideBy": "auto",
+      "backgroundColor": "#009c95",
+      "verticalAlign": "stretched-items",
+      "styles": ""
+    },
+    "visualization": "qsSimpleKPI",
+    "version": 1.1,
+    "extensionMeta": {
+      "name": "Simple KPI",
+      "description": "Simple KPI",
+      "preview": "preview.png",
+      "icon": "kpi",
+      "type": "visualization",
+      "version": "1.1.2",
+      "author": "Alexander Nerush",
+      "previewIconURL": "../extensions/qsSimpleKPI/preview.png",
+      "template": "qsSimpleKPI",
+      "isLibraryItem": true,
+      "isThirdParty": true,
+      "templateIconClassName": "icon-kpi"
+    },
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 886,
+          "h": 78
+        }
+      },
+      "rtl": false,
+      "parent": {
+        "h": 1098.75,
+        "w": 2400
+      }
+    },
+    "visualizationType": "qsSimpleKPI",
+    "sourceObjectId": "Wgkhmd",
+    "sheetId": "jkPhfh",
+    "timestamp": 1535429500667,
+    "isClone": false,
+    "supportExport": true
+  },
+  {
+    "qInfo": {
+      "qId": "dc8bea32-2a8d-4633-967e-b0b0fe096df1",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "creationDate": "2018-10-16T11:47:41.214Z",
+    "qSelectionInfo": {},
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "props": {
+      "loadByTag": true,
+      "btnLabel": "Filters",
+      "groups": {
+        "group1": {
+          "tag": "Filter1",
+          "label": ""
+        },
+        "group2": {
+          "tag": "",
+          "label": ""
+        },
+        "group3": {
+          "tag": "",
+          "label": ""
+        },
+        "group4": {
+          "tag": "",
+          "label": ""
+        }
+      }
+    },
+    "visualization": "qssidemenu",
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 0,
+        "qcy": 0
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [],
+      "qEffectiveInterColumnSortOrder": [],
+      "qGrandTotalRow": [],
+      "qDataPages": [
+        {
+          "qMatrix": [],
+          "qTails": [],
+          "qArea": {
+            "qLeft": 0,
+            "qTop": 0,
+            "qWidth": 0,
+            "qHeight": 0
+          }
+        }
+      ],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": []
+    },
+    "version": "@@version",
+    "extensionMeta": {
+      "name": "QS Side Menu",
+      "description": "a filters menu",
+      "icon": "extension",
+      "type": "visualization",
+      "version": "@@version",
+      "preview": "qssidemenu.png",
+      "author": "Loris Lombardo",
+      "previewIconURL": "../extensions/qssidemenu/qssidemenu.png",
+      "template": "qssidemenu",
+      "isLibraryItem": true,
+      "isThirdParty": true,
+      "templateIconClassName": "icon-puzzle"
+    },
+    "masterVersion": 0.96,
+    "metadata": {},
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 89,
+          "h": 78
+        }
+      },
+      "rtl": false,
+      "parent": {
+        "h": 1092.5,
+        "w": 2400
+      }
+    },
+    "visualizationType": "qssidemenu",
+    "sourceObjectId": "CqAm",
+    "sheetId": "jkPhfh",
+    "timestamp": 1539690461184,
+    "isClone": false,
+    "supportExport": false
+  },
+  {
+    "qInfo": {
+      "qId": "mLqTA",
+      "qType": "snapshot"
+    },
+    "qMetaDef": {
+      "title": "",
+      "description": "",
+      "annotation": ""
+    },
+    "sheetId": "1069b042-b5ac-49c8-b58c-fe72ef713084",
+    "creationDate": "2017-11-17T14:20:26.997Z",
+    "qSelectionInfo": {},
+    "qHyperCube": {
+      "qSize": {
+        "qcx": 2,
+        "qcy": 1
+      },
+      "qDimensionInfo": [],
+      "qMeasureInfo": [
+        {
+          "qFallbackTitle": "if(v_Switch_Option_Month_YTD = 2,'YTD','Month')\n\n//'YTD'",
+          "qApprMaxGlyphCount": 3,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qMin": "NaN",
+          "qMax": "NaN",
+          "qIsAutoFormat": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "zLqJC",
+          "numFormatFromTemplate": true
+        },
+        {
+          "qFallbackTitle": "MonthName(Max({1<[Month ID]={$(v_Max_Month_ID)}>}[Month Year]))",
+          "qApprMaxGlyphCount": 8,
+          "qCardinal": 0,
+          "qSortIndicator": "D",
+          "qNumFormat": {
+            "qType": "U",
+            "qnDec": 0,
+            "qUseThou": 0
+          },
+          "qMin": 43009,
+          "qMax": 43009,
+          "qIsAutoFormat": true,
+          "qAttrExprInfo": [],
+          "qAttrDimInfo": [],
+          "qTrendLines": [],
+          "autoSort": true,
+          "cId": "kQVtSw",
+          "numFormatFromTemplate": true
+        }
+      ],
+      "qEffectiveInterColumnSortOrder": [
+        0,
+        1
+      ],
+      "qGrandTotalRow": [
+        {
+          "qText": "YTD",
+          "qNum": "NaN",
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        },
+        {
+          "qText": "Oct 2017",
+          "qNum": 43009,
+          "qElemNumber": -1,
+          "qState": "X",
+          "qIsTotalCell": true
+        }
+      ],
+      "qDataPages": [],
+      "qPivotDataPages": [],
+      "qStackedDataPages": [],
+      "qMode": "S",
+      "qNoOfLeftDims": -1,
+      "qTreeNodesOnDim": [],
+      "qColumnOrder": [],
+      "customErrorMessage": {
+        "calcCond": ""
+      }
+    },
+    "showTitles": false,
+    "title": "",
+    "subtitle": "",
+    "footnote": "",
+    "showDetails": false,
+    "responsive": "all",
+    "markdown": "%[#[**=[](zLqJC)**](3) #[%[**=[](kQVtSw)**](3)](7)](3)",
+    "images": [],
+    "background": {
+      "isUsed": false,
+      "size": "auto",
+      "position": "topLeft",
+      "url": {}
+    },
+    "visualization": "text-image",
+    "masterVersion": 0.96,
+    "snapshotData": {
+      "object": {
+        "size": {
+          "w": 308,
+          "h": 85
+        }
+      },
+      "rtl": false,
+      "scrollTopPercent": 0,
+      "verticalScrollWidth": 0.75,
+      "parent": {
+        "h": 1185.3333740234375,
+        "w": 2560
+      }
+    },
+    "visualizationType": "text-image",
+    "sourceObjectId": "70c7dfe4-877e-45b2-814e-d15b288a5355",
+    "timestamp": 1510928426963,
+    "isClone": false
+  }
+]

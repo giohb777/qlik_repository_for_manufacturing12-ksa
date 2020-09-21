@@ -1,0 +1,3999 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qCardinal": 377,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qCardinal": 62,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qCardinal": 18,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qCardinal": 1,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qCardinal": 40,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qCardinal": 41,
+    "qTags": [
+      "$hidden",
+      "$system",
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "%SynCostLossMatrixXDimensions",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "%SynCostLossMatrixXDimensions"
+    ]
+  },
+  {
+    "qName": "%SynCostLossMatrixXDimensionsPlusDepreciation",
+    "qCardinal": 4,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "%SynCostLossMatrixXDimensionsPlusDepreciation"
+    ]
+  },
+  {
+    "qName": "%SynCostLossMatrixXDimensionsWithTotals",
+    "qCardinal": 9,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "%SynCostLossMatrixXDimensionsWithTotals"
+    ]
+  },
+  {
+    "qName": "%SynCostLossMatrixYDimensions",
+    "qCardinal": 13,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "%SynCostLossMatrixYDimensions"
+    ]
+  },
+  {
+    "qName": "%SynCostLossMatrixYDimensionsWithTotalCosts",
+    "qCardinal": 14,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "%SynCostLossMatrixYDimensionsWithTotalCosts"
+    ]
+  },
+  {
+    "qName": "%SynMachinePerformance",
+    "qCardinal": 4,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "%SynMachinePerformance"
+    ]
+  },
+  {
+    "qName": "%SynTimeAllocation",
+    "qCardinal": 6,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "%SynTimeAllocation"
+    ]
+  },
+  {
+    "qName": "ACCESS",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Allowance Type",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Allowances"
+    ]
+  },
+  {
+    "qName": "Application",
+    "qCardinal": 439,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Branch",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Building Block",
+    "qCardinal": 616,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Business Unit",
+    "qCardinal": 16,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Business Unit Account",
+    "qCardinal": 16,
+    "qTags": [],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Business Unit Currency Code",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Business Unit Key",
+    "qCardinal": 16,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Machines",
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Business Unit Local Security Key",
+    "qCardinal": 16,
+    "qTags": [],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Business Unit Location",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Business Unit Type",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Capacity Calendar Date",
+    "qCardinal": 2557,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Capacity Machine Key",
+    "qCardinal": 854,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Colors Concatenation",
+    "qCardinal": 6683,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Consumption Item Application",
+    "qCardinal": 86,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Building Block",
+    "qCardinal": 848,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Code",
+    "qCardinal": 78650,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Description",
+    "qCardinal": 30623,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item End Use",
+    "qCardinal": 447,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Industry",
+    "qCardinal": 414,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Inventory Unit",
+    "qCardinal": 34,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Item Group",
+    "qCardinal": 50,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Key",
+    "qCardinal": 86191,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Consumption_Items",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Consumption Item Market Sector",
+    "qCardinal": 200,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Name",
+    "qCardinal": 62359,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Product Line",
+    "qCardinal": 1452,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Product Type",
+    "qCardinal": 206,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Sector",
+    "qCardinal": 200,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Structure",
+    "qCardinal": 274,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Consumption Item Sub Industry",
+    "qCardinal": 447,
+    "qTags": [],
+    "qSrcTables": [
+      "Consumption_Items"
+    ]
+  },
+  {
+    "qName": "Currency",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Average Rate",
+    "qCardinal": 1870,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Conversion Rate Date Num",
+    "qCardinal": 4458,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Currency_Rates",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Currency EOD Rate",
+    "qCardinal": 1870,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Key",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Sorting Key",
+    "qCardinal": 6,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Symbol",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Day",
+    "qCardinal": 31,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Defective Quantity",
+    "qCardinal": 3703,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "Depreciation Expenses USD",
+    "qCardinal": 4669,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Costs_NSI_DEP_MNT"
+    ]
+  },
+  {
+    "qName": "Dimensions",
+    "qCardinal": 29,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Dimensions"
+    ]
+  },
+  {
+    "qName": "DimensionsID",
+    "qCardinal": 29,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Dimensions"
+    ]
+  },
+  {
+    "qName": "Division",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Division Machine Group",
+    "qCardinal": 49,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Division Machine Group Filter",
+    "qCardinal": 49,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "End Use",
+    "qCardinal": 334,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Full Day Minutes",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Holding",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Business_Units"
+    ]
+  },
+  {
+    "qName": "Industry",
+    "qCardinal": 264,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Invoice Amount USD",
+    "qCardinal": 494139,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Cost USD",
+    "qCardinal": 596935,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Kg",
+    "qCardinal": 195269,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Item Code",
+    "qCardinal": 121196,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Color_1",
+    "qCardinal": 209,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_10",
+    "qCardinal": 9,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_2",
+    "qCardinal": 262,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_3",
+    "qCardinal": 235,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_4",
+    "qCardinal": 251,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_5",
+    "qCardinal": 249,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_6",
+    "qCardinal": 234,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_7",
+    "qCardinal": 213,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_8",
+    "qCardinal": 177,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Color_9",
+    "qCardinal": 15,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Colors Combination",
+    "qCardinal": 6683,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Description",
+    "qCardinal": 72948,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Details Key",
+    "qCardinal": 201988,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Items",
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Group",
+    "qCardinal": 26,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Inventory Unit",
+    "qCardinal": 66,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Key",
+    "qCardinal": 269447,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Items",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Item Name",
+    "qCardinal": 140194,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Number Of Colors",
+    "qCardinal": 11,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Number Of Colors PBA",
+    "qCardinal": 11,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Printing Mode",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Production Number of Lines",
+    "qCardinal": 33,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Substrait_1",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Substrait_2",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Substrait_3",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Substrait_4",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Thickness",
+    "qCardinal": 625,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Thickness PBA",
+    "qCardinal": 215,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Item Width",
+    "qCardinal": 1889,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Width PBA",
+    "qCardinal": 1081,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Link Production Job Key",
+    "qCardinal": 712580,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Link Production Shift Key",
+    "qCardinal": 748337,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Local Mixed Security Key",
+    "qCardinal": 144,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Shared_Security_Dimensions",
+      "Shared_Security"
+    ]
+  },
+  {
+    "qName": "MNT-DEP-NSI Line Key",
+    "qCardinal": 64485,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Costs_NSI_DEP_MNT",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Machine",
+    "qCardinal": 850,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Allowance Key",
+    "qCardinal": 870,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Allowances",
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Capacity Key",
+    "qCardinal": 2472850,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Machine Capacity Unit Name",
+    "qCardinal": 6,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Family",
+    "qCardinal": 49,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Group",
+    "qCardinal": 49,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Group Converting",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Group Corrugator",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Hold Goods Percentage Allocation",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Machine Key",
+    "qCardinal": 870,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Machines",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Machine Section",
+    "qCardinal": 49,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Speed",
+    "qCardinal": 195,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Allowances"
+    ]
+  },
+  {
+    "qName": "Machine Speed Per Minute",
+    "qCardinal": 195,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Allowances"
+    ]
+  },
+  {
+    "qName": "Machine Speed Unit",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Allowances"
+    ]
+  },
+  {
+    "qName": "Machine Status",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machine Std Setup Minute",
+    "qCardinal": 147,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Std_Setup"
+    ]
+  },
+  {
+    "qName": "Machine Target Availability Minutes",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Machine Target Capacity Utilization",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Machine Target OEE",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Machine Target Quality",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Machine Target Rate",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Machine Type",
+    "qCardinal": 49,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Machines Standard Capacity",
+    "qCardinal": 195,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Machines"
+    ]
+  },
+  {
+    "qName": "Maintenance Expenses USD",
+    "qCardinal": 12454,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Costs_NSI_DEP_MNT"
+    ]
+  },
+  {
+    "qName": "Market Sector",
+    "qCardinal": 440,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date",
+    "qCardinal": 2456,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date Num",
+    "qCardinal": 4458,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions",
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Density",
+    "qCardinal": 11680,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Depth",
+    "qCardinal": 627,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Height",
+    "qCardinal": 3067,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Item Number",
+    "qCardinal": 103599,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Key",
+    "qCardinal": 719984,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Name",
+    "qCardinal": 141660,
+    "qTags": [],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Number",
+    "qCardinal": 228895,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Number Of Lines",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order PoolId",
+    "qCardinal": 461,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Production Unit",
+    "qCardinal": 11,
+    "qTags": [],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Reference",
+    "qCardinal": 12424,
+    "qTags": [],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Width",
+    "qCardinal": 1868,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Master WO - Production Order Worker",
+    "qCardinal": 424,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Production_Orders_Data"
+    ]
+  },
+  {
+    "qName": "Measures",
+    "qCardinal": 24,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Measures"
+    ]
+  },
+  {
+    "qName": "MeasuresID",
+    "qCardinal": 24,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Measures"
+    ]
+  },
+  {
+    "qName": "Mixed Security Key",
+    "qCardinal": 16,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Shared_Security"
+    ]
+  },
+  {
+    "qName": "Month",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Day",
+    "qCardinal": 366,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month ID",
+    "qCardinal": 81,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Num",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Year",
+    "qCardinal": 81,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "NB Of Setups",
+    "qCardinal": 2,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "NCR Scrapped Amount USD",
+    "qCardinal": 2952,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "NCR Scrapped Qty",
+    "qCardinal": 1082,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "NSI Consumption Cost USD",
+    "qCardinal": 3633,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Costs_NSI_DEP_MNT"
+    ]
+  },
+  {
+    "qName": "Non Conformance - Approval Status",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "Non Conformance - Order Number",
+    "qCardinal": 12320,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "Non Conformance - Problem Type ID",
+    "qCardinal": 368,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "Non Conformance - RCA",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "Non Conformance - Type",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "Non Conformance Count",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "NonConformances"
+    ]
+  },
+  {
+    "qName": "Non Conformance Diagnostic Key",
+    "qCardinal": 23566,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "NonConformances",
+      "NonConformancesDiagnostic"
+    ]
+  },
+  {
+    "qName": "Non Conformance Diagnostic Type",
+    "qCardinal": 180,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformancesDiagnostic"
+    ]
+  },
+  {
+    "qName": "Non Conformance Diagnostic Type Description",
+    "qCardinal": 181,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformancesDiagnostic"
+    ]
+  },
+  {
+    "qName": "Non Conformance Key",
+    "qCardinal": 23566,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "NonConformances",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Non Conformance Operation Type",
+    "qCardinal": 20,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "NonConformancesOperationType"
+    ]
+  },
+  {
+    "qName": "Non Conformance Operation Type Key",
+    "qCardinal": 23566,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "NonConformances",
+      "NonConformancesOperationType"
+    ]
+  },
+  {
+    "qName": "Open Day Minutes",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "Order Key",
+    "qCardinal": 713493,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "PRMTYPE",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Product Line",
+    "qCardinal": 1881,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Product Type",
+    "qCardinal": 310,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Production Cost Due To Speed - USD",
+    "qCardinal": 1143064,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Cost Element",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production Cost Key",
+    "qCardinal": 712543,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Cost Key Shared Key",
+    "qCardinal": 7846346,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Cost Key Shared Key Total",
+    "qCardinal": 522930,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing_Total",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Depreciation Cost Due To Downtime - USD",
+    "qCardinal": 164096,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production Depreciation Cost Due To Speed - USD",
+    "qCardinal": 971179,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Depreciation Cost Due To Waste Production - USD",
+    "qCardinal": 834668,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Downtime Cost USD",
+    "qCardinal": 61411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production Downtime Count",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production Downtime End Date",
+    "qCardinal": 1211522,
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production Downtime Key",
+    "qCardinal": 1909952,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Downtime Minutes",
+    "qCardinal": 5740,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production Downtime Opp Cost - USD",
+    "qCardinal": 439147,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production Downtime Reason",
+    "qCardinal": 46,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Downtime_Reasons",
+      "Reason_Categories"
+    ]
+  },
+  {
+    "qName": "Production Downtime Reason Category",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Reason_Categories"
+    ]
+  },
+  {
+    "qName": "Production Downtime Reason Family",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Downtime_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Downtime Reason Group",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Downtime_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Downtime Reason Mix Key",
+    "qCardinal": 423,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes",
+      "Production_Downtime_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Downtime Reason Place",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Downtime_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Downtime Reason Type",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Downtime_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Downtime Source",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production Downtime Start Date",
+    "qCardinal": 1211522,
+    "qTags": [
+      "$numeric",
+      "$timestamp"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production End Date",
+    "qCardinal": 139,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Estimated Consumption Net Weight",
+    "qCardinal": 1628974,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production Estimated Consumption Net Weight Total",
+    "qCardinal": 360522,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing_Total"
+    ]
+  },
+  {
+    "qName": "Production FG Element Cost Amount USD",
+    "qCardinal": 2202814,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production FG Element Estimated Cost Amount USD",
+    "qCardinal": 2799331,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production FG Hits",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Good Qty",
+    "qCardinal": 492714,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Item Key",
+    "qCardinal": 3696381,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Outputs",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Job NB",
+    "qCardinal": 823349,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Job Qty FG LM",
+    "qCardinal": 99666,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Job Qty LM",
+    "qCardinal": 135770,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Job Qty WIP LM",
+    "qCardinal": 99666,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Job Waste Output Key",
+    "qCardinal": 712350,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Labor Cost USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Production Labor Cost USD1",
+    "qCardinal": 1439,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Labor_Cost"
+    ]
+  },
+  {
+    "qName": "Production Lost Due To Speed - Hours",
+    "qCardinal": 870369,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Maintenance Cost USD Proration",
+    "qCardinal": 16120,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Downtimes"
+    ]
+  },
+  {
+    "qName": "Production NSI Cost USD Proration",
+    "qCardinal": 204576,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty Kg",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty LF",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty LM",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty Lbp",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty MSF",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty MT",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty Pcs",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty SQM",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty US Ton",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold FG Qty Unit",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold Issuing Date",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold Key",
+    "qCardinal": 0,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_On_Hold",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production On Hold Status",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty Kg",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty LF",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty LM",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty Lbp",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty MSF",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty MT",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty Pcs",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty SQM",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty US Ton",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production On Hold WIP Qty Unit",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_On_Hold"
+    ]
+  },
+  {
+    "qName": "Production Order Master Key",
+    "qCardinal": 719984,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Outputs_Classification",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Output FG Cost Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty",
+    "qCardinal": 306528,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty Kg",
+    "qCardinal": 645969,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty LF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty LM",
+    "qCardinal": 99666,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty Lbp",
+    "qCardinal": 646358,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty MSF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty MT",
+    "qCardinal": 599645,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty Pcs",
+    "qCardinal": 298399,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty SQM",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty US Ton",
+    "qCardinal": 604168,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Qty Unit",
+    "qCardinal": 298399,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output FG Sales Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output InterstateInks",
+    "qCardinal": 2317,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Cost Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty",
+    "qCardinal": 239930,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty Kg",
+    "qCardinal": 277483,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty LF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty LM",
+    "qCardinal": 80795,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty Lbp",
+    "qCardinal": 277557,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty MSF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty MT",
+    "qCardinal": 269808,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty Pcs",
+    "qCardinal": 234278,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty SQM",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty US Ton",
+    "qCardinal": 270702,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Qty Unit",
+    "qCardinal": 234278,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output WIP Sales Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Cost Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty Kg",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty LF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty LM",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty Lbp",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty MSF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty MT",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty Pcs",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty SQM",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty US Ton",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Qty Unit",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Output Waste Sales Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Qty Production Unit",
+    "qCardinal": 94176,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Real Consumption Net Weight",
+    "qCardinal": 1963491,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production Real Consumption Net Weight Total",
+    "qCardinal": 421015,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing_Total"
+    ]
+  },
+  {
+    "qName": "Production Running Mode End Date",
+    "qCardinal": 1213945,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Production Running Mode Key",
+    "qCardinal": 2082822,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Production Running Mode Minutes",
+    "qCardinal": 53248,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Production Running Mode Population Key",
+    "qCardinal": 712518,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Production Running Mode Shared Key",
+    "qCardinal": 2082822,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Running Mode Start Date",
+    "qCardinal": 1213945,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Production Running Mode Type",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Running_Modes"
+    ]
+  },
+  {
+    "qName": "Production SP Cost USD Proration",
+    "qCardinal": 773914,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Shared Key",
+    "qCardinal": 712580,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Labor_Cost",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Shared Security Key",
+    "qCardinal": 144,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Machines",
+      "Shared_Security_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Shift",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift End Date",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift Idle Time Minutes",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift Key",
+    "qCardinal": 745961,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift Labor Cost Key",
+    "qCardinal": 745961,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift Link Key",
+    "qCardinal": 4071384,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Shifts",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Shift PM Cleaning Time Minutes",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift Planned Time Minutes",
+    "qCardinal": 50277,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift Start Date",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Shift Team Leader",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shifts"
+    ]
+  },
+  {
+    "qName": "Production Speed Loss Opp Cost - USD",
+    "qCardinal": 595812,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Start Date",
+    "qCardinal": 139,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Std Setup Key",
+    "qCardinal": 712350,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Outputs",
+      "Production_Std_Setup"
+    ]
+  },
+  {
+    "qName": "Production Type",
+    "qCardinal": 7,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production WIP Element Cost Amount USD",
+    "qCardinal": 1277359,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production WIP Element Estimated Cost Amount USD",
+    "qCardinal": 1711003,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production WIP Hits",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Waste COP USD",
+    "qCardinal": 675279,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Element Cost Amount USD",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Output_Costing"
+    ]
+  },
+  {
+    "qName": "Production Waste End Date",
+    "qCardinal": 2457,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Hits",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Production Waste Key",
+    "qCardinal": 1723678,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Wastes",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Production Waste Lost Cost USD - From Hours",
+    "qCardinal": 1095923,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Lost Cost USD - From Qty",
+    "qCardinal": 1241185,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Lost Hours",
+    "qCardinal": 1068745,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty Kg",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty LF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty LM",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty Lbp",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty MSF",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty MT",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty Pcs",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty SQM",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty US Ton",
+    "qCardinal": 13411,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Qty Unit",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "Production Waste Reason",
+    "qCardinal": 26,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Waste_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Waste Reason Category",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Waste_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Waste Reason Family",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Waste_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Waste Reason Mix Key",
+    "qCardinal": 181,
+    "qTags": [
+      "$key"
+    ],
+    "qSrcTables": [
+      "Production_Wastes",
+      "Production_Waste_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Waste Reason Place",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Waste_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Waste Reason Type",
+    "qCardinal": 26,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Waste_Reasons"
+    ]
+  },
+  {
+    "qName": "Production Waste Start Date",
+    "qCardinal": 2457,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Production_Wastes"
+    ]
+  },
+  {
+    "qName": "QL Acceptable Quality Level",
+    "qCardinal": 4,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Include Results",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Lower Limmit",
+    "qCardinal": 4501,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Lower Tolerance",
+    "qCardinal": 4934,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Standard Value",
+    "qCardinal": 3180,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Test ID",
+    "qCardinal": 629,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Test Instrument ID",
+    "qCardinal": 199,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Test Result",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Test Sequence",
+    "qCardinal": 35,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Test Unit",
+    "qCardinal": 58,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Upper Limit",
+    "qCardinal": 5153,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Upper Tolerance",
+    "qCardinal": 5750,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Variable ID",
+    "qCardinal": 186,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QL Varibale Outcome ID Standard",
+    "qCardinal": 190,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QO Acceptable Quality Level",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QO Item Sampling ID",
+    "qCardinal": 34,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QO Line Key",
+    "qCardinal": 2559726,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QO Order Status",
+    "qCardinal": 3,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QO Qty",
+    "qCardinal": 17357,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QO Reference Type",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QO Test Group ID",
+    "qCardinal": 3205,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QR Test Real Test Result",
+    "qCardinal": 35174,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QR Test Result",
+    "qCardinal": 2,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QR Test Result Quantity",
+    "qCardinal": 6810,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "QR Test Result Value Outcome",
+    "qCardinal": 285,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Quality Order ID",
+    "qCardinal": 155646,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Quality Order Key",
+    "qCardinal": 0,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Quarter",
+    "qCardinal": 4,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter ID",
+    "qCardinal": 27,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter Year",
+    "qCardinal": 27,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "SP Consumprion Qty",
+    "qCardinal": 874,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "SparePartsConsumption"
+    ]
+  },
+  {
+    "qName": "SP Consumption Cost",
+    "qCardinal": 110186,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "SparePartsConsumption"
+    ]
+  },
+  {
+    "qName": "SP Consumption Cost USD",
+    "qCardinal": 136990,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "SparePartsConsumption"
+    ]
+  },
+  {
+    "qName": "SP Consumption Key",
+    "qCardinal": 550212,
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "SparePartsConsumption",
+      "Production_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "SP Consumption Unit",
+    "qCardinal": 64,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "SparePartsConsumption"
+    ]
+  },
+  {
+    "qName": "Sector",
+    "qCardinal": 440,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Std Run Hours",
+    "qCardinal": 664582,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Structure",
+    "qCardinal": 387,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Sub Industry",
+    "qCardinal": 334,
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Substrait Combination",
+    "qCardinal": 11,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Substrait Concatenation",
+    "qCardinal": 11,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Items_Details"
+    ]
+  },
+  {
+    "qName": "Total Maintenance Cost USD",
+    "qCardinal": 16086,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Production_Costs_NSI_DEP_MNT"
+    ]
+  },
+  {
+    "qName": "UPPER([Machine Type Capacity Key])",
+    "qCardinal": 854,
+    "qTags": [],
+    "qSrcTables": [
+      "Production_Machine_Time_Capacity"
+    ]
+  },
+  {
+    "qName": "USERID",
+    "qCardinal": 1,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "WOLength",
+    "qCardinal": 5,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Outputs_Classification"
+    ]
+  },
+  {
+    "qName": "Week",
+    "qCardinal": 53,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Day",
+    "qCardinal": 7,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Year",
+    "qCardinal": 352,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Work Center ID",
+    "qCardinal": 493,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Outputs"
+    ]
+  },
+  {
+    "qName": "Work Order Number",
+    "qCardinal": 228949,
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Production_Outputs_Classification"
+    ]
+  },
+  {
+    "qName": "Year",
+    "qCardinal": 7,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  }
+]

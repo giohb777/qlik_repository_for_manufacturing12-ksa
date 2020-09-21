@@ -1,0 +1,5032 @@
+[
+  {
+    "qInfo": {
+      "qId": "07859c81-f152-4ae7-b0aa-0de0cdec5b36",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Hrs (YTD)",
+      "qDef": "$(v_Time_Run_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Run Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "095df1f1-2b55-45c8-a55e-dd4aa49fff20",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Hold MT (YTD)",
+      "qDef": "($(v_Hold_FG_MT_YTD) + $(v_Hold_WIP_MT_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Hold MT (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "09c0b506-3a2d-49ed-8e44-26c647c6a8ff",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Hrs (YTD)",
+      "qDef": "$(v_Time_Idle_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#b6d7ea",
+        "index": 4
+      }
+    },
+    "qMetaDef": {
+      "title": "Idle Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "0b6f687e-177d-4df3-8593-38bd255f3932",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Run Opportunity Loss $ (LY YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_LY_YTD))\n        +($(v_Time_Std_Setup_Hrs_LY_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_LY_YTD))\n        +($(v_Time_Setup_Hrs_LY_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_LY_YTD))\n        +($(v_Time_Not_Allocated_Hrs_LY_YTD))\n    )\n  )\n)\n*\n($(v_Time_Run_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Run Opportunity Loss $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "0d360757-28e8-4a33-bd17-3bd3a3cb00e9",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Setup Loss $",
+      "qDef": "($(v_Labor_Setup_Cost_CM_YTD))-($(v_Labor_Std_Setup_Cost_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Setup Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "129cf4d2-ef30-463c-be1e-ddf4ad0f3635",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Contr. Per Machine Hrs (YTD)",
+      "qDef": "(\n  ($(v_Contribution_FG_YTD))\n  /\n  (\n      ($(v_Time_Std_Run_Hrs_YTD))\n      +($(v_Time_Std_Setup_Hrs_YTD))\n  )\n)\n-\n(\n  ($(v_Contribution_FG_YTD))\n  /\n  (\n      ($(v_Time_Run_Hrs_YTD))\n      +($(v_Time_Setup_Hrs_YTD))\n      +($(v_Time_Unplanned_Down_Hrs_YTD))\n      +($(v_Time_Not_Allocated_Hrs_YTD))\n  )\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f8981d",
+        "index": 9
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Contr. Per Machine Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "16307645-9459-4fce-8731-171e9b444822",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Run Hrs (LY YTD)",
+      "qDef": "($(v_Contribution_FG_LY_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Run Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "17e85506-baec-4702-af2f-1f22b46f7250",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Down Loss $ (LY YTD)",
+      "qDef": "($(v_Labor_Unplanned_Down_Cost_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Down Loss $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "1d89a4a4-2773-4e73-8af9-3fa777923b3d",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Operation Loss Hrs (YTD)",
+      "qDef": "($(v_Time_Operation_Loss_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#633d0c",
+        "index": 11
+      }
+    },
+    "qMetaDef": {
+      "title": "Operation Loss Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "21809997-cbb8-42b3-ba0f-e4e825883a7b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Run Opportunity Loss $ (YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_YTD))\n        +($(v_Time_Std_Setup_Hrs_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_YTD))\n        +($(v_Time_Setup_Hrs_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_YTD))\n        +($(v_Time_Not_Allocated_Hrs_YTD))\n    )\n  )\n)\n*\n($(v_Time_Run_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Run Opportunity Loss $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "22e520f6-9a45-4e4b-87fa-bd2200e4b6b7",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste % (YTD)",
+      "qDef": "$(v_Waste_MT_YTD)\n/\n(\n\t($(v_Output_FG_MT_YTD))\n    +($(v_Output_WIP_MT_YTD))\n    +($(v_Waste_MT_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#633d0c",
+        "index": 11
+      }
+    },
+    "qMetaDef": {
+      "title": "Waste % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "22f6f29c-995b-4b37-a42d-9ca89978f373",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Availability (YTD)",
+      "qDef": "(\n  ($(v_Time_Run_Hrs_By_Section_YTD))\n  /($(v_Time_Available_Hrs_By_Section_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#633d0c",
+        "index": 11
+      }
+    },
+    "qMetaDef": {
+      "title": "Availability (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "23677b38-efd1-4c5f-ba68-f9b6a9bc1d28",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Machine Hrs (YTD)",
+      "qDef": "($(v_Contribution_FG_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_YTD))\n    +($(v_Time_Setup_Hrs_YTD))\n    +($(v_Time_Unplanned_Down_Hrs_YTD))\n    +($(v_Time_Not_Allocated_Hrs_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#46c646",
+        "index": 2
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Machine Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "26c8aae6-1e27-41a2-8511-d11bd27caaa7",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Contr. Operation (LY YTD)",
+      "qDef": "(\n  ($(v_Contribution_FG_LY_YTD))\n  /\n  (\n      ($(v_Time_Std_Run_Hrs_LY_YTD))\n      +($(v_Time_Std_Setup_Hrs_LY_YTD))\n  )\n)\n\n* ($(v_Time_Operation_Loss_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Contr. Operation (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "277229e0-6cef-48cc-bcf3-d668382529d1",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Production Hrs (LY YTD)",
+      "qDef": "($(v_Contribution_FG_LY_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_LY_YTD))\n    +($(v_Time_Setup_Hrs_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Production Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "2afa6a9c-c8f6-4b64-a97d-93d2b4fdc346",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Opportunity Loss $",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_CM_YTD))\n        +($(v_Time_Std_Setup_Hrs_CM_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_CM_YTD))\n        +($(v_Time_Setup_Hrs_CM_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_CM_YTD))\n        +($(v_Time_Not_Allocated_Hrs_CM_YTD))\n    )\n  )\n)\n*\n($(v_Time_Unplanned_Down_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Down Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "2ea5d758-3612-4b0b-9eba-c0eabbaf6731",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Setup Opportunity Loss $ (LY YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_LY_YTD))\n        +($(v_Time_Std_Setup_Hrs_LY_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_LY_YTD))\n        +($(v_Time_Setup_Hrs_LY_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_LY_YTD))\n        +($(v_Time_Not_Allocated_Hrs_LY_YTD))\n    )\n  )\n)\n*\n($(v_Time_Setup_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Setup Opportunity Loss $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "363ad23b-8899-4652-b589-6cf11ec326ad",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Capacity Utilization (LY YTD)",
+      "qDef": "(\n\t($(v_Time_Available_Hrs_By_Section_LY_YTD))\n    /($(v_Time_Capacity_Hrs_By_Section_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Capacity Utilization (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "37721ed1-8855-4f10-a1e6-d7322edaa46a",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste %",
+      "qDef": "$(v_Waste_MT_CM_YTD)\n/\n(\n\t($(v_Output_FG_MT_CM_YTD))\n    +($(v_Output_WIP_MT_CM_YTD))\n    +($(v_Waste_MT_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#633d0c",
+        "index": 11
+      }
+    },
+    "qMetaDef": {
+      "title": "Waste %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "38d75b96-de37-44cb-b25a-71462af5ab19",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Setup Hrs (YTD)",
+      "qDef": "($(v_Contribution_FG_YTD))\n/\n(\n\t($(v_Time_Setup_Hrs_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Setup Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "3b606fd0-0ba6-4c27-bdf7-eec49a300102",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Return MT (LY YTD)",
+      "qDef": "$(v_Return_MT_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Return MT (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "3ba66656-e101-42e0-8761-ce8f46823d95",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Not Planned Down Hrs (LY YTD)",
+      "qDef": "$(v_Time_Unplanned_Down_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Not Planned Down Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "3c7b3a35-2a9d-4db0-90b8-1203e586a02e",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Operation (YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_YTD))\n        +($(v_Time_Std_Setup_Hrs_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_YTD))\n        +($(v_Time_Setup_Hrs_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_YTD))\n        +($(v_Time_Not_Allocated_Hrs_YTD))\n    )\n  )\n)\n*\n($(v_Time_Operation_Loss_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#545352",
+        "index": 14
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Operation (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "409aefa4-e394-4802-a441-913ea367d762",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Hrs (YTD)",
+      "qDef": "$(v_Time_Setup_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Setup Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "46d7a7d9-ea78-4754-b123-98172f539d00",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Total Loss $ (YTD)",
+      "qDef": "(($(v_Labor_Run_Cost_YTD))-($(v_Labor_Std_Run_Cost_YTD)))\n+(($(v_Labor_Setup_Cost_YTD))-($(v_Labor_Std_Setup_Cost_YTD)))\n+(($(v_Labor_Unplanned_Down_Cost_YTD)))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#000000",
+        "index": 15
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Total Loss $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "4fbfd1eb-dd7d-4861-b97e-2f1f40214cf4",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Production Cost $ (LY YTD)",
+      "qDef": "$(v_Production_Cost_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Production Cost $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "5012ae90-4d5e-44ec-9a81-51d0bdd5812f",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs (YTD)",
+      "qDef": "$(v_Time_Down_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Down Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "5021b612-bf1e-4a27-add8-6e413b0205b0",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Std Machine Hrs (LY YTD)",
+      "qDef": "($(v_Contribution_FG_LY_YTD))\n/\n(\n\t($(v_Time_Std_Run_Hrs_LY_YTD))\n    +($(v_Time_Std_Setup_Hrs_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Std Machine Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "52907768-9269-4507-8472-9f1da68a0efc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Loss Hrs",
+      "qDef": "($(v_Time_Setup_Loss_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Setup Loss Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "58c5ab7f-0577-47a6-a88e-245898908bbe",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Total Loss $",
+      "qDef": "(($(v_Labor_Run_Cost_CM_YTD))-($(v_Labor_Std_Run_Cost_CM_YTD)))\n+(($(v_Labor_Setup_Cost_CM_YTD))-($(v_Labor_Std_Setup_Cost_CM_YTD)))\n+(($(v_Labor_Unplanned_Down_Cost_CM_YTD)))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#000000",
+        "index": 15
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Total Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "5b2808a3-dede-4eb1-853f-2802020f74af",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Not Planned Down Hrs (YTD)",
+      "qDef": "$(v_Time_Unplanned_Down_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Not Planned Down Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "5d55df06-09dc-467f-ab99-b9c81fce0425",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FG MT (LY YTD)",
+      "qDef": "$(v_Output_FG_MT_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "FG MT (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "6067762b-5a48-4a00-a35a-17ba36bf62d6",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Inventory WIP SQM",
+      "qDef": "$(v_Inventory_WIP_SQM_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Inventory WIP SQM",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "62a5382a-c49e-4b76-affc-3631a8f96e3f",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Total Loss $ (LY YTD)",
+      "qDef": "(($(v_Labor_Run_Cost_LY_YTD))-($(v_Labor_Std_Run_Cost_LY_YTD)))\n+(($(v_Labor_Setup_Cost_LY_YTD))-($(v_Labor_Std_Setup_Cost_LY_YTD)))\n+(($(v_Labor_Unplanned_Down_Cost_LY_YTD)))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Total Loss $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "62b91047-770a-4079-bd56-098e0019d28b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "# Setups (YTD)",
+      "qDef": "$(v_Number_Setups_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#545352",
+        "index": 14
+      }
+    },
+    "qMetaDef": {
+      "title": "# Setups (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "66ffb752-7335-4dd8-8b47-614af45a03e8",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Running Capacity Utilization (YTD)",
+      "qDef": "(\n\t($(v_Time_Run_Hrs_By_Section_YTD))\n    /($(v_Time_Capacity_Hrs_By_Section_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Running Capacity Utilization (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "676e140b-37e5-47c4-a4cf-a361c0468f3a",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Planned Hrs (LY YTD)",
+      "qDef": "$(v_Time_Planned_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Planned Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "68776e35-2a8f-4a97-8819-5d6dda063ed4",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Loss Hrs (LY YTD)",
+      "qDef": "($(v_Time_Setup_Loss_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Setup Loss Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "68be6777-258a-4fbf-b9f4-754d935338d8",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down % from Run",
+      "qDef": "($(v_Time_Down_Hrs_CM_YTD))\n/($(v_Time_Run_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f8981d",
+        "index": 9
+      }
+    },
+    "qMetaDef": {
+      "title": "Down % from Run",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "69372242-df65-4bdd-9f3b-e881d97eb753",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Return MT",
+      "qDef": "$(v_Return_MT_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Return MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "696092fb-440c-4814-b6ae-e1dd046b3faa",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Production Hrs (YTD)",
+      "qDef": "($(v_Contribution_FG_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_YTD))\n    +($(v_Time_Setup_Hrs_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Production Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "6d4efae7-b6c2-4dd7-b376-b00f0d4bcd4f",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Loss Hrs (YTD)",
+      "qDef": "($(v_Time_Run_Loss_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Run Loss Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "70cd7770-c33c-4387-841d-0daeb7875b76",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Contr. Operation (YTD)",
+      "qDef": "(\n  ($(v_Contribution_FG_YTD))\n  /\n  (\n      ($(v_Time_Std_Run_Hrs_YTD))\n      +($(v_Time_Std_Setup_Hrs_YTD))\n  )\n)\n\n* ($(v_Time_Operation_Loss_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#633d0c",
+        "index": 11
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Contr. Operation (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "784386a6-de5e-4724-9e04-6836aa127a97",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Goods LM (YTD)",
+      "qDef": "$(v_Output_Goods_LM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Goods LM (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "79de4b4b-8283-457c-984a-2cad2ce8a3b3",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down % from Planned (LY YTD)",
+      "qDef": "($(v_Time_Down_Hrs_LY_YTD))\n/($(v_Time_Planned_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Down % from Planned (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "7c306226-8d5d-4889-b7ff-69d0281feba8",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Not Planned Down Hrs",
+      "qDef": "$(v_Time_Unplanned_Down_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Not Planned Down Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "7e9ab031-712d-4e6e-b31a-15eab861f2d6",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Rate (YTD)",
+      "qDef": "($(v_Output_Standard_By_Section_YTD))/\n($(v_Output_Actual_By_Section_YTD))\n\n\n\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Rate (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "82482313-a505-4c76-815a-bbcbecf870ab",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Rate (LY YTD)",
+      "qDef": "($(v_Output_Standard_By_Section_LY_YTD))/\n($(v_Output_Actual_By_Section_LY_YTD))\n\n\n\n",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Rate (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "83cf2dde-535f-4357-9b26-6330778dd323",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Not Allocated Hrs (YTD)",
+      "qDef": "$(v_Time_Not_Allocated_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7b7a78",
+        "index": 13
+      }
+    },
+    "qMetaDef": {
+      "title": "Not Allocated Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "877514c7-132b-4936-a0d2-ca7abfb681fd",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Down Loss $ (YTD)",
+      "qDef": "($(v_Labor_Unplanned_Down_Cost_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Down Loss $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "91f14f31-dd53-47fd-bf6e-4915bc8ec082",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT (YTD)",
+      "qDef": "$(v_Waste_MT_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f8981d",
+        "index": 9
+      }
+    },
+    "qMetaDef": {
+      "title": "Waste MT (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "94cc706c-80cc-46bf-aa6d-8dbcb57c04b9",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Inventory WIP MT (YTD)",
+      "qDef": "$(v_Inventory_WIP_MT_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Inventory WIP MT (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "95be8808-ed39-4126-8af3-c34cd8b5aa6e",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Contr. Per Machine Hrs (LY YTD)",
+      "qDef": "(\n  ($(v_Contribution_FG_LY_YTD))\n  /\n  (\n      ($(v_Time_Std_Run_Hrs_LY_YTD))\n      +($(v_Time_Std_Setup_Hrs_LY_YTD))\n  )\n)\n-\n(\n  ($(v_Contribution_FG_LY_YTD))\n  /\n  (\n      ($(v_Time_Run_Hrs_LY_YTD))\n      +($(v_Time_Setup_Hrs_LY_YTD))\n      +($(v_Time_Unplanned_Down_Hrs_LY_YTD))\n      +($(v_Time_Not_Allocated_Hrs_LY_YTD))\n  )\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Contr. Per Machine Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "97c5bcf8-918f-428f-a3b7-effea9026828",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "# Of Labor (LY YTD)",
+      "qDef": "$(v_Labor_NB_Labor_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "# Of Labor (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "9b747f92-376d-4723-a737-d5820aa6729b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "WIP SQM (LY_YTD)",
+      "qDef": "$(v_Output_WIP_SQM_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "WIP SQM (LY_YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "9b90f13a-3535-4792-9c06-0c1e336cfd60",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "WIP MT (YTD)",
+      "qDef": "$(v_Output_WIP_MT_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "WIP MT (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "9e0c8b15-411d-4962-9b75-2bdc672867e3",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Setup Loss $ (YTD)",
+      "qDef": "($(v_Labor_Setup_Cost_YTD))-($(v_Labor_Std_Setup_Cost_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Setup Loss $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "9e93e73e-5947-463e-bd44-fc092b84f0fc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Std Machine Hrs (YTD)",
+      "qDef": "($(v_Contribution_FG_YTD))\n/\n(\n\t($(v_Time_Std_Run_Hrs_YTD))\n    +($(v_Time_Std_Setup_Hrs_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Std Machine Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "AfAjGP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Time",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Setup Time",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "AqPtJk",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Atackable Setup Time",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Atackable Setup Time",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BUMqEyx",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Speed Loss",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Speed Loss",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BVFK",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Opportunity Loss $",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_CM_YTD))\n        +($(v_Time_Std_Setup_Hrs_CM_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_CM_YTD))\n        +($(v_Time_Setup_Hrs_CM_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_CM_YTD))\n        +($(v_Time_Not_Allocated_Hrs_CM_YTD))\n    )\n  )\n)\n*\n($(v_Time_Run_Loss_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Run Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BazUpJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Days OY",
+      "qDef": "($(v_Time_Capacity_Hrs_OY)-$(v_Time_Planned_Hrs_OY))/24/($(v_Work_Centers_Count_OY))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Idle Days OY",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BcpFWP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Linear Meters Reported / Min YTD",
+      "qDef": "$(v_Linear_Meters_Reported_Per_Min_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Linear Meters Reported / Min YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BqmQ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Run Loss $",
+      "qDef": "($(v_Labor_Run_Cost_CM_YTD))-($(v_Labor_Std_Run_Cost_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Run Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "BsKJcg",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FG MT",
+      "qDef": "$(v_Output_FG_MT_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "FG MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Burf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Production % (YTD)",
+      "qDef": "($(v_Waste_MT_Production_YTD))/($(v_Waste_MT_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Production % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "CXfjB",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Hrs",
+      "qDef": "$(v_Time_Run_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Run Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "CgxRAz",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Available Hrs",
+      "qDef": "$(v_Time_Available_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Available Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "CjmtXD",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Other",
+      "qDef": "$(v_Time_Down_Hrs_Other_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Other",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "CkSGN",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Production Cost $",
+      "qDef": "$(v_Production_Cost_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Production Cost $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "DRRpP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Production Stops",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Production Stops",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "DdCVUM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Hrs (LY YTD)",
+      "qDef": "$(v_Time_Run_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Run Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "DkD",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Goods MT (LY)",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Goods MT (LY)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "EFWG",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Std Run Hrs",
+      "qDef": "$(v_Time_Std_Run_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Std Run Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "EjduYT",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Setup Opportunity Loss $",
+      "qDef": "($(v_Contribution_Opportunity_Loss_Per_Hr))*($(v_Time_Setup_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Setup Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "FAzsMF",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Production Hrs",
+      "qDef": "($(v_Contribution_FG_CM_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_CM_YTD))\n    +($(v_Time_Setup_Hrs_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Production Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "FEptr",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "WIP SQM",
+      "qDef": "$(v_Output_WIP_SQM_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "WIP SQM",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "FJPbd",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Maintenance % (YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Maintenance_YTD))/($(v_Time_Down_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Maintenance % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "FPUPVv",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT",
+      "qDef": "$(v_Waste_MT_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f8981d",
+        "index": 9
+      }
+    },
+    "qMetaDef": {
+      "title": "Waste MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "FfDg",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Maintenance (LY YTD)",
+      "qDef": "($(v_Waste_MT_Maintenance_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Maintenance (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "GEhLj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "# Setups (LY)",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "# Setups (LY)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "GJqPD",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Maintenance (YTD)",
+      "qDef": "($(v_Waste_MT_Maintenance_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Maintenance (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "GUDTLm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Maintenance (LY YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Maintenance_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Maintenance (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "HVLQjAp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down % from Planned",
+      "qDef": "($(v_Time_Down_Hrs_CM_YTD))\n/($(v_Time_Planned_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Down % from Planned",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "HaKdEV",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "KG Reported Per Hour",
+      "qDef": "$(v_KG_Reported_Per_Hour_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "KG Reported Per Hour",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "HyefJLm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Availability",
+      "qDef": "(\n  ($(v_Time_Run_Hrs_By_Section_CM_YTD))\n  /($(v_Time_Available_Hrs_By_Section_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#633d0c",
+        "index": 11
+      }
+    },
+    "qMetaDef": {
+      "title": "Availability",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "JVbvM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Production (YTD)",
+      "qDef": "($(v_Waste_MT_Production_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Production (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "JVgpE",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Avalability T",
+      "qDef": "(\n  ($(v_Time_Run_Hrs_CM_YTD))\n  /($(v_Time_Available_Hrs_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Avalability T",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "JbWCBpm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Other (LY YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Other_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Other (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "JewDwN",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Preventive",
+      "qDef": "$(v_Time_Down_Hrs_Preventive_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Preventive",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KHfmRW",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Other (LY YTD)",
+      "qDef": "($(v_Waste_MT_Other_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Other (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KJMjQC",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Production % (LY YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Production_LY_YTD))/($(v_Time_Down_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Production % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KNRDhM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Preventive %  (LY YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Preventive_LY_YTD))/($(v_Time_Down_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Preventive %  (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KPmJcM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Planned Hrs",
+      "qDef": "$(v_Time_Planned_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#46c646",
+        "index": 2
+      }
+    },
+    "qMetaDef": {
+      "title": "Planned Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "KYAcwM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Setup Hrs",
+      "qDef": "($(v_Contribution_FG_CM_YTD))\n/\n(\n\t($(v_Time_Setup_Hrs_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Setup Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "LjzJM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Maintenance % (LY YTD)",
+      "qDef": "($(v_Waste_MT_Maintenance_LY_YTD))/($(v_Waste_MT_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Maintenance % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MJFxmT",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Hrs",
+      "qDef": "$(v_Time_Setup_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Setup Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MXguP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "WIP MT",
+      "qDef": "$(v_Output_WIP_MT_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "WIP MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MZHCP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Std Setup Hrs",
+      "qDef": "$(v_Time_Std_Setup_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Std Setup Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "MgSnPZ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Opportunity Loss $",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_CM_YTD))\n        +($(v_Time_Std_Setup_Hrs_CM_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_CM_YTD))\n        +($(v_Time_Setup_Hrs_CM_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_CM_YTD))\n        +($(v_Time_Not_Allocated_Hrs_CM_YTD))\n    )\n  )\n)\n*\n($(v_Time_Setup_Loss_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Setup Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PAYmYJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Maintenance",
+      "qDef": "$(v_Time_Down_Hrs_Maintenance_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Maintenance",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PKACrA",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Nb Of Days",
+      "qDef": "count( {$< Year={$(v_Max_Year)} > } distinct [Master Calendar Date Num])",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Nb Of Days",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PPTkwPr",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Capacity YTD",
+      "qDef": "$(v_Time_Idle_Capacity_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Idle Capacity YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PQPjDcj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Other",
+      "qDef": "($(v_Waste_MT_Other_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Other",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PmrKGSn",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Days (YTD)",
+      "qDef": "($(v_Time_Run_Hrs_YTD))/24",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Run Days (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "PujDrRe",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Other (YTD)",
+      "qDef": "($(v_Waste_MT_Other_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Other (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "QFBAB",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Production (LY YTD)",
+      "qDef": "($(v_Waste_MT_Production_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Production (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Qbhf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Maintenance %",
+      "qDef": "($(v_Time_Down_Hrs_Maintenance_CM_YTD))/($(v_Time_Down_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Maintenance %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "QsfP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "OEE",
+      "qDef": "(\n  ($(v_Time_Run_Hrs_By_Section_CM_YTD))\n  /($(v_Time_Available_Hrs_By_Section_CM_YTD))\n)\n*\n(\n($(v_Output_Standard_By_Section_CM_YTD)) /\n  ($(v_Output_Actual_By_Section_CM_YTD))\n)\n*\n(\n  ($(v_Output_Goods_MT_By_Section_CM_YTD))\n  /($(v_Output_Production_MT_By_Section_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "OEE",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "RHkyqc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Production (YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Production_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Production (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "RMrmfP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Other % (LY YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Other_LY_YTD))/($(v_Time_Down_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Other % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "RZyxHP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Produced MT (LY YTD)",
+      "qDef": "$(v_Produced_MT_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Produced MT (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "RsfzXm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Rate",
+      "qDef": "($(v_Output_Standard_By_Section_CM_YTD))\n/\n($(v_Output_Actual_By_Section_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Rate",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Rujyej",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Used Capacity YTD",
+      "qDef": "$(v_Time_Used_Capacity_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Used Capacity YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "RvsGtu",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Other % (YTD)",
+      "qDef": "($(v_Waste_MT_Other_YTD))/($(v_Waste_MT_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Other % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SBjrVN",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Machine Hrs (LY YTD)",
+      "qDef": "($(v_Contribution_FG_LY_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_LY_YTD))\n    +($(v_Time_Setup_Hrs_LY_YTD))\n    +($(v_Time_Unplanned_Down_Hrs_LY_YTD))\n    +($(v_Time_Not_Allocated_Hrs_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Machine Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SFVzEx",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "# Of Labor",
+      "qDef": "$(v_Labor_NB_Labor_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#000000",
+        "index": 15
+      }
+    },
+    "qMetaDef": {
+      "title": "# Of Labor",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SSmEfSL",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Setup (LY YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Setup_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Setup (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SSzKjY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste Index",
+      "qDef": "($(v_Waste_MT_YTD)) / ($(v_Waste_MT_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste Index",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SbhNf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Quality (LY YTD)",
+      "qDef": "($(v_Output_Goods_MT_By_Section_LY_YTD))\n/($(v_Output_Production_MT_By_Section_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Quality (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ScaXt",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Days",
+      "qDef": "($(v_Time_Capacity_Hrs_YTD)-$(v_Time_Planned_Hrs_YTD))/24/($(v_Work_Centers_Count_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Idle Days",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SetgfHY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Labor",
+      "qDef": "$(v_Labor_Operation_Loss_Cost_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Labor",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SjypbMm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Production % (LY YTD)",
+      "qDef": "($(v_Waste_MT_Production_LY_YTD))/($(v_Waste_MT_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Production % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SwBwvjp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Meters Index",
+      "qDef": "($(v_Output_Goods_LM_YTD)) / ($(v_Output_Goods_LM_LM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Meters Index",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "SwtZJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Run Opportunity Loss $",
+      "qDef": "($(v_Contribution_Opportunity_Loss_Per_Hr))*($(v_Time_Run_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Run Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TLjnZ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "OEE Converting",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "OEE Converting",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TMWcmtm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Preventive %",
+      "qDef": "($(v_Time_Down_Hrs_Preventive_CM_YTD))/($(v_Time_Down_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Preventive %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TSBjNM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Down Opportunity Loss $",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_CM_YTD))\n        +($(v_Time_Std_Setup_Hrs_CM_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_CM_YTD))\n        +($(v_Time_Setup_Hrs_CM_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_CM_YTD))\n        +($(v_Time_Not_Allocated_Hrs_CM_YTD))\n    )\n  )\n)\n*\n($(v_Time_Unplanned_Down_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Down Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TTjCT",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Maintenance %",
+      "qDef": "($(v_Waste_MT_Maintenance_CM_YTD))/($(v_Waste_MT_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Maintenance %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "TyQhtA",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Other (YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Other_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Other (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "UATJpc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Other % (LY YTD)",
+      "qDef": "($(v_Waste_MT_Other_LY_YTD))/($(v_Waste_MT_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Other % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "UKJaY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Operation Opportunity Loss $",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_CM_YTD))\n        +($(v_Time_Std_Setup_Hrs_CM_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_CM_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_CM_YTD))\n        +($(v_Time_Setup_Hrs_CM_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_CM_YTD))\n        +($(v_Time_Not_Allocated_Hrs_CM_YTD))\n    )\n  )\n)\n*\n($(v_Time_Operation_Loss_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#545352",
+        "index": 14
+      }
+    },
+    "qMetaDef": {
+      "title": "Operation Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "UpCeJmQ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Used Capacity %",
+      "qDef": "$(v_Time_Used_Capacity_CM)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Used Capacity %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "WAJhWwA",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Not Allocated Hrs",
+      "qDef": "$(v_Time_Not_Allocated_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7b7a78",
+        "index": 13
+      }
+    },
+    "qMetaDef": {
+      "title": "Not Allocated Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "Wadpq",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Production %",
+      "qDef": "($(v_Time_Down_Hrs_Production_CM_YTD))/($(v_Time_Down_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Production %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "WzvSe",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Production",
+      "qDef": "($(v_Waste_MT_Production_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Production",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "XUJmCS",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste % Index",
+      "qDef": "($(v_Waste_MT_YTD)\n/\n(\n\t($(v_Output_FG_MT_YTD))\n    +($(v_Output_WIP_MT_YTD))\n    +($(v_Waste_MT_YTD))\n))\n\n/\n\n(\n$(v_Waste_MT_LY_YTD)\n/\n(\n\t($(v_Output_FG_MT_LY_YTD))\n    +($(v_Output_WIP_MT_LY_YTD))\n    +($(v_Waste_MT_LY_YTD))\n)\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste % Index",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "XUJtf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Contr. Per Machine Hrs",
+      "qDef": "$(v_Contribution_Opportunity_Loss_Per_Hr)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f8981d",
+        "index": 9
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Contr. Per Machine Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "XkZnf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Setup (YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Setup_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Setup (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "a12b3dbe-27c9-4abc-9030-d5e423081237",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Run Loss $ (LY YTD)",
+      "qDef": "($(v_Labor_Run_Cost_LY_YTD))-($(v_Labor_Std_Run_Cost_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Run Loss $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "a3a657b9-4303-47e0-94ce-a7d6c06f4aba",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Planned Down Hrs",
+      "qDef": "$(v_Time_Planned_Down_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Planned Down Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "a3cf5608-057b-4576-9551-332c58031c24",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Run Hrs (YTD)",
+      "qDef": "($(v_Contribution_FG_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#b6d7ea",
+        "index": 4
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Run Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "a41188cd-d7e0-4907-8e85-bf84cbc1c110",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Hold MT",
+      "qDef": "($(v_Hold_FG_MT_CM_YTD) + $(v_Hold_WIP_MT_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Hold MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "a79edb79-9144-4bed-9508-ee142b40cd35",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste % (LY YTD)",
+      "qDef": "$(v_Waste_MT_LY_YTD)\n/\n(\n\t($(v_Output_FG_MT_LY_YTD))\n    +($(v_Output_WIP_MT_LY_YTD))\n    +($(v_Waste_MT_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Waste % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "aDPEsRW",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "# Setups",
+      "qDef": "$(v_Number_Setups_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#545352",
+        "index": 14
+      }
+    },
+    "qMetaDef": {
+      "title": "# Setups",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "aa176c2c-557b-4d49-8427-9f741f505190",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Labor (LY YTD)",
+      "qDef": "$(v_Labor_Operation_Loss_Cost_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Labor (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ab340599-6a7d-4c3b-abee-a5b99c3d48a8",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Production Cost $ (YTD)",
+      "qDef": "$(v_Production_Cost_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Production Cost $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "abc88c04-5f4e-425b-9b8d-4af900b15735",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Running Capacity Utilization",
+      "qDef": "(\n\t($(v_Time_Run_Hrs_By_Section_CM_YTD))\n    /($(v_Time_Capacity_Hrs_By_Section_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Running Capacity Utilization",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ac6c2af1-9fef-4291-a9ee-4fc5fdeaac9c",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FG SQM (LY YTD)",
+      "qDef": "$(v_Output_FG_SQM_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "FG SQM (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "adUfXNz",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Short Stops",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Short Stops",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b08326c4-ce19-43b2-8733-49d8a734f5a9",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Available Hrs (LY YTD)",
+      "qDef": "$(v_Time_Available_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Available Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b26e97d7-1898-49b2-98a9-b06dea41e0fd",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "WIP SQM (YTD)",
+      "qDef": "$(v_Output_WIP_SQM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "WIP SQM (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b445245a-3c69-43ee-af93-62ced152f7b2",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "# Of Labor (YTD)",
+      "qDef": "$(v_Labor_NB_Labor_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#000000",
+        "index": 15
+      }
+    },
+    "qMetaDef": {
+      "title": "# Of Labor (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b692ec88-39c6-4421-901e-1ba0e14d03c3",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "OEE (LY YTD)",
+      "qDef": "(\n  ($(v_Time_Run_Hrs_By_Section_LY_YTD))\n  /($(v_Time_Available_Hrs_By_Section_LY_YTD))\n)\n*\n(\n  ($(v_Output_Standard_By_Section_LY_YTD))/\n  ($(v_Output_Actual_By_Section_LY_YTD))\n  \n)\n*\n(\n  ($(v_Output_Goods_MT_By_Section_LY_YTD))\n  /($(v_Output_Production_MT_By_Section_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "OEE (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b6ecf922-8ee5-4a4a-8c6f-0410a7d461c8",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Setup Loss $ (LY YTD)",
+      "qDef": "($(v_Labor_Setup_Cost_LY_YTD))-($(v_Labor_Std_Setup_Cost_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Setup Loss $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "b9e8c90b-dc45-4258-bc31-d04b8d7b13ca",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Run Loss $ (YTD)",
+      "qDef": "($(v_Labor_Run_Cost_YTD))-($(v_Labor_Std_Run_Cost_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Run Loss $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "bXmhBS",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste % YTD Over Net",
+      "qDef": "($(v_Output_Waste_MT_YTD)) / ($(v_Output_FG_MT_YTD)+$(v_Output_WIP_MT_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste % YTD Over Net",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "bb990336-5110-412e-a808-61de658acf99",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Down Opportunity Loss $ (LY YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_LY_YTD))\n        +($(v_Time_Std_Setup_Hrs_LY_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_LY_YTD))\n        +($(v_Time_Setup_Hrs_LY_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_LY_YTD))\n        +($(v_Time_Not_Allocated_Hrs_LY_YTD))\n    )\n  )\n)\n*\n($(v_Time_Unplanned_Down_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Down Opportunity Loss $ (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "be2843ca-b936-42d6-80b1-58e982f28296",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down % from Run (LY YTD)",
+      "qDef": "($(v_Time_Down_Hrs_LY_YTD))\n/($(v_Time_Run_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Down % from Run (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "bnJzpjs",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Production (LY YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Production_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Production (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "c027b483-4e7a-4af6-a7fe-aa08bd5944fe",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Planned Hrs (YTD)",
+      "qDef": "$(v_Time_Planned_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#46c646",
+        "index": 2
+      }
+    },
+    "qMetaDef": {
+      "title": "Planned Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "c0a0bb70-dfbe-4357-b808-89e761343b7c",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Setup Opportunity Loss $ (YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_YTD))\n        +($(v_Time_Std_Setup_Hrs_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_YTD))\n        +($(v_Time_Setup_Hrs_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_YTD))\n        +($(v_Time_Not_Allocated_Hrs_YTD))\n    )\n  )\n)\n*\n($(v_Time_Setup_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Setup Opportunity Loss $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "c4dfc889-4963-44af-b97f-3a9ed8593f57",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Std Run Hrs (YTD)",
+      "qDef": "$(v_Time_Std_Run_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Std Run Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "c9ab9773-f48b-439b-84ae-338d95e81f9a",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "OEE (YTD)",
+      "qDef": "(\r\n  ($(v_Time_Run_Hrs_By_Section_YTD))\n  /($(v_Time_Available_Hrs_By_Section_YTD))\n)\n*\n(\n  ($(v_Output_Standard_By_Section_YTD))/\n  ($(v_Output_Actual_By_Section_YTD))\n  \n)\n*\n(\n  ($(v_Output_Goods_MT_By_Section_YTD))\n  /($(v_Output_Production_MT_By_Section_YTD))\n) ",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "coloring": {
+        "baseColor": {
+          "color": "#4477aa",
+          "index": 6
+        }
+      }
+    },
+    "qMetaDef": {
+      "title": "OEE (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "cAmmNRV",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FG SQM",
+      "qDef": "$(v_Output_FG_SQM_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "FG SQM",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ca91bcd7-2e1b-4939-bd28-3e19f5f1ee81",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Std Setup Hrs (YTD)",
+      "qDef": "$(v_Time_Std_Setup_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Std Setup Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "cb96c861-22df-4bd8-84c2-b72f0cd59ddb",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FG SQM (YTD)",
+      "qDef": "$(v_Output_FG_SQM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "FG SQM (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "cbccf723-0ea9-4d9b-8d34-65681b88899c",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Available Hrs (YTD)",
+      "qDef": "$(v_Time_Available_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Available Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "cfedd7da-047c-44ee-8feb-8eb9a6cd1852",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Operation (LY YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_LY_YTD))\n        +($(v_Time_Std_Setup_Hrs_LY_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_LY_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_LY_YTD))\n        +($(v_Time_Setup_Hrs_LY_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_LY_YTD))\n        +($(v_Time_Not_Allocated_Hrs_LY_YTD))\n    )\n  )\n)\n*\n($(v_Time_Operation_Loss_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Operation (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "czRyV",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Hours P",
+      "qDef": "($(v_Time_Capacity_Hrs_YTD)-$(v_Time_Planned_Hrs_YTD))/($(v_Work_Centers_Count_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Idle Hours P",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "d516592e-6f8c-4c42-8448-934381a79fbf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "WIP MT (LY YTD)",
+      "qDef": "$(v_Output_WIP_MT_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "WIP MT (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "d5bc2a47-032e-449b-877e-714ddbeae11f",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Loss Hrs (LY YTD)",
+      "qDef": "($(v_Time_Run_Loss_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Run Loss Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "d7c670dd-ae45-4670-a012-2ce9ebec2ac7",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down % from Run (YTD)",
+      "qDef": "($(v_Time_Down_Hrs_YTD))\n/($(v_Time_Run_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f8981d",
+        "index": 9
+      }
+    },
+    "qMetaDef": {
+      "title": "Down % from Run (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dBJwftm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Capacity Hrs",
+      "qDef": "$(v_Time_Capacity_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Capacity Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dad397d3-7fda-453c-bb4f-53fa187069eb",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Down Loss $",
+      "qDef": "($(v_Labor_Unplanned_Down_Cost_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Labor Down Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dc2d3912-aa7e-4976-806a-31ba337882fa",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Hold MT (LY YTD)",
+      "qDef": "($(v_Hold_FG_MT_LY_YTD) + $(v_Hold_WIP_MT_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Hold MT (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dc839f03-7997-4d21-b8c7-29c66359f29b",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "FG MT (YTD)",
+      "qDef": "$(v_Output_FG_MT_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "FG MT (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "dde12997-bcf7-4eaf-8362-61c78906d273",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Inventory WIP SQM (YTD)",
+      "qDef": "$(v_Inventory_WIP_SQM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Inventory WIP SQM (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "de9ac0d4-0396-4321-8211-dc9b02c320f5",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Loss Hrs (YTD)",
+      "qDef": "($(v_Time_Setup_Loss_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Setup Loss Hrs (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e2162293-eec9-4154-9403-83792ce630ab",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Run Loss Hrs",
+      "qDef": "($(v_Time_Run_Loss_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#276e27",
+        "index": 3
+      }
+    },
+    "qMetaDef": {
+      "title": "Run Loss Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e2838467-472b-4776-a484-d0aa47548aee",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Capacity Utilization",
+      "qDef": "(\n\t($(v_Time_Available_Hrs_CM_YTD))\n    /($(v_Time_Capacity_Hrs_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Capacity Utilization",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e6dd37fb-4350-4036-8d9d-e9206bd7a40d",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Return MT (YTD)",
+      "qDef": "$(v_Return_MT_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Return MT (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "e9224eb8-dc25-4eb8-aef4-81c273d168e7",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Opportunity Loss - Labor (YTD)",
+      "qDef": "$(v_Labor_Operation_Loss_Cost_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Opportunity Loss - Labor (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "eHjXpm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Other % (YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Other_YTD))/($(v_Time_Down_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Other % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "eb4ce839-41c0-4059-ac07-3cc4faeefb5e",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down % from Planned (YTD)",
+      "qDef": "($(v_Time_Down_Hrs_YTD))\n/($(v_Time_Planned_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Down % from Planned (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ecf9ade6-9bfa-4a33-bd36-183333db2907",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Running Capacity Utilization (LY YTD)",
+      "qDef": "(\n\t($(v_Time_Run_Hrs_By_Section_LY_YTD))\n    /($(v_Time_Capacity_Hrs_By_Section_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Running Capacity Utilization (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "emnRKgu",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Available Capacity",
+      "qDef": "($(v_Time_Available_Capacity_CM))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Available Capacity",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "f37fbbdd-d782-40fa-ad7f-c65a1282e9b0",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Availability (LY YTD)",
+      "qDef": "(\n  ($(v_Time_Run_Hrs_By_Section_LY_YTD))\n  /($(v_Time_Available_Hrs_By_Section_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Availability (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "f54332de-663b-4d16-b85a-de3baae71e22",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Quality (YTD)",
+      "qDef": "($(v_Output_Goods_MT_By_Section_YTD))\n/($(v_Output_Production_MT_By_Section_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#46c646",
+        "index": 2
+      }
+    },
+    "qMetaDef": {
+      "title": "Quality (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "f8faa6c9-8e69-4cb7-a15a-90046ff9590e",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Down Opportunity Loss $ (YTD)",
+      "qDef": "(\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Std_Run_Hrs_YTD))\n        +($(v_Time_Std_Setup_Hrs_YTD))\n    )\n  )\n  -\n  (\n    ($(v_Contribution_FG_YTD))\n    /\n    (\n        ($(v_Time_Run_Hrs_YTD))\n        +($(v_Time_Setup_Hrs_YTD))\n        +($(v_Time_Unplanned_Down_Hrs_YTD))\n        +($(v_Time_Not_Allocated_Hrs_YTD))\n    )\n  )\n)\n*\n($(v_Time_Unplanned_Down_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Down Opportunity Loss $ (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "f9082850-28f8-49bf-bc48-fef64fdd4808",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Capacity Utilization (YTD)",
+      "qDef": "(\n\t($(v_Time_Available_Hrs_By_Section_YTD))\n    /($(v_Time_Capacity_Hrs_By_Section_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#8e477d",
+        "index": 7
+      }
+    },
+    "qMetaDef": {
+      "title": "Capacity Utilization (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "fwj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Production YTD",
+      "qDef": "$(v_Production_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Production YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "gJNBeE",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Total Opportunity Loss $",
+      "qDef": "($(v_Contribution_Opportunity_Loss_Per_Hr))*(($(v_Time_Run_Hrs_CM_YTD))+($(v_Time_Setup_Hrs_CM_YTD))+($(v_Time_Unplanned_Down_Hrs_CM_YTD)))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#000000",
+        "index": 15
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Total Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "gQjSPr",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Other %",
+      "qDef": "($(v_Time_Down_Hrs_Other_CM_YTD))/($(v_Time_Down_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Other %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "gVnJPXj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Production % (YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Production_YTD))/($(v_Time_Down_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Production % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "hJKUYZ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Std Machine Hrs",
+      "qDef": "($(v_Contribution_FG_CM_YTD))\n/\n(\n\t($(v_Time_Std_Run_Hrs_CM_YTD))\n    +($(v_Time_Std_Setup_Hrs_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Std Machine Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "hUJpF",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Setup Hrs (LY YTD)",
+      "qDef": "($(v_Contribution_FG_LY_YTD))\n/\n(\n\t($(v_Time_Setup_Hrs_LY_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Setup Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "haddSJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Not Allocated Hrs (LY YTD)",
+      "qDef": "$(v_Time_Not_Allocated_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Not Allocated Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jZUk",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Goods MT",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#46c646",
+        "index": 2
+      }
+    },
+    "qMetaDef": {
+      "title": "Goods MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jhTvxBc",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Run Hrs",
+      "qDef": "($(v_Contribution_FG_CM_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#b6d7ea",
+        "index": 4
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Run Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "jxvXpF",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Breakdowns",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Breakdowns",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "kEEuE",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Produced MT (YTD)",
+      "qDef": "$(v_Produced_MT_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Produced MT (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "kTjUPp",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Hrs (LY YTD)",
+      "qDef": "$(v_Time_Idle_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Idle Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mCcsup",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Production MT Total",
+      "qDef": "$(v_Output_FG_MT_CM_YTD)+\n$(v_Waste_MT_CM_YTD)+\n$(v_Output_WIP_MT_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Production MT Total",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mHunn",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Inventory WIP MT",
+      "qDef": "$(v_Inventory_WIP_MT_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#ffcf02",
+        "index": 8
+      }
+    },
+    "qMetaDef": {
+      "title": "Inventory WIP MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mSaYdPL",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Speed Index",
+      "qDef": "(($(v_Output_Standard_By_Section_YTD))/($(v_Output_Actual_By_Section_YTD)))\n/\n(($(v_Output_Standard_By_Section_LY_YTD))/($(v_Output_Actual_By_Section_LY_YTD)))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Speed Index",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mfExsfk",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Setup % (LY YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Setup_LY_YTD))/($(v_Time_Down_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Setup % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mpnBRct",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs",
+      "qDef": "$(v_Time_Down_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#7db8da",
+        "index": 5
+      }
+    },
+    "qMetaDef": {
+      "title": "Down Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "mrmpdN",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Setup %",
+      "qDef": "($(v_Time_Down_Hrs_Setup_CM_YTD))/($(v_Time_Down_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Setup %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "nFVpus",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Number Of Days",
+      "qDef": "Max({$<[Month ID]={\"<=$(v_Max_Month_ID)\"},Year = {$(v_Max_Year)} , Quarter=, Month=, [Month Year]=>} [Day])",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Number Of Days",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "nPnjeem",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Production",
+      "qDef": "$(v_Time_Down_Hrs_Production_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Production",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "nSNtXy",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Produced MT",
+      "qDef": "$(v_Produced_MT_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Produced MT",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "nyKrRH",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Operation Loss Hrs",
+      "qDef": "($(v_Time_Operation_Loss_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#545352",
+        "index": 14
+      }
+    },
+    "qMetaDef": {
+      "title": "Operation Loss Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pDZyUU",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs (LY YTD)",
+      "qDef": "$(v_Time_Down_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Down Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pNZgjP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Maintenance % (YTD)",
+      "qDef": "($(v_Waste_MT_Maintenance_YTD))/($(v_Waste_MT_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Maintenance % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pZhCBjK",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Capacity Hrs YTD",
+      "qDef": "$(v_Time_Capacity_Hrs_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Capacity Hrs YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pbLzXV",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Setup",
+      "qDef": "$(v_Time_Down_Hrs_Setup_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Setup",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pdPF",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Preventive % (YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Preventive_YTD))/($(v_Time_Down_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Preventive % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "ppsUd",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Labor Cost $/Hr",
+      "qDef": "$(v_Labor_Cost_Per_Hr_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Labor Cost $/Hr",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pxmWbDm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Quality",
+      "qDef": "($(v_Output_Goods_MT_By_Section_CM_YTD))\n/($(v_Output_Production_MT_By_Section_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#46c646",
+        "index": 2
+      }
+    },
+    "qMetaDef": {
+      "title": "Quality",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "pzZjxpL",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Linear Meters YTD",
+      "qDef": "$(v_Output_Goods_LM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Linear Meters YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "qEkHr",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Setup Hrs (LY YTD)",
+      "qDef": "$(v_Time_Setup_Hrs_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Setup Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "rEShJY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Maintenance % (LY YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Maintenance_LY_YTD))/($(v_Time_Down_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Maintenance % (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "raYReVf",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Technical Setup Time",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Technical Setup Time",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "rbKqQh",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Preventive (LY YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Preventive_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Preventive (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "rhYVgH",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Planned Days",
+      "qDef": "($(v_Time_Planned_Hrs_YTD) / 24 / ($(v_Work_Centers_Count_YTD)))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Planned Days",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "rzxGP",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Capacity",
+      "qDef": "$(v_Time_Idle_Capacity_CM)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Idle Capacity",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "sCPJjs",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Available Capacity YTD",
+      "qDef": "$(v_Time_Available_Capacity_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "Available Capacity YTD",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "sWCuMnY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Output Index",
+      "qDef": "($(v_KG_Reported_Hour_YTD)) / ($(v_KG_Reported_Hour_LYYTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Output Index",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "sdqtfmR",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Goods LM",
+      "qDef": "$(v_Output_Goods_LM_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#4477aa",
+        "index": 6
+      }
+    },
+    "qMetaDef": {
+      "title": "Goods LM",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "uqMjQ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Preventive (YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Preventive_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Preventive (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "vMPtNBx",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "OEE Corrugator",
+      "qDef": "1",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "OEE Corrugator",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "vPPytm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Other %",
+      "qDef": "($(v_Waste_MT_Other_CM_YTD))/($(v_Waste_MT_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Other %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "vykBUmW",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Setup % (YTD)",
+      "qDef": "($(v_Time_Down_Hrs_Setup_YTD))/($(v_Time_Down_Hrs_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Setup % (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "wAbCaGM",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Down Hrs - Maintenance (YTD)",
+      "qDef": "$(v_Time_Down_Hrs_Maintenance_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Down Hrs - Maintenance (YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "xDABY",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Maintenance",
+      "qDef": "($(v_Waste_MT_Maintenance_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Maintenance",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "xJxAaLm",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "OEE Target",
+      "qDef": "Avg({<[Month ID]={\"<=$(v_Max_Month_ID)\"},Year = {$(v_Max_Year)}, $(v_Switch_Option_Production_Sections_Filter), Quarter=, Month=, [Month Year]=>} [Machine Target OEE])",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {}
+    },
+    "qMetaDef": {
+      "title": "OEE Target",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "xKedw",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Operation Opportunity Loss $",
+      "qDef": "(\n  ($(v_Contribution_FG_CM_YTD))\n  /\n  (\n      ($(v_Time_Std_Run_Hrs_CM_YTD))\n      +($(v_Time_Std_Setup_Hrs_CM_YTD))\n  )\n)\n\n* ($(v_Time_Operation_Loss_Hrs_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#545352",
+        "index": 14
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Operation Opportunity Loss $",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "xmewbj",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT - Production %",
+      "qDef": "($(v_Waste_MT_Production_CM_YTD))/($(v_Waste_MT_CM_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0
+    },
+    "qMetaDef": {
+      "title": "Waste MT - Production %",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "yJYmSMn",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Idle Hrs",
+      "qDef": "$(v_Time_Idle_Hrs_CM_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#b6d7ea",
+        "index": 4
+      }
+    },
+    "qMetaDef": {
+      "title": "Idle Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "yyGZXMn",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Contr. Per Machine Hrs",
+      "qDef": "($(v_Contribution_FG_CM_YTD))\n/\n(\n\t($(v_Time_Run_Hrs_CM_YTD))\n    +($(v_Time_Setup_Hrs_CM_YTD))\n    +($(v_Time_Unplanned_Down_Hrs_CM_YTD))\n    +($(v_Time_Not_Allocated_Hrs_CM_YTD))\n)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#46c646",
+        "index": 2
+      }
+    },
+    "qMetaDef": {
+      "title": "Contr. Per Machine Hrs",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "zJJWLU",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Operation Loss Hrs (LY YTD)",
+      "qDef": "($(v_Time_Operation_Loss_Hrs_LY_YTD))",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Operation Loss Hrs (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  },
+  {
+    "qInfo": {
+      "qId": "zPxRJ",
+      "qType": "measure"
+    },
+    "qMeasure": {
+      "qLabel": "Waste MT (LY YTD)",
+      "qDef": "$(v_Waste_MT_LY_YTD)",
+      "qGrouping": "N",
+      "qExpressions": [],
+      "qActiveExpression": 0,
+      "baseColor": {
+        "color": "#f93f17",
+        "index": 10
+      }
+    },
+    "qMetaDef": {
+      "title": "Waste MT (LY YTD)",
+      "description": "",
+      "tags": []
+    }
+  }
+]

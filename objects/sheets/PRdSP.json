@@ -1,0 +1,101 @@
+{
+  "qProperty": {
+    "qInfo": {
+      "qId": "PRdSP",
+      "qType": "sheet"
+    },
+    "qMetaDef": {
+      "title": "Formulation",
+      "description": ""
+    },
+    "rank": 6.3125,
+    "thumbnail": {
+      "qStaticContentUrlDef": {
+        "qUrl": "/appcontent/bd5cc7c1-06f4-4c6e-ab6d-cbf1e1a77b84/BLUE ICON.png"
+      }
+    },
+    "columns": 24,
+    "rows": 12,
+    "cells": [
+      {
+        "name": "eRdceh",
+        "type": "text-image",
+        "col": 0,
+        "row": 0,
+        "colspan": 24,
+        "rowspan": 12
+      }
+    ],
+    "navPoints": []
+  },
+  "qChildren": [
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "eRdceh",
+          "qType": "text-image"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [],
+          "qMeasures": [],
+          "qInterColumnSortOrder": [],
+          "qInitialDataFetch": [],
+          "qReductionMode": "N",
+          "qMode": "S",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": -1,
+          "qMaxStackedCells": 5000,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "customErrorMessage": {
+            "calcCond": ""
+          },
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "responsive": "all",
+        "markdown": "^[**_~Availability~_****_~  % :~  Run Hours / Planned Hours _**](inherit)^[**_\n_**](inherit)^[**_~Performance % : ~ Run Hours / Std Hours  \\(Std Hours is calculated based on the machine capacity , reflecting the Standard Hours needed to perform a Job\\)_**](inherit)^[**_\n_**](inherit)^[**_~Quality % : ~  1 \\- \\(Waste / Production\\)_**](inherit)^[**_\n_**](inherit)^[**_~OEE% :~ Availability% \\* Performance % \\* Quality %_**](inherit)^[**_\n_**](inherit)^[_**~Capacity Utilization  :~  Planned Hours /   Total Hours \\( Days Of a Month \\* 24\\) **\n_](inherit)^[**_\n_**](inherit)^[**_~Running CU : ~_**_**Run Hours /   Total Hours \\( Days Of a Month \\* 24\\) **_](inherit)^[_**\n**_](inherit)^[_**~DT From Planned  : ~DT Hours / Planned Hours**__**\n**_](inherit)^[_**\n**_](inherit)^[**_~DT From Run :~ DT Hours / Run Hours_**](inherit)^[**_\n_**](inherit)^[**_~Waste % :~ Waste / Production_**](inherit)^[^[\n](inherit)](inherit)",
+        "images": [],
+        "background": {
+          "isUsed": false,
+          "size": "auto",
+          "position": "topLeft",
+          "url": {}
+        },
+        "visualization": "text-image"
+      },
+      "qChildren": []
+    }
+  ]
+}

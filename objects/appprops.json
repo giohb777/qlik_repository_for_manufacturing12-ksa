@@ -1,0 +1,23 @@
+[
+  {
+    "qProperty": {
+      "qInfo": {
+        "qId": "JPPLcJ",
+        "qType": "appprops"
+      },
+      "qMetaDef": {},
+      "sheetTitleBgColor": "#4477aa",
+      "sheetTitleGradientColor": "",
+      "sheetTitleColor": "#ffffff",
+      "sheetLogoThumbnail": {
+        "qStaticContentUrlDef": {
+          "qUrl": "/appcontent/bd5cc7c1-06f4-4c6e-ab6d-cbf1e1a77b84/Manufacturing Grid.jpg"
+        }
+      },
+      "sheetLogoPosition": "",
+      "rtl": false,
+      "theme": "sense"
+    },
+    "qChildren": []
+  }
+]

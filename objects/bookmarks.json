@@ -1,0 +1,48 @@
+[
+  {
+    "qInfo": {
+      "qId": "LrBXKv",
+      "qType": "bookmark"
+    },
+    "qMetaDef": {
+      "title": "Hours - Trending - Machine Group (\"Corrugator\")",
+      "description": ""
+    },
+    "sheetId": "425f17a4-ae02-44b9-8d3c-913e7241dcaa",
+    "selectionFields": "Machine Group",
+    "creationDate": "2017-09-12T13:27:42.587Z",
+    "qData": {
+      "qBookMark": {
+        "qStateData": [
+          {
+            "qStateName": "$",
+            "qFieldItems": [
+              {
+                "qDef": {
+                  "qName": "Machine Group",
+                  "qType": "PRESENT"
+                },
+                "qSelectInfo": {
+                  "qRangeLo": "NaN",
+                  "qRangeHi": "NaN",
+                  "qNumberFormat": {
+                    "qType": "U",
+                    "qnDec": 10,
+                    "qUseThou": 0
+                  },
+                  "qRangeInfo": [],
+                  "qContinuousRangeInfo": []
+                },
+                "qValues": [],
+                "qExcludedValues": []
+              }
+            ]
+          }
+        ],
+        "qUtcModifyTime": 42990.685902777775,
+        "qVariableItems": [],
+        "qPatches": []
+      }
+    }
+  }
+]

@@ -1,0 +1,842 @@
+{
+  "qProperty": {
+    "qInfo": {
+      "qId": "8cbbfa1c-616b-4c06-9867-33777e84efc7",
+      "qType": "sheet"
+    },
+    "qMetaDef": {
+      "title": "Production Benchmarking",
+      "description": ""
+    },
+    "rank": 17.142578125,
+    "thumbnail": {
+      "qStaticContentUrlDef": {
+        "qUrl": "/appcontent/bd5cc7c1-06f4-4c6e-ab6d-cbf1e1a77b84/BLUE ICON.png"
+      }
+    },
+    "columns": 24,
+    "rows": 12,
+    "cells": [
+      {
+        "name": "Jnjged",
+        "type": "barchart",
+        "col": 0,
+        "row": 1,
+        "colspan": 24,
+        "rowspan": 10
+      },
+      {
+        "name": "hfmpTQ",
+        "type": "variable",
+        "col": 0,
+        "row": 11,
+        "colspan": 24,
+        "rowspan": 1
+      },
+      {
+        "name": "mpdXb",
+        "type": "variable",
+        "col": 3,
+        "row": 0,
+        "colspan": 3,
+        "rowspan": 1
+      },
+      {
+        "name": "aXWqmPJ",
+        "type": "variable",
+        "col": 6,
+        "row": 0,
+        "colspan": 18,
+        "rowspan": 1
+      },
+      {
+        "name": "JCVTXR",
+        "type": "swr-sense-navigation",
+        "col": 0,
+        "row": 0,
+        "colspan": 1,
+        "rowspan": 1
+      },
+      {
+        "name": "LTtRkjC",
+        "type": "qssidemenu",
+        "col": 1,
+        "row": 0,
+        "colspan": 2,
+        "rowspan": 1
+      }
+    ],
+    "qChildListDef": {
+      "qData": {
+        "title": "/title"
+      }
+    }
+  },
+  "qChildren": [
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "Jnjged",
+          "qType": "barchart"
+        },
+        "qMetaDef": {},
+        "qHyperCubeDef": {
+          "qDimensions": [
+            {
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [
+                  "=Pick\r\n(\n$(v_Switch_Option_Production_BenchmarkMeasures_1)\n    \n    ,[Month Year]\n    ,Quarter\n    ,[Machine Section]\n    ,Application\n    ,[Market Sector]\n    ,Sector\n    ,Industry\n    ,[End Use]\n    ,[Sub Industry]\n    ,[Building Block]\n    ,[Product Line]\n    ,Structure\n    ,[Product Type]\n\t,Year\n\n)"
+                ],
+                "qFieldLabels": [
+                  "Dimensions"
+                ],
+                "qSortCriterias": [
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": false,
+                "cId": "mpGxmT",
+                "othersLabel": "Others"
+              },
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              }
+            },
+            {
+              "qLibraryId": "kxqp",
+              "qDef": {
+                "qGrouping": "N",
+                "qFieldDefs": [],
+                "qFieldLabels": [],
+                "qSortCriterias": [
+                  {
+                    "qSortByAscii": 1,
+                    "qSortByLoadOrder": 1,
+                    "qExpression": {}
+                  }
+                ],
+                "qNumberPresentations": [],
+                "qActiveField": 0,
+                "autoSort": true,
+                "cId": "Dpcfth",
+                "othersLabel": "Others"
+              },
+              "qNullSuppression": true,
+              "qOtherTotalSpec": {
+                "qOtherMode": "OTHER_OFF",
+                "qOtherCounted": {
+                  "qv": "10"
+                },
+                "qOtherLimit": {
+                  "qv": "0"
+                },
+                "qOtherLimitMode": "OTHER_GE_LIMIT",
+                "qForceBadValueKeeping": true,
+                "qApplyEvenWhenPossiblyWrongResult": true,
+                "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                "qTotalMode": "TOTAL_OFF",
+                "qReferencedExpression": {}
+              },
+              "qOtherLabel": {
+                "qv": "Others"
+              },
+              "qTotalLabel": {},
+              "qCalcCond": {},
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [
+                {
+                  "qLibraryId": "kxqp",
+                  "qSortBy": {
+                    "qSortByAscii": 1,
+                    "qExpression": {}
+                  },
+                  "id": "colorByAlternative",
+                  "colorMapRef": "kxqp"
+                }
+              ],
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "$$hashKey": "object:17972"
+            }
+          ],
+          "qMeasures": [
+            {
+              "qDef": {
+                "qLabel": "Measure",
+                "qTags": [],
+                "qGrouping": "N",
+                "qDef": "=Pick\r\n(\n$(v_Switch_Option_Production_BenchmarkMeasures)\n    ,( ($(v_Time_Run_Hrs_By_Section_CM_YTD)) /($(v_Time_Available_Hrs_By_Section_CM_YTD)))*100 // Availability\n    , (($(v_Output_Standard_By_Section_CM_YTD)) /($(v_Output_Actual_By_Section_CM_YTD)))*100 // Performace\n    , $(v_Output_FG_MT_CM_YTD)+ $(v_Waste_MT_CM_YTD)+ $(v_Output_WIP_MT_CM_YTD) // Production MT\n\t,(($(v_Output_Goods_MT_By_Section_CM_YTD)) /($(v_Output_Production_MT_By_Section_CM_YTD)))*100 //Quality \n    ,((($(v_Time_Run_Hrs_By_Section_CM_YTD)) /($(v_Time_Available_Hrs_By_Section_CM_YTD)))*(($(v_Output_Standard_By_Section_CM_YTD)) / ($(v_Output_Actual_By_Section_CM_YTD)))*( ($(v_Output_Goods_MT_By_Section_CM_YTD))/($(v_Output_Production_MT_By_Section_CM_YTD))))*100  // OEE\n    ,(($(v_Time_Available_Hrs_By_Section_CM_YTD))  /($(v_Time_Capacity_Hrs_By_Section_CM_YTD)))*100 // Capacity Utilization\n    ,(($(v_Time_Run_Hrs_By_Section_CM_YTD)) /($(v_Time_Capacity_Hrs_By_Section_CM_YTD)))*100 // Running CU\n    ,(($(v_Time_Down_Hrs_CM_YTD))/($(v_Time_Run_Hrs_CM_YTD)))*100 // DT from Run\n    ,(($(v_Time_Down_Hrs_CM_YTD))/($(v_Time_Planned_Hrs_CM_YTD)))*100 // DT from Plan\n    ,($(v_Waste_MT_CM_YTD)/(($(v_Output_FG_MT_CM_YTD))+($(v_Output_WIP_MT_CM_YTD)) +($(v_Waste_MT_CM_YTD))))*100//Waste% \n    ,$(v_Output_FG_MT_CM_YTD) // FG MT\n    ,$(v_Output_WIP_MT_CM_YTD) // WIP MT\n    ,$(v_Waste_MT_CM_YTD) // Waste MT\n    ,$(v_Time_Capacity_Hrs_CM_YTD) // Capacity Hours\n    ,$(v_Time_Planned_Hrs_CM_YTD) // Planned Hours\n    ,$(v_Time_Run_Hrs_CM_YTD) // Run Hours\n    ,$(v_WO_Count_YTD)\n    ,$(v_Output_Goods_LM_CM_YTD) // Linear Meters\n    ,$(v_Output_FG_MT_CM_YTD)+$(v_Output_WIP_MT_CM_YTD) // Production MT withouy Waste\n    ,(($(v_Output_FG_MT_CM_YTD)+$(v_Output_WIP_MT_CM_YTD))*1000)/($(v_Time_Planned_Hrs_CM_YTD)) // KG/HR\n    ,($(v_Output_Goods_LM_CM_YTD))/($(v_Time_Planned_Hrs_CM_YTD)) // LM/HR\n    ,$(v_Waste_MT_CM_YTD) // Waste MT\n    ,($(v_Waste_MT_Production_CM_YTD)) // Waste MT - Production\n    ,($(v_Waste_MT_Maintenance_CM_YTD)) // Waste MT - Maintenance\n    ,($(v_Waste_MT_Other_CM_YTD)) // Waste Mt - Other\n    ,$(v_Time_Down_Hrs_CM_YTD) // Downtime Hours\n    ,$(v_Time_Down_Hrs_Production_CM_YTD) // Down Hrs - Production\n    ,$(v_Time_Down_Hrs_Maintenance_CM_YTD) // Down Hrs - Maintenance\n    ,$(v_Time_Down_Hrs_Preventive_CM_YTD) // Down Hrs - Preventive\n    ,$(v_Time_Down_Hrs_Setup_CM_YTD) // Down Hrs - Setup\n    ,$(v_Time_Down_Hrs_Other_CM_YTD) // Down Hrs - Other\n    ,$(v_Time_Down_Hrs_YTD) // Down Hrs (YTD)\n)",
+                "qNumFormat": {
+                  "qType": "F",
+                  "qnDec": 2,
+                  "qUseThou": 0,
+                  "qFmt": "#,##0.00",
+                  "qDec": ".",
+                  "qThou": ","
+                },
+                "qAccumulate": 0,
+                "qActiveExpression": 0,
+                "qExpressions": [],
+                "autoSort": true,
+                "cId": "HgWyCDB",
+                "numFormatFromTemplate": true,
+                "isCustomFormatted": false
+              },
+              "qSortBy": {
+                "qSortByNumeric": -1,
+                "qSortByLoadOrder": 1,
+                "qExpression": {}
+              },
+              "qAttributeExpressions": [],
+              "qAttributeDimensions": [],
+              "qCalcCond": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qTrendLines": [],
+              "qMiniChartDef": {
+                "qSortBy": {
+                  "qExpression": {}
+                },
+                "qOtherTotalSpec": {
+                  "qOtherMode": "OTHER_OFF",
+                  "qOtherCounted": {},
+                  "qOtherLimit": {},
+                  "qOtherLimitMode": "OTHER_GT_LIMIT",
+                  "qForceBadValueKeeping": true,
+                  "qApplyEvenWhenPossiblyWrongResult": true,
+                  "qOtherSortMode": "OTHER_SORT_DESCENDING",
+                  "qTotalMode": "TOTAL_OFF",
+                  "qReferencedExpression": {}
+                },
+                "qMaxNumberPoints": -1,
+                "qAttributeExpressions": []
+              },
+              "$$hashKey": "object:15414"
+            }
+          ],
+          "qInterColumnSortOrder": [
+            0,
+            2,
+            1
+          ],
+          "qSuppressZero": true,
+          "qSuppressMissing": true,
+          "qInitialDataFetch": [
+            {
+              "qLeft": 0,
+              "qTop": 0,
+              "qWidth": 17,
+              "qHeight": 500
+            }
+          ],
+          "qReductionMode": "N",
+          "qMode": "S",
+          "qPseudoDimPos": -1,
+          "qNoOfLeftDims": -1,
+          "qAlwaysFullyExpanded": true,
+          "qMaxStackedCells": 5000,
+          "qCalcCond": {},
+          "qTitle": {},
+          "qCalcCondition": {
+            "qCond": {},
+            "qMsg": {}
+          },
+          "qColumnOrder": [],
+          "qExpansionState": [],
+          "qLayoutExclude": {
+            "qHyperCubeDef": {
+              "qDimensions": [],
+              "qMeasures": [],
+              "qInterColumnSortOrder": [],
+              "qInitialDataFetch": [],
+              "qReductionMode": "N",
+              "qMode": "S",
+              "qPseudoDimPos": -1,
+              "qNoOfLeftDims": -1,
+              "qMaxStackedCells": 5000,
+              "qCalcCond": {},
+              "qTitle": {},
+              "qCalcCondition": {
+                "qCond": {},
+                "qMsg": {}
+              },
+              "qColumnOrder": [],
+              "qExpansionState": []
+            }
+          }
+        },
+        "refLine": {
+          "refLines": []
+        },
+        "showTitles": true,
+        "title": "Production Benchmarking",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "barGrouping": {
+          "grouping": "grouped"
+        },
+        "orientation": "vertical",
+        "scrollStartPos": 0,
+        "gridLine": {
+          "auto": true,
+          "spacing": 2
+        },
+        "dataPoint": {
+          "showLabels": true
+        },
+        "color": {
+          "auto": true,
+          "mode": "byDimension",
+          "useBaseColors": "off",
+          "paletteColor": {
+            "index": 6
+          },
+          "useDimColVal": false,
+          "persistent": true,
+          "expressionIsColor": true,
+          "expressionLabel": "",
+          "measureScheme": "dc",
+          "reverseScheme": false,
+          "dimensionScheme": "12",
+          "autoMinMax": true,
+          "measureMin": 0,
+          "measureMax": 10,
+          "byDimDef": {
+            "label": "kxqp",
+            "key": "kxqp",
+            "type": "libraryItem",
+            "activeDimensionIndex": -1
+          },
+          "altLabel": "kxqp",
+          "byMeasureDef": {
+            "label": "Measure",
+            "key": "=Pick\r\n(\n$(v_Switch_Option_Production_BenchmarkMeasures)\n    ,( ($(v_Time_Run_Hrs_By_Section_CM_YTD)) /($(v_Time_Available_Hrs_By_Section_CM_YTD)))*100 // Availability\n    , (($(v_Output_Standard_By_Section_CM_YTD)) /($(v_Output_Actual_By_Section_CM_YTD)))*100 // Performace\n    , $(v_Output_FG_MT_CM_YTD)+ $(v_Waste_MT_CM_YTD)+ $(v_Output_WIP_MT_CM_YTD) // Production MT\n\t,(($(v_Output_Goods_MT_By_Section_CM_YTD)) /($(v_Output_Production_MT_By_Section_CM_YTD)))*100 //Quality \n    ,((($(v_Time_Run_Hrs_By_Section_CM_YTD)) /($(v_Time_Available_Hrs_By_Section_CM_YTD)))*(($(v_Output_Standard_By_Section_CM_YTD)) / ($(v_Output_Actual_By_Section_CM_YTD)))*( ($(v_Output_Goods_MT_By_Section_CM_YTD))/($(v_Output_Production_MT_By_Section_CM_YTD))))*100  // OEE\n    ,(($(v_Time_Available_Hrs_By_Section_CM_YTD))  /($(v_Time_Capacity_Hrs_By_Section_CM_YTD)))*100 // Capacity Utilization\n    ,(($(v_Time_Run_Hrs_By_Section_CM_YTD)) /($(v_Time_Capacity_Hrs_By_Section_CM_YTD)))*100 // Running CU\n    ,(($(v_Time_Down_Hrs_CM_YTD))/($(v_Time_Run_Hrs_CM_YTD)))*100 // DT from Run\n    ,(($(v_Time_Down_Hrs_CM_YTD))/($(v_Time_Planned_Hrs_CM_YTD)))*100 // DT from Plan\n    ,($(v_Waste_MT_CM_YTD)/(($(v_Output_FG_MT_CM_YTD))+($(v_Output_WIP_MT_CM_YTD)) +($(v_Waste_MT_CM_YTD))))*100//Waste% \n    ,$(v_Output_FG_MT_CM_YTD) // FG MT\n    ,$(v_Output_WIP_MT_CM_YTD) // WIP MT\n    ,$(v_Waste_MT_CM_YTD) // Waste MT\n    ,$(v_Time_Capacity_Hrs_CM_YTD) // Capacity Hours\n    ,$(v_Time_Planned_Hrs_CM_YTD) // Planned Hours\n    ,$(v_Time_Run_Hrs_CM_YTD) // Run Hours\n    ,count({$<$(v_Switch_Option_Month_YTD_Filter), Quarter=, Month=, [Month Year]=>} distinct Left([Production Item Key], 15 )) // # of WO\n    ,$(v_Output_Goods_LM_CM_YTD) // Linear Meters\n    ,$(v_Output_FG_MT_CM_YTD)+$(v_Output_WIP_MT_CM_YTD) // Production MT withouy Waste\n    ,(($(v_Output_FG_MT_CM_YTD)+$(v_Output_WIP_MT_CM_YTD))*1000)/($(v_Time_Planned_Hrs_CM_YTD)) // KG/HR\n    ,($(v_Output_Goods_LM_CM_YTD))/($(v_Time_Planned_Hrs_CM_YTD)) // LM/HR\n    ,$(v_Waste_MT_CM_YTD) // Waste MT\n    ,($(v_Waste_MT_Production_CM_YTD)) // Waste MT - Production\n    ,($(v_Waste_MT_Maintenance_CM_YTD)) // Waste MT - Maintenance\n    ,($(v_Waste_MT_Other_CM_YTD)) // Waste Mt - Other\n    ,$(v_Time_Down_Hrs_CM_YTD) // Downtime Hours\n    ,$(v_Time_Down_Hrs_Production_CM_YTD) // Down Hrs - Production\n    ,$(v_Time_Down_Hrs_Maintenance_CM_YTD) // Down Hrs - Maintenance\n    ,$(v_Time_Down_Hrs_Preventive_CM_YTD) // Down Hrs - Preventive\n    ,$(v_Time_Down_Hrs_Setup_CM_YTD) // Down Hrs - Setup\n    ,$(v_Time_Down_Hrs_Other_CM_YTD) // Down Hrs - Other\n    ,$(v_Time_Down_Hrs_YTD) // Down Hrs (YTD)\n)",
+            "type": "expression"
+          }
+        },
+        "legend": {
+          "show": true,
+          "dock": "auto",
+          "showTitle": false
+        },
+        "dimensionAxis": {
+          "continuousAuto": true,
+          "show": "all",
+          "label": "auto",
+          "dock": "near"
+        },
+        "preferContinuousAxis": true,
+        "measureAxis": {
+          "show": "all",
+          "dock": "near",
+          "spacing": 0.5,
+          "autoMinMax": true,
+          "minMax": "min",
+          "min": 0,
+          "max": 10
+        },
+        "visualization": "barchart"
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "hfmpTQ",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Switch_Option_Production_BenchmarkMeasures",
+        "style": "qlik",
+        "width": "",
+        "customwidth": "",
+        "render": "b",
+        "alternatives": [
+          {
+            "value": "1",
+            "label": "Availibilty %",
+            "cId": "pHGJ"
+          },
+          {
+            "value": "2",
+            "label": "Performance %",
+            "cId": "jkskJ"
+          },
+          {
+            "value": "4",
+            "label": "Quality %",
+            "cId": "hPURpcP"
+          },
+          {
+            "value": "5",
+            "label": "OEE %",
+            "cId": "GmhMXwu"
+          },
+          {
+            "value": "6",
+            "label": "Capacity Utilization %",
+            "cId": "FnHJP"
+          },
+          {
+            "value": "7",
+            "label": "Running CU %",
+            "cId": "AQEjw"
+          },
+          {
+            "value": "8",
+            "label": "DT from Run %",
+            "cId": "szhzD"
+          },
+          {
+            "value": "9",
+            "label": "DT from Plan %",
+            "cId": "pbwsPP"
+          },
+          {
+            "value": "10",
+            "label": "Waste %",
+            "cId": "wEWJ"
+          },
+          {
+            "value": "3",
+            "label": "Production MT",
+            "cId": "PjkM"
+          },
+          {
+            "value": "11",
+            "label": "FG MT",
+            "cId": "jeJNJPY"
+          },
+          {
+            "value": "12",
+            "label": "WIP MT",
+            "cId": "cyYMuj"
+          },
+          {
+            "value": "13",
+            "label": "Waste MT",
+            "cId": "djrVm"
+          },
+          {
+            "value": "19",
+            "label": "Production MT without  Waste",
+            "cId": "FSPCJB"
+          },
+          {
+            "value": "14",
+            "label": "Capacity Hours",
+            "cId": "fnjLe"
+          },
+          {
+            "value": "15",
+            "label": "Planned Hours",
+            "cId": "DCNwKCA"
+          },
+          {
+            "value": "16",
+            "label": "Run Hours",
+            "cId": "AnyNfNj"
+          },
+          {
+            "value": "17",
+            "label": "# of WO",
+            "cId": "GNRKGPp"
+          },
+          {
+            "value": "18",
+            "label": "Linear Meters",
+            "cId": "WgqmSYg"
+          },
+          {
+            "value": "20",
+            "label": "KG/HR",
+            "cId": "TjSJRf"
+          },
+          {
+            "value": "21",
+            "label": "LM/HR",
+            "cId": "jxTwj"
+          },
+          {
+            "value": "22",
+            "label": "Waste MT",
+            "cId": "CmQHby"
+          },
+          {
+            "value": "23",
+            "label": "Waste MT - Production",
+            "cId": "rGgpw"
+          },
+          {
+            "value": "24",
+            "label": "Waste MT - Maintenance",
+            "cId": "faJj"
+          },
+          {
+            "value": "25",
+            "label": "Waste MT - Other",
+            "cId": "PJjLHN"
+          },
+          {
+            "value": "26",
+            "label": "Downtime Hours",
+            "cId": "rpBYVF"
+          },
+          {
+            "value": "27",
+            "label": "Down Hrs - Production",
+            "cId": "YnYzBJ"
+          },
+          {
+            "value": "28",
+            "label": "Down Hrs - Maintenance",
+            "cId": "pWncGDP"
+          },
+          {
+            "value": "29",
+            "label": "Down Hrs - Preventive",
+            "cId": "fazjswj"
+          },
+          {
+            "value": "30",
+            "label": "Down Hrs - Setup",
+            "cId": "kvNEenq"
+          },
+          {
+            "value": "31",
+            "label": "Down Hrs - Other",
+            "cId": "mjpaFsN"
+          },
+          {
+            "value": "32",
+            "label": "Down Hrs (YTD)",
+            "cId": "MdTcdy"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Switch_Option_Production_BenchmarkMeasures"
+          }
+        },
+        "version": "2.2.0",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "puzzle",
+          "iconChar": "g",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Variable",
+          "description": "Variable extension",
+          "template": "variable",
+          "isThirdParty": true,
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "LTtRkjC",
+          "qType": "qssidemenu"
+        },
+        "qExtendsId": "ASAuBSC",
+        "qMetaDef": {}
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "JCVTXR",
+          "qType": "swr-sense-navigation"
+        },
+        "qMetaDef": {},
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "props": {
+          "buttonLabel": "Main Menu",
+          "buttonStyle": "danger",
+          "fullWidth": true,
+          "buttonAlign": "center",
+          "isButtonMultiLine": true,
+          "buttonIcon": "renren",
+          "action": "gotoSheet",
+          "sheetId": "",
+          "selectedSheet": "a414e529-c3c1-44b7-9e08-ea69481379a3",
+          "selectedStory": "",
+          "websiteUrl": "",
+          "isActionsBefore": true,
+          "actionBefore1": "none",
+          "field1": "",
+          "variable1": "",
+          "value1": "",
+          "value1Desc": null,
+          "bookmark1": "",
+          "softlock1": false,
+          "actionBefore2": "none",
+          "field2": "",
+          "variable2": "",
+          "value2": "",
+          "value2Desc": "",
+          "bookmark2": "",
+          "softlock2": false
+        },
+        "visualization": "swr-sense-navigation",
+        "version": "0.8.1",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "puzzle",
+          "iconChar": "g",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Sheet Navigation & Actions",
+          "description": "Sense Sheet Navigation + Actions visualization extension for Qlik Sense.",
+          "template": "swr-sense-navigation",
+          "isThirdParty": true,
+          "type": "visualization",
+          "version": "0.8.1",
+          "preview": "swr-sense-navigation.png",
+          "author": "Stefan Walther",
+          "license": "MIT",
+          "homepage": "http://github.com/stefanwalther/sense-navigation",
+          "keywords": "qlik-sense, visualization",
+          "repository": "https://github.com/stefanwalther/sense-navigation",
+          "dependencies": {
+            "qlik-sense": ">=2.1.1"
+          },
+          "previewIconURL": "../extensions/swr-sense-navigation/swr-sense-navigation.png"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "aXWqmPJ",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Switch_Option_Production_BenchmarkMeasures_1",
+        "style": "bootstrap",
+        "width": "fill",
+        "customwidth": "",
+        "render": "b",
+        "alternatives": [
+          {
+            "value": "14",
+            "label": "Year",
+            "cId": "JZcUL"
+          },
+          {
+            "value": "1",
+            "label": "Month Year",
+            "cId": "pHGJ"
+          },
+          {
+            "value": "2",
+            "label": "Quarter",
+            "cId": "jkskJ"
+          },
+          {
+            "value": "3",
+            "label": "Machine Section",
+            "cId": "rwKWe"
+          },
+          {
+            "value": "4",
+            "label": "Application",
+            "cId": "ZpcQJW"
+          },
+          {
+            "value": "5",
+            "label": "Market Sector",
+            "cId": "mCBTqRr"
+          },
+          {
+            "value": "6",
+            "label": "Sector",
+            "cId": "jYNQX"
+          },
+          {
+            "value": "7",
+            "label": "Industry",
+            "cId": "RANhDE"
+          },
+          {
+            "value": "8",
+            "label": "End Use",
+            "cId": "PFxUQpp"
+          },
+          {
+            "value": "9",
+            "label": "Sub Industry",
+            "cId": "uhjep"
+          },
+          {
+            "value": "10",
+            "label": "Building Block",
+            "cId": "fcNmfHC"
+          },
+          {
+            "value": "11",
+            "label": "Product Line",
+            "cId": "dTcBmN"
+          },
+          {
+            "value": "12",
+            "label": "Structure",
+            "cId": "VmthPLa"
+          },
+          {
+            "value": "13",
+            "label": "Product Type",
+            "cId": "jkJeU"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Switch_Option_Production_BenchmarkMeasures_1"
+          }
+        },
+        "version": "2.2.0",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "puzzle",
+          "iconChar": "g",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Variable",
+          "description": "Variable extension",
+          "template": "variable",
+          "isThirdParty": true,
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg"
+        }
+      },
+      "qChildren": []
+    },
+    {
+      "qProperty": {
+        "qInfo": {
+          "qId": "mpdXb",
+          "qType": "variable"
+        },
+        "qMetaDef": {},
+        "showTitles": false,
+        "title": "",
+        "subtitle": "",
+        "footnote": "",
+        "showDetails": false,
+        "variableName": "v_Switch_Option_Month_YTD",
+        "style": "bootstrap",
+        "width": "fill",
+        "customwidth": "",
+        "render": "b",
+        "alternatives": [
+          {
+            "value": "1",
+            "label": "CM",
+            "cId": "pHGJ"
+          },
+          {
+            "value": "2",
+            "label": "YTD",
+            "cId": "jkskJ"
+          },
+          {
+            "value": "3",
+            "label": "TD",
+            "cId": "rwKWe"
+          }
+        ],
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "rangelabel": false,
+        "visualization": "variable",
+        "variableValue": {
+          "qStringExpression": {
+            "qExpr": "=v_Switch_Option_Month_YTD"
+          }
+        },
+        "version": "2.2.0",
+        "extensionMeta": {
+          "translationKey": "",
+          "icon": "puzzle",
+          "iconChar": "g",
+          "isLibraryItem": true,
+          "visible": true,
+          "name": "Variable",
+          "description": "Variable extension",
+          "template": "variable",
+          "isThirdParty": true,
+          "version": "2.3.1",
+          "type": "visualization",
+          "author": "Erik Wetterberg"
+        }
+      },
+      "qChildren": []
+    }
+  ]
+}

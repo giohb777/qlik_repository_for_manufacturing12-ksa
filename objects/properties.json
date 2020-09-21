@@ -1,0 +1,19 @@
+{
+  "qTitle": "Manufacturing 1.2",
+  "qLastReloadTime": "2020-09-21T10:04:34.597Z",
+  "qMigrationHash": "98d482c3f964dccf69cbfb9a00e0c048ea6eb221",
+  "qSavedInProductVersion": "12.674.6",
+  "qThumbnail": {
+    "qUrl": "/appcontent/bd5cc7c1-06f4-4c6e-ab6d-cbf1e1a77b84/Manufacturing.jpg"
+  },
+  "createdDate": "2020-07-29T14:41:08.438Z",
+  "modifiedDate": "2020-09-21T12:30:28.151Z",
+  "published": true,
+  "publishTime": "2020-09-21T12:29:52.393Z",
+  "description": "",
+  "dynamicColor": "hsla(210,18%,43%,1)",
+  "stream": {
+    "id": "9da1f73e-2aec-48ad-a815-942d9b79bbdc",
+    "name": "Flexible Division"
+  }
+}
