@@ -1,0 +1,97 @@
+///$tab Drop Tables
+Sub DropTables
+ 
+ 
+LIB CONNECT TO 'NAPAX-12-PROD-DEV (indevco_georges.raad)';
+
+// ProductionLaborCount:
+// NoConcatenate
+// Load *;
+// SQL
+
+// SELECT UPPER(EC.DATAAREAID) AS [Business Unit Labour Count Key] 
+// 	, EC.Date as [Master Calendar Date Num]
+//     ,  DIMENSION2_ AS [Plant Section]
+//     ,  SUM(EMP_COUNT) AS [Labor Count] 
+      
+//       FROM (
+// SELECT     B.[Date], A.DATAAREAID, A.EMPLID, a.DIMENSION2_, 1 as EMP_COUNT
+// FROM         dbo.EMPLTABLE AS A INNER JOIN
+//                           (SELECT     [Date]
+//                             FROM          dbo.BITIMETABLE('2012-01-01', '2020-12-31') AS BITIMETABLE_1) AS B ON A.PAYFJOININGDATE <= B.[Date] 
+// WHERE     (A.PAYFTERMINATIONDATE >= B.[Date] OR A.PAYFTERMINATIONDATE <= '1900-01-01') and a.DIMENSION2_ like 'PLANT-DIR-%'
+// 			and A.DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M')
+// 			and DAY(b.Date) = 1 and a.status in ('1','5','6')) AS EC 
+// 			GROUP BY EC.DATAAREAID, EC.Date,  DIMENSION2_;
+
+// STORE ProductionLaborCount INTO [LIB://Folder_IFP_Admin_Group/QVD/Production-AX2012/ProductionLaborCount.qvd];
+// DROP TABLE ProductionLaborCount;
+
+
+TimeTable:
+NoConcatenate
+Load *;
+SQL 
+Select * from BITIMETABLE('01/01/2014','12/31/2020');
+
+
+
+LIB CONNECT TO 'NAPAX-12-PROD-DEV (indevco_georges.raad)';
+
+
+Production_Machine_Time_Capacity_1:
+NoConcatenate
+Load *;
+SQL SELECT 
+DATAAREAID + '.' + WRKCTRID  AS [Machine Key],
+DATAAREAID + '.' + WRKCTRID  AS [Machine Type Capacity Key],
+DATAAREAID + '.' + WRKCTRID  AS [Machine Capacity Key],
+DATAAREAID + '.' + WRKCTRID  AS [Capacity Machine Key],
+1440 AS [Open Day Minutes],
+1440 AS [Full Day Minutes],
+0  AS [Machine Target OEE],
+1440 AS [Machine Target Availability Minutes],
+0 AS [Machine Target Capacity Utilization],
+0 AS [Machine Target Rate],
+0 AS [Machine Target Quality],
+1 AS [Machine Hold Goods Percentage Allocation]
+
+FROM WRKCTRTABLE
+WHERE ISGROUP = '0' and DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M');
+
+
+join(Production_Machine_Time_Capacity_1)
+load * Resident TimeTable;
+
+
+Production_Machine_Time_Capacity:
+NoConcatenate
+Load 
+[Machine Key],
+[Machine Type Capacity Key],
+[Machine Capacity Key],
+[Capacity Machine Key],
+[Date] AS [Capacity Calendar Date],
+[Open Day Minutes],
+[Full Day Minutes],
+[Machine Target OEE],
+[Machine Target Availability Minutes],
+[Machine Target Capacity Utilization],
+[Machine Target Rate],
+[Machine Target Quality],
+[Machine Hold Goods Percentage Allocation]
+
+Resident Production_Machine_Time_Capacity_1;
+
+
+STORE Production_Machine_Time_Capacity INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Machine_Time_Capacity_NEW.qvd];
+DROP TABLE Production_Machine_Time_Capacity;
+
+
+
+Drop Table Production_Machine_Time_Capacity_1;
+Drop Table TimeTable;
+
+
+  
+End Sub

@@ -1,0 +1,45 @@
+///$tab Master Calendar
+SUB Master_Calendar
+  Let vTodaysDate = Today();
+  Let vTodaysDateYear = Year(vTodaysDate);
+  Let vTodaysDateMonth = Month(vTodaysDate);
+  Let vTodaysDateDay = Day(vTodaysDate);
+
+  Let vTempDate = MakeDate(vTodaysDateYear,vTodaysDateMonth,1);
+
+
+  Let vMinCalendarDate = Num(MakeDate(2014,1,1));
+ // Let vMaxCalendarDate = Num(Date(if(vTodaysDateDay>=2, vTempDate, AddMonths(vTempDate,0))));
+ // Let vMaxCalendarDate =  Num(MakeDate(2019,10,31));
+ 
+   Let vMaxCalendarDate = Num(MakeDate(vTodaysDateYear,vTodaysDateMonth,vTodaysDateDay));
+ 
+ 
+  Master_Calendar: 
+  Load 
+    TempDate AS [Master Calendar Date Num], 
+    Date(TempDate) As [Master Calendar Date],
+    Week(TempDate) As Week, 
+    Year(TempDate) As Year, 
+    Month(TempDate) As Month, 
+    Day(TempDate) As Day, 
+    'Q' & ceil(month(TempDate) / 3) AS Quarter, 
+    Week(weekstart(TempDate)) & '-' & WeekYear(TempDate) as [Week Year], 
+    WeekDay(TempDate) as [Week Day],
+    Num(Month(TempDate)) as [Month Num],
+    Month(TempDate) & '-' & Day(TempDate) as [Month Day],
+    MonthName(TempDate) as [Month Year],
+    (Year(TempDate)-1)*12 + Num(Month(TempDate)) As [Month ID],
+    (Year(TempDate)-1)*4 + Num(Ceil(Month(TempDate)/3)) As [Quarter ID],
+    (Year(TempDate)) & '-'&    'Q' & ceil(month(TempDate) / 3)  as [Quarter Year]
+  ;
+  
+  
+  //=== Generate a temp table of dates === 
+  LOAD 
+    date($(vMinCalendarDate) + IterNo()-1) AS TempDate,
+    $(vMaxCalendarDate) // Used in InYearToDate() above, but not kept 
+  AutoGenerate 1 WHILE $(vMinCalendarDate) + IterNo() -1<= $(vMaxCalendarDate);
+  
+ 
+End Sub

@@ -1,0 +1,19 @@
+///$tab Active BOMS
+Sub Active_BOMS
+
+
+LIB CONNECT TO 'NAPAX-12-PROD-DEV (indevco_georges.raad)';
+
+
+Active_BOMS:
+NoConcatenate
+Load *;
+SQL
+
+SELECT UPPER(DATAAREAID) +'.NOMACHINE' as [Machine Key], 
+		ACTIVEBOMCOUNT
+	  	 FROM ACTIVEBOMS;
+
+
+
+END Sub

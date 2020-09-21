@@ -1,0 +1,65 @@
+///$tab Qwik Table - Self Service
+[Dimensions]:
+LOAD * INLINE [
+Dimensions, DimensionsID
+Business Unit, i1hsqvnqmodlqgsxldh5cs
+Branch, f8uirbunlz7y82wrsjq3b
+Month Year, 0cvpjur6ouax9c5t0219hj
+Month, 8q819rxl7bwnml10oa2hlj
+Year, rcr0ax9npi2k8fprs3l5p
+Division, k3lv6vrlwoqgvudoj3lu3
+Building Block, z4iz08z06twecoyzekvm9
+Market Sector, q9aloxvpbaf6tgzwcexg5d
+Sector, t6tdgmbkoocnj92pzeib1j
+Product Line, 7kprpj3qez5z7k3wp5ut1a
+Application, kuvau7ey14os3keotmjs3
+Item Name, hdw1qjmztcsnp3m7tybzgj
+Item Number, 4vka7qcudert1anlbhp76p
+Work Order Number, l20owvcwrtpjq76fa1dy
+Work Order Name, cgryhf0ewt304917499nj
+Machine Group, sl73ifgxfaipl79wqrsz
+Machine, 4ks9ra9tg7sl1tp66tyxsb
+Machine Status, r5jx7hyoeri5qdy3602u
+Number Of Colors, muoobifpwxcsc1s1ov97o
+Substrate Combination, sl8131jc6k8d63rf1ahho
+Machine Section, vfon93nclof3qmzsy1gogg
+Printing Mode, dzsgqgxmxsnoheiqneaget
+Product Type, rh2b5kii3cgypzbqyttes
+Item Key, p9tnis0xrbsrdjolxmwg7i
+Downtime Reason Type, b8wn425v7jw22bnjla2bhz
+Downtime Reason, 2kvwft6vs4ckjs82p1pvcn
+Waste Reason Category, v4hvqg3u31jauagwfs3yv
+Waste Reason, 506k48u9vduwmiyy047g8
+Production Order Worker, ksgdfi7tsd87svc
+]
+;
+[Measures]:
+LOAD * INLINE [
+Measures, MeasuresID
+Actual Linear Meter, r0824wnq3396bwu5dwj9ig
+Actual Net Weight, hxwj90hom24r2ako15m1jp
+Qty (Prod Unit), i3klgycezqmiron7zfrphr
+Waste %, l60y6v374zsz10738vwg
+Waste FG %, 8kgid033jj26sac17ayjnf
+Waste KG, sa5f7pip29nn0uzfui3ukk
+Planned Hours, gkp5mwgpc4s973tpe6s05n
+Run Hours, swto739hzbgy3sedbm21h
+Downtime Hours, xeer2d6fu5xt2ubg8odli
+Performance %, lgdsio4kqj2bztgzlktqh
+Good Quantity %, maqot2iahsk8f9xg5wjqr4
+Up Time %, 50btp2u7p3vw668by5t44
+OEE %, zi2ifqig0fgdkfz9lksd2
+Output KG/Hr (Planned), jl13zcfpp5c1vi5mrae0n
+Output KG/Hr (Run), 9qv4sgricbz2915brv7ja
+Speed M/Min (Planned), 5dokhy9ebhfevt3qyyriz6
+Speed M/Min (Run), 54tgrgtrhr6y56
+Setup Hours, sipk9x0f55iidl0ok75jns
+Downtime Count, ygs7fgs8d7fg6r35qfsfysgdf
+Work Order Count, ckjbvsiudfiusdfshdf
+Actual Speed, icobdpfpigusoryw9eisud
+Std Speed, dvkshbcvidvd
+Downtime % (From Run), jbvkjxbckvjbckjvxbc
+Downtime % (From Planned), gsfdyqtfdw7tfsydg
+
+]
+;

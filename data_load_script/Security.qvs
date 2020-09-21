@@ -1,0 +1,43 @@
+///$tab Security
+Section access;
+
+
+tmp_Security_Roles:
+NoConcatenate
+LOAD
+    'USER' as ACCESS, 
+    Upper(User) as USERID,
+    Role
+FROM [lib://Folder_IFP_Admin_Group/IFP_EXCEL/SECURITY/IFP_Production_Security.xlsx]
+(ooxml, embedded labels, table is [Security Users]);
+
+
+tmp_Security_Users:
+NoConcatenate
+LOAD
+    Role,
+    UPPER("Business Unit Security Key")
+    &'|'& Upper("Machine Group Security Key") 
+    As "Mixed Security Key"
+    
+FROM [lib://Folder_IFP_Admin_Group/IFP_EXCEL/SECURITY/IFP_Production_Security.xlsx]
+(ooxml, embedded labels, table is [Security Roles]);
+
+
+Inner Join(tmp_Security_Users)
+Load * Resident tmp_Security_Roles;
+
+
+Security:
+NoConcatenate
+LOAD
+	ACCESS, 
+    USERID,
+    "Mixed Security Key"
+Resident tmp_Security_Users;
+
+
+Drop Table tmp_Security_Roles;
+Drop Table tmp_Security_Users;
+
+Section Application;

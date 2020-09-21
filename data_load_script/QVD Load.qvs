@@ -1,0 +1,930 @@
+///$tab QVD Load
+SUB QVD_Load
+
+
+Production_Outputs:
+NoConcatenate
+LOAD *
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Output_NEW.qvd]
+(qvd) where [Master Calendar Date Key] < '$(vMinFetchDate)';
+
+ 
+ 
+Concatenate(Production_Outputs) 
+Load *;
+SQL  
+select 
+A.WRKCTRID AS [Work Center ID],
+ 
+CAST(YEAR(A.TRANSDATE) as NVARCHAR(20))  + '|' +
+CAST(Month(A.TRANSDATE) as NVARCHAR(20)) + '|' +  
+Upper(Convert(Varchar,'2') + '.' + Convert(Varchar,A.DATAAREAID) + '.' + 'PI' + '.' + Convert(Varchar,A.ITEMID)) As [Production Output Item COP Key],
+
+
+A.DATAAREAID + '.' + A.PRODID + '.' + A.ITEMID + '.' + A.WRKCTRID + '.' + cast((ROW_NUMBER() OVER (ORDER BY A.DATAAREAID)) as nvarchar(50))  AS [Production Item Key],
+A.DATAAREAID + '.' + A.PRODID 				   AS [Production Job Key],
+A.DATAAREAID + '.' + A.PRODID 				   AS [Production Std Setup Key],
+A.DATAAREAID + '.' + A.PRODID 				   AS [Production Job Waste Output Key],
+A.DATAAREAID + '.' + A.PRODID 				   AS [Production Cost Key],
+A.DATAAREAID + '.' + A.PRODID				   AS [Production Shared Key],
+A.TRANSDATE 								   AS [Master Calendar Date Key],
+A.DATAAREAID + '.' + A.ITEMID 				   AS [Item Key],
+I.[Item Group],
+A.DATAAREAID + '.' + A.PRODID				   AS [Link Production Job Key],
+A.DATAAREAID + '.' + A.PRODID				   AS [Order Key],
+A.DATAAREAID + '.' + 'A' + '.' + A.PRODID + '.' + A.ITEMID + '.' + A.WRKCTRID AS      [Production Shift Key],
+A.DATAAREAID + '.' + 'A' + '.' + A.PRODID + '.' + A.ITEMID + '.' + A.WRKCTRID 	   AS [Link Production Shift Key],
+A.DATAAREAID + '.' + 'A' + '.' + A.PRODID + '.' + A.ITEMID + '.' + A.WRKCTRID 	   AS [Production Shift Link Key],
+A.DATAAREAID + '.' + A.WRKCTRID				   AS [Machine Key],
+A.DATAAREAID + '.' + A.PRODID				   AS [Production Job NB],
+A.DATAAREAID + '.' + A.WRKCTRID				   AS [Machine Capacity Key],
+A.DATAAREAID + '.' + A.PRODID				   AS [Production Type],
+
+
+
+
+DATEADD(month, DATEDIFF(month, 0, A.TRANSDATE ), 0) as [Production Start Date],
+DATEADD(month, DATEDIFF(month, 0, A.TRANSDATE ), 0)	as [Production End Date],
+A.HOURS AS [HOURS],
+
+
+CASE WHEN   A.DATAAREAID = '96K'   THEN  A.[Good Qty] + A.[Error Qty]  ELSE 0 END AS [Production Output InterstateInks],
+
+CASE WHEN	I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Good Qty] ELSE 0 END AS [Production Output FG Qty],
+CASE WHEN	I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Good Qty] ELSE 0 END AS [Production Output FG Qty Unit],
+CASE WHEN	I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Good Qty] ELSE 0 END AS [Production Output FG Qty Pcs],
+CASE WHEN	I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Actual Net Weight] ELSE 0 END AS [Production Output FG Qty Kg],
+CASE WHEN	I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Actual Net Weight]/1000 ELSE 0 END AS [Production Output FG Qty MT],
+CASE WHEN	I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Actual Net Weight]*0.00110231 ELSE 0 END AS [Production Output FG Qty US Ton],
+CASE WHEN	I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Actual Net Weight]*2.20462 ELSE 0 END AS [Production Output FG Qty Lbp],
+0										AS [Production Output FG Qty SQM],
+0										AS [Production Output FG Qty MSF],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Actual Linear Meters] ELSE 0 END AS [Production Output FG Qty LM],
+0 as [Production Output FG Qty LF],
+0 as [Production Output FG Sales Amount USD],
+0 as [Production Output FG Cost Amount USD],
+A.[Good Qty],
+
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Good Qty] END AS [Production Output WIP Qty],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Good Qty]  END  AS [Production Output WIP Qty Unit],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Good Qty]  END  AS [Production Output WIP Qty Pcs],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Actual Net Weight] END AS [Production Output WIP Qty Kg],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Actual Net Weight]/1000 END AS [Production Output WIP Qty MT],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Actual Net Weight]*0.00110231 END AS [Production Output WIP Qty US Ton],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Actual Net Weight]*2.20462 END AS [Production Output WIP Qty Lbp],
+0 AS [Production Output WIP Qty SQM],
+0 as [Production Output WIP Qty MSF],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN 0 ELSE A.[Actual Linear Meters] END AS [Production Output WIP Qty LM],
+0 as [Production Output WIP Qty LF],
+0 as [Production Output WIP Sales Amount USD],
+0 as [Production Output WIP Cost Amount USD], 
+0 as [Production FG Hits],
+0 as [Production WIP Hits],
+0 as [Production Waste Hits],
+A.[Produced Qty]  as [Production Qty Production Unit],
+A.[Actual Linear Meters]   as [Production Job Qty LM],
+
+CASE WHEN I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Actual Linear Meters] ELSE 0  end as [Production Job Qty FG LM],
+CASE WHEN  I.[Item Group] LIKE '%FG%' OR I.[Item Group] LIKE '%RCM%' THEN A.[Actual Linear Meters] ELSE 0 end   as [Production Job Qty WIP LM],
+
+CASE 
+	WHEN A.DATAAREAID = '96K' AND A.WRKCTRID LIKE 'G%'  THEN (A.[Good Qty]+ A.[Error Qty])  / nullif(a.CAPACITY,0) * 60
+	WHEN a.CAPUNIT = 1 THEN a.[Produced Qty] / nullif(a.CAPACITY,0) * 60  
+	WHEN a.CAPUNIT = 2 THEN a.[Actual Linear Meters] / nullif(a.CAPACITY,0) * 60
+	WHEN a.CAPUNIT = 3 THEN a.[Actual Net Weight] / nullif(a.CAPACITY,0) * 60
+	WHEN a.CAPUNIT = 4 THEN (a.[Produced Qty]*1000) / nullif(a.CAPACITY,0) * 60
+	ELSE 0 END AS 
+[Std Run Hours],
+
+Upper(cast(Year(A.TRANSDATE) as nvarchar(20)) + '|' + cast(MONTH(A.TRANSDATE) as nvarchar(20)) + '|'  +  A.DATAAREAID + '.' + A.WRKCTRID)	 AS [ProductionByMachineBUMonthKey],
+Upper(cast(Year(A.TRANSDATE) as nvarchar(20)) + '|' + cast(MONTH(A.TRANSDATE) as nvarchar(20)) + '|'  +  A.DATAAREAID)						 AS [ProductionByBUMonthKey]
+
+
+FROM [NAPAX-9-STAGING].[dbo].[Qlik_ProductionOutput_N] as A
+LEFT OUTER JOIN [NAPAX-9-STAGING].[dbo].[Qlik_ProductionItems] I ON (A.DATAAREAID + '.' + A.ITEMID )= I.[Item Key]
+
+where A.TRANSDATE >= '$(vMinFetchDate)';
+
+
+STORE Production_Outputs INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Output_NEW.qvd];
+DROP TABLE Production_Outputs;   
+
+
+
+//*************Production Wastes************//
+Production_Wastes:
+NoConcatenate
+LOAD *
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Wastes_NEW.qvd]
+(qvd) where [Master Calendar Date Key] < '$(vMinFetchDate)';
+
+
+Concatenate(Production_Wastes) 
+Load *; 
+SQL    
+SELECT  
+
+
+CAST(YEAR(WASTE.TRANSDATE) as NVARCHAR(20))  + '|' +
+CAST(Month(WASTE.TRANSDATE) as NVARCHAR(20)) + '|' +  
+Upper(Convert(Varchar,'2') + '.' + Convert(Varchar,WASTE.DATAAREAID) + '.' + 'PI' + '.' + Convert(Varchar,WASTE.ITEMID)) As [Production Waste Item COP Key],
+
+
+
+upper(CAST(YEAR(WASTE.TRANSDATE) as NVARCHAR(20))  + '|' +
+CAST(Month(WASTE.TRANSDATE) as NVARCHAR(20)) + '|' + WASTE.DATAAREAID + '.' + WASTE.WRKCTRID) as [Production Waste Depreciation Key],
+
+
+CAST(YEAR(WASTE.TRANSDATE) as NVARCHAR(20))  + '|' +
+CAST(Month(WASTE.TRANSDATE) as NVARCHAR(20)) + '|' +  
+UPPER(WASTE.DATAAREAID) +
+UPPER(WASTE.ITEMID) as [Production Waste Item Cost Key],
+
+WASTE.DATAAREAID + '.' + WASTE.PRODID				   as [Production Job Key],
+WASTE.DATAAREAID + '.' + WASTE.PRODID  + '.' + WASTE.[Waste Type] + '.' + cast((ROW_NUMBER() OVER (ORDER BY WASTE.DATAAREAID)) as nvarchar(50))  AS [Production Waste Key],
+WASTE.DATAAREAID + '.' + WASTE.PRODID  + '.' + WASTE.ITEMID + '.' + WASTE.WRKCTRID + '.' + cast((ROW_NUMBER() OVER (ORDER BY WASTE.DATAAREAID)) as nvarchar(50)) AS [Production Waste Item Key],
+WASTE.DATAAREAID + '.' + WASTE.PRODID                  as [Production Job Waste Output Key],
+WASTE.DATAAREAID + '.' + WASTE.PRODID				   as [Production Shared Key],
+WASTE.TRANSDATE 								   	   AS [Master Calendar Date Key],
+WASTE.DATAAREAID + '.' + WASTE.ITEMID 				   AS [Item Key],
+CASE WHEN WASTE.ITEMID LIKE '%FG%' OR WASTE.ITEMID LIKE '%RCM%' THEN 'FG' ELSE 'WIP' END  AS [ItemWasteId],
+WASTE.DATAAREAID + '.' + WASTE.PRODID				   as [Link Production Job Key],
+WASTE.DATAAREAID + '.' + WASTE.PRODID				   as [Order Key],
+WASTE.DATAAREAID + '.' + 'A' + '.' + WASTE.PRODID  + '.' + WASTE.ITEMID + '.' + WASTE.WRKCTRID	   as [Link Production Shift Key],
+WASTE.DATAAREAID + '.' + 'A' + '.' + WASTE.PRODID  + '.' + WASTE.ITEMID + '.' + WASTE.WRKCTRID	   as [Production Shift Link Key],
+WASTE.DATAAREAID + '.' + WASTE.WRKCTRID				   as [Machine Key],
+WASTE.DATAAREAID + '.' + WASTE.PRODID				   as [Production Job NB],
+WASTE.DATAAREAID + '.' + WASTE.WRKCTRID				   as [Machine Capacity Key],
+WASTE.DATAAREAID + '.' + WASTE.PRODID				   as [Production Type],
+WASTE.DATAAREAID + '.' + 'A' + '.' + WASTE.PRODID  + '.' + WASTE.ITEMID + '.' + WASTE.WRKCTRID	   AS [Production Shift Key],
+WASTE.TRANSDATE	 AS [Production Waste Start Date],
+
+
+
+WASTE.TRANSDATE AS [Production Waste End Date],
+WASTE.[Waste Type Mix Key] AS [Production Waste Reason Mix Key],
+WASTE.WASTEQTY AS [Production Waste Qty],
+'Kg' AS [Production Waste Qty Unit],
+0 AS [Production Waste Qty Pcs],
+WASTE.WASTEQTY AS [Production Waste Qty Kg],
+WASTE.WASTEQTY /1000 AS [Production Waste Qty MT],
+WASTE.WASTEQTY * 0.00110231 AS [Production Waste Qty US Ton],
+WASTE.WASTEQTY * 2.20462  AS [Production Waste Qty Lbp] ,
+
+
+
+0 AS [Production Waste Qty SQM],
+0 AS [Production Waste Qty MSF],
+0 AS [Production Waste Qty LM],
+0 AS [Production Waste Qty LF],
+
+WASTE.WASTEQTY *  case  WHEN WO.QTYCOST IS NOT NULL THEN WO.QTYCOST
+						when w.COSTPRICE > 1000 and IT.[Item Base Cost Price USD] <> 0 and IT.[Item Base Cost Price USD] < 1000 THEN IT.[Item Base Cost Price USD]
+						WHEN W.COSTPRICE IS NULL and IT.[Item Base Cost Price USD] < 1000 THEN IT.[Item Base Cost Price USD]
+						WHEN W.COSTPRICE IS NOT NULL THEN W.COSTPRICE
+					ELSE 0 END 	AS [Production Waste Lost Cost USD - From Qty]
+					
+
+
+FROM (SELECT W.*, O.ITEMID, W.DATAAREAID + '.' + W.WASTETYPEID AS [Waste Type Mix Key] 
+	, W.WASTETYPEID as [Waste Type] FROM Qlik_ProductionWastes W
+	LEFT OUTER JOIN Qlik_ProductionOrders O ON O.DATAAREAID = W.DATAAREAID AND O.PRODID = W.PRODID) AS WASTE
+	LEFT OUTER JOIN Qlik_ProductionWAC W on Year(w.DATEFINANCIAL) = Year(Waste.TRANSDATE) 
+											and Month(w.DATEFINANCIAL) = Month(Waste.TRANSDATE)
+											and w.DATAAREAID = waste.DATAAREAID
+											and w.itemid = waste.ITEMID
+	left outer join Qlik_ProductionItems IT on it.[Item Key] =  waste.DATAAREAID+'.'+waste.ITEMID
+	LEFT OUTER JOIN Qlik_ProductionCosting_ByWo WO ON WASTE.DATAAREAID + '.' + WASTE.PRODID = WO.[PRODUCTION COST KEY]
+    
+    where  WASTE.TRANSDATE 	 >= '$(vMinFetchDate)';
+
+STORE Production_Wastes INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Wastes_NEW.qvd];
+DROP TABLE Production_Wastes; 
+
+
+
+// Production Waste Reasons
+
+Production_Waste_Reasons:
+NoConcatenate
+Load *;
+SQL SELECT 
+A.DATAAREAID + '.' + A.WASTETYPEID AS  [Production Waste Reason Mix Key],
+'' AS [Production Waste Reason Place],
+A.WASTETYPEID AS [Production Waste Reason Type],
+
+CASE 
+	when A.WASTETYPEID IN ('Cast WIP','Color','Extrusion WIP','Lamination WIP','Material','Printing WIP','Problematic Material',
+    						'Raw Material','Trim','Trimming','Peeling','Peeling Waste','Pigment Spillage','Solvent Spillage','Varnish Spillage') THEN 'Material'
+    when A.WASTETYPEID IN ('Die Cleaning','Filter Change','Machine Adjustments','Roll Change','Production') THEN 'Production'
+    when A.WASTETYPEID IN ('Uncategorized') then 'Correction'
+    when A.WASTETYPEID IN ('Maintenance') then 'Maintenance'
+    when A.WASTETYPEID IN ('Setup') then 'Setup'
+    ELSE 'No Reason Family'
+END AS [Production Waste Reason Family],
+CASE 
+	when A.WASTETYPEID IN ('Cast WIP','Color','Extrusion WIP','Lamination WIP','Material','Printing WIP','Problematic Material',
+    					'Raw Material','Trim','Trimming','Peeling','Peeling Waste','Pigment Spillage','Solvent Spillage','Varnish Spillage') THEN 'Material'
+    when A.WASTETYPEID IN ('Die Cleaning','Filter Change','Machine Adjustments','Roll Change','Production') THEN 'Production'
+    when A.WASTETYPEID IN ('Uncategorized') then 'Correction'
+    when A.WASTETYPEID IN ('Maintenance') then 'Maintenance'
+    when A.WASTETYPEID IN ('Setup') then 'Setup'
+    ELSE 'No Reason Category'
+END AS [Production Waste Reason Category],
+A.WASTETYPEID AS [Production Waste Reason]
+
+FROM (SELECT     WASTETYPEID, DATAAREAID
+FROM         dbo.Qlik_ProductionWastes
+GROUP BY WASTETYPEID, DATAAREAID
+UNION ALL
+SELECT     'Setup' AS WASTETYPEID, ID AS DATAAREAID
+FROM         dbo.DATAAREA
+WHERE     (ISVIRTUAL = 0)
+UNION ALL
+SELECT     'Uncategorized' AS WASTETYPEID, ID AS DATAAREAID
+FROM         dbo.DATAAREA AS DATAAREA_1
+WHERE     (ISVIRTUAL = 0)) A WHERE A.DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M')
+
+UNION ALL 
+
+SELECT 
+ ID+'.Setup' AS [Production Waste Reason Mix Key],
+ '' AS [Production Waste Reason Place],
+ 'Setup' AS [Production Waste Reason Type],
+ 'Setup' AS [Production Waste Reason Family],
+ 'Setup' AS [Production Waste Reason Category],
+ 'Setup' AS [Production Waste Reason]
+ FROM DATAAREA WHERE ID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M');
+
+STORE Production_Waste_Reasons INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Waste_Reasons_NEW.qvd];
+DROP TABLE Production_Waste_Reasons;
+
+
+//****************Prodcution Downtimes*************//
+
+Production_Downtimes:
+NoConcatenate
+LOAD *
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Downtimes_NEW.qvd]
+(qvd) where [Master Calendar Date Key] < '$(vMinFetchDate)';
+
+
+
+
+Concatenate(Production_Downtimes) 
+Load *; 
+SQL    
+
+SELECT 
+
+DT.DATAAREAID + '.' + DT.PRODID + '.' + DT.[Downtime Type]  + '.' + cast((ROW_NUMBER() OVER (ORDER BY DT.DATAAREAID)) as nvarchar(50))   AS [Production Downtime Key],
+
+CAST(YEAR(DT.TRANSDATE) as NVARCHAR(20))  + '|' +
+CAST(Month(DT.TRANSDATE) as NVARCHAR(20)) + '|' +  
+Upper(Convert(Varchar,'2') + '.' + Convert(Varchar,DT.DATAAREAID) + '.' + 'PI' + '.' + Convert(Varchar,DT.ITEMID)) As [Production Downtime Item COP Key],
+
+
+Upper(Cast(Year(DT.TRANSDATE) AS NVARCHAR(20)) 
+                     + '|' 
+                     + Cast(Month(DT.TRANSDATE) AS NVARCHAR(20)) 
+                     + '|' 
+                     + Upper(DT.DATAAREAID+'.'+DT.WRKCTRID))           AS 
+               [Production Downtime Depreciation Key], 
+
+Upper(Cast(Year(DT.TRANSDATE) AS NVARCHAR(20)) 
+                     + '|' 
+                     + Cast(Month(DT.TRANSDATE) AS NVARCHAR(20)) 
+                     + '|' 
+                     + Upper(DT.DATAAREAID))           AS 
+               [ProductionMaintenanceRateKey], 
+
+
+
+DT.[Downtime Type] 									   as [DTTYPE],
+DT.DATAAREAID + '.' + DT.PRODID				   AS [Production Shared Key],
+DT.TRANSDATE 								   AS [Master Calendar Date Key],
+DT.DATAAREAID + '.' + DT.ITEMID 			   AS [Item Key],
+DT.DATAAREAID + '.' + DT.PRODID				   AS [Link Production Job Key],
+
+DT.DATAAREAID+'.'+DT.PRODID + '.2.' + DT.ITEMID + '.' + DT.WRKCTRID    AS [Downtime Running Mode Key] ,
+
+DT.DATAAREAID + '.' + DT.PRODID				   AS [Order Key],
+DT.DATAAREAID + '.' + 'A' + '.' + DT.PRODID	+ '.' + DT.ITEMID + '.' + DT.WRKCTRID	   AS [Link Production Shift Key],
+DT.DATAAREAID + '.' + 'A' + '.' + DT.PRODID	+ '.' + DT.ITEMID + '.' + DT.WRKCTRID      AS [Production Shift Link Key],
+DT.DATAAREAID + '.' + DT.WRKCTRID			   AS [Machine Key],
+DT.DATAAREAID + '.' + DT.PRODID				   AS [Production Job NB],
+DT.DATAAREAID + '.' + DT.PRODID				   AS [Production Job Key],
+DT.DATAAREAID + '.' + DT.WRKCTRID			   AS [Machine Capacity Key],
+DT.DATAAREAID + '.' + DT.PRODID				   AS [Production Type],
+DT.DATAAREAID + '.' + 'A' + '.' + DT.PRODID	+ '.' + DT.ITEMID + '.' + DT.WRKCTRID   AS [Production Shift Key],
+
+
+DT.TRANSDATE	 AS [Production Downtime Start Date],
+DT.TRANSDATE AS [Production Downtime End Date],
+'Step' AS [Production Downtime Source],
+DT.DATAAREAID + '.' + DT.[Downtime Type] AS [Production Downtime Reason Mix Key],
+DT.[Downtime Hours] * 60  AS [Production Downtime Minutes],
+dt.[Downtime Hours] * DT.[Production Labor Cost USD] as [Production Downtime Cost USD],
+1 as  [Production Downtime Count]
+
+ FROM (SELECT  DT.*, cost.[Production Labor Cost USD] FROM Qlik_ProductionDowntimes  AS DT 
+LEFT OUTER JOIN Qlik_ProductionDowntimesCost as Cost on COST.DATAAREAID = DT.DATAAREAID AND DT.PRODID = COST.PRODID 
+WHERE DT.[Downtime Hours] <> 0) as DT 
+    where  DT.TRANSDATE 	 >= '$(vMinFetchDate)';
+
+STORE Production_Downtimes INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Downtimes_NEW.qvd];
+DROP TABLE Production_Downtimes;
+
+
+
+Production_Std_Setup:
+NoConcatenate
+Load *;
+SQL SELECT * FROM Qlik_ProductionStdSetup;
+
+STORE Production_Std_Setup INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Std_Setup_NEW.qvd];
+DROP TABLE Production_Std_Setup;
+
+
+Items:
+NoConcatenate
+Load *;
+SQL SELECT * FROM QLIK_ProductionItems; 
+
+STORE Items INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Items_NEW.qvd];
+DROP TABLE Items;
+
+
+Production_Output_Costing:
+NoConcatenate
+LOAD *
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Output_Costing_NEW.qvd]
+(qvd) where [TRANSDATE] < '$(vMinFetchDate)';
+
+
+
+Concatenate(Production_Output_Costing) 
+Load *; 
+SQL    
+
+SELECT row_number() over (partition by [Production Cost Key] order by [MACHINE KEY]) as RN,
+  [TRANSDATE],
+  [CALCDATE],
+  [Production Cost Key],
+  [Production Cost Element],
+  [Production Job Key],
+  [Machine Key],
+  [Item Key],
+  [Production FG Element Cost Amount USD],
+  [Production WIP Element Cost Amount USD],
+  [Production FG Element Estimated Cost Amount USD],
+  [Production WIP Element Estimated Cost Amount USD],
+  [Production Estimated Consumption Net Weight],
+  [Production Real Consumption Net Weight],
+  [Production Waste Element Cost Amount USD],
+  [Consumption Item Key]
+FROM Qlik_ProductionCosting   where  TRANSDATE 	 >= '$(vMinFetchDate)'
+
+UNION ALL 
+
+SELECT row_number() over (partition by [Production Cost Key] order by [MACHINE KEY]) as RN, 
+  [TRANSDATE],
+  [CALCDATE],
+  [Production Cost Key],
+  [Production Cost Element],
+  [Production Job Key],
+  [Machine Key],
+  [Item Key],
+  [Production FG Element Cost Amount USD],
+  [Production WIP Element Cost Amount USD],
+  [Production FG Element Estimated Cost Amount USD],
+  [Production WIP Element Estimated Cost Amount USD],
+  [Production Estimated Consumption Net Weight],
+  [Production Real Consumption Net Weight],
+  [Production Waste Element Cost Amount USD],
+  [Consumption Item Key]
+FROM Qlik_ProductionCosting_ax2009 where  TRANSDATE  >= '$(vMinFetchDate)';
+
+STORE Production_Output_Costing INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Output_Costing_NEW.qvd];
+DROP TABLE Production_Output_Costing;
+
+
+
+
+// Production_Labor_Cost:
+// NoConcatenate
+// Load *;
+// SQL SELECT 
+// UPPER(p.DATAAREAID) + '.' + UPPER(p.PRODID) as [Production Shared Key],
+// RC.COSTPRICE * LT.[From Local To USD Conversion] AS [Production Labor Cost USD]
+// FROM PRODTABLE P
+// LEFT OUTER JOIN PRODROUTE PR ON PR.DATAAREAID = P.DATAAREAID AND PR.PRODID = P.PRODID
+// LEFT OUTER JOIN ROUTECOSTCATEGORY RC ON RC.COSTCATEGORYID = PR.PROCESSCATEGORYID AND RC.DATAAREAID = PR.DATAAREAID
+// left outer join LOCALTOUSD_TABLE lt on lt.DATAAREAID = p.DATAAREAID and lt.DATEKEY = p.SCHEDDATE
+
+// WHERE P.DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M')
+
+// ;
+
+// STORE Production_Labor_Cost INTO [LIB://Folder_IFP_Admin_Group/QVD/Production-AX2012/Production_Labor_Cost.qvd];
+// DROP TABLE Production_Labor_Cost;
+
+
+// ProductionLaborCount:
+// NoConcatenate
+// Load *;
+// SQL
+
+// SELECT UPPER(EC.DATAAREAID) AS [Business Unit Labour Count Key] 
+// 	, EC.Date as [Master Calendar Date Num]
+//     ,  DIMENSION2_ AS [Plant Section]
+//     ,  SUM(EMP_COUNT) AS [Labor Count] 
+      
+//       FROM (
+// SELECT     B.[Date], A.DATAAREAID, A.EMPLID, a.DIMENSION2_, 1 as EMP_COUNT
+// FROM         dbo.EMPLTABLE AS A INNER JOIN
+//                           (SELECT     [Date]
+//                             FROM          dbo.BITIMETABLE('2012-01-01', '2020-12-31') AS BITIMETABLE_1) AS B ON A.PAYFJOININGDATE <= B.[Date] 
+// WHERE     (A.PAYFTERMINATIONDATE >= B.[Date] OR A.PAYFTERMINATIONDATE <= '1900-01-01') and a.DIMENSION2_ like 'PLANT-DIR-%'
+// 			and A.DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M')
+// 			and DAY(b.Date) = 1 and a.status in ('1','5','6')) AS EC 
+// 			GROUP BY EC.DATAAREAID, EC.Date,  DIMENSION2_;
+
+// STORE ProductionLaborCount INTO [LIB://Folder_IFP_Admin_Group/QVD/Production-AX2012/ProductionLaborCount.qvd];
+// DROP TABLE ProductionLaborCount;
+
+
+
+LIB CONNECT TO 'NAPAX-12-PROD-DEV (indevco_georges.raad)';
+
+
+Business_Units:
+NoConcatenate
+Load *;
+SQL SELECT 
+D.BU_Type AS [Branch],
+D1.NAME as [Business Unit],
+D.DAID as [Business Unit Account], 
+C.CURRENCYCODE as [Business Unit Currency Code],
+D.DAID as [Business Unit Key],
+D.DAID as [Business Unit Local Security Key],
+D.BU_LOCATION as [Business Unit Location],
+D.BU_Type as [Business Unit Type],
+D.BU_Location as [Division],
+'' AS Holding
+from [NAPAX-12-PROD-DEV].dbo.DATAAREA_QLIK D
+LEFT OUTER JOIN [NAPAX-12-PROD-DEV].dbo.DATAAREA D1 ON D1.ID = D.DAID 
+LEFT OUTER JOIN [NAPAX-12-PROD-DEV].dbo.COMPANYINFO C ON C.DATAAREAID = D.DAID;
+
+STORE Business_Units INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Business_Units_NEW.qvd];
+DROP TABLE Business_Units;
+
+
+Production_Allowances:
+NoConcatenate
+Load *;
+SQL SELECT 
+w.DATAAREAID + '.' + w.WRKCTRID AS [Machine Allowance Key],
+'Average Machine Speed' AS [Allowance Type],
+W.CAPACITY AS [Machine Speed],
+CASE 
+	WHEN W.CAPUNIT = '0' THEN 'None' 
+	WHEN W.CAPUNIT = '1' THEN 'Pcs/Hour'
+	WHEN W.CAPUNIT = '2' THEN 'Linear Meters/Hour'
+	WHEN W.CAPUNIT = '3' THEN 'Kg/Hour'
+	WHEN W.CAPUNIT = '4' THEN '1000Bags'
+	END AS   [Machine Speed Unit],
+W.CAPACITY / 60  AS [Machine Speed Per Minute]
+FROM [NAPAX-12-PROD-DEV].dbo.WRKCTRTABLE W WHERE W.ISGROUP = '0' AND W.DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M');
+
+STORE Production_Allowances INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Allowances_NEW.qvd];
+DROP TABLE Production_Allowances;
+
+
+
+Production_Machines:
+NoConcatenate
+Load *;
+SQL SELECT  
+W.DATAAREAID + '.' + W.WRKCTRID AS [Machine Key], 
+W.DATAAREAID + '.' + W.WRKCTRID AS [Machine Allowance Key],
+S.ENUMITEMLABEL as [Machine Capacity Unit] ,
+w.NAME + ' ('+D.[SHORTNAME]+')' as  [Machine],
+w.CAPACITY as [Machines Standard Capacity],
+w1.NAME as [Machine Group],
+w1.NAME as [Machine Section],
+w1.NAME as [Machine Type],
+w1.NAME as [Machine Family],
+'' as [Machine Group Converting],
+'' as [Machine Group Corrugator],
+w1.NAME as [Division Machine Group],
+w1.NAME as [Division Machine Group Filter],
+
+CASE WHEN W.STOP = 0 THEN 'Running'
+	 WHEN W.STOP = 1 THEN 'Stopped'
+	 else ''
+end as [Machine Status],
+
+w.DATAAREAID as [Business Unit Key]
+ FROM [NAPAX-12-PROD-DEV].dbo.WRKCTRTABLE W 
+LEFT OUTER JOIN [NAPAX-12-PROD-DEV].dbo.WRKCTRTABLE W1 ON W1.WRKCTRID = W.WRKCTRGROUPID AND W1.DATAAREAID = W.DATAAREAID AND W1.ISGROUP = 1
+LEFT OUTER JOIN [NAPAX-12-PROD-DEV].dbo.SRSANALYSISENUMS S ON (S.ENUMID = '38') AND (S.LANGUAGEID = 'en-us') AND S.ENUMITEMVALUE = W.CAPUNIT
+left outer JOIN [NAPAX-12-PROD-DEV].dbo.[DATAAREA_SHORT] D ON D.ID = W.DATAAREAID
+WHERE W.ISGROUP = 0 AND W.DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M')
+
+
+
+UNION ALL 
+
+select ID+'.NoMachine' as [Machine key],
+ID+'.NoMachine' as [Machine Allowance Key],
+'NoCapacity' as [Machine Capacity Unit],
+'NoMachine' as [Machine],
+0 as [Machines Standard Capacity],
+'NoGroup' as [Machine Group],
+'NoSection' as [Machine Section],
+'NoType' as [Machine Type],
+'NoFamily' as [Machine Family],
+'NoGroupConverting' as [Machine Group Converting],
+'NoGroupCorrugator' as [Machine Group Corrugator],
+'NoMachineGroup' as [Division Machine Group],
+'NoGroupFilter' as [Division Machine Group Filter],
+'Running' as [Machine Status],
+ID as [Business Unit Key]
+
+  from [NAPAX-12-PROD-DEV].dbo.DATAAREA
+where ID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M');
+
+
+
+STORE Production_Machines INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Machines_NEW.qvd];
+DROP TABLE Production_Machines;
+
+
+
+// LIB CONNECT TO '192.168.8.22 (indevco_rbeainy)';
+
+
+// TimeTable:
+// NoConcatenate
+// Load *;
+// SQL 
+// Select * from BITIMETABLE('01/01/2014','12/31/2020');
+
+
+
+
+
+
+Production_Downtime_Reasons:
+NoConcatenate
+Load *;
+SQL 
+
+SELECT  
+A.DATAAREAID + '.'+ A.DOWNTIMETYPEID as [Production Downtime Reason Mix Key],
+'Production' AS [Production Downtime Reason Place],
+CASE 
+WHEN A.DOWNTIMETYPEID IN ('Color Matching','Set Up') THEN  'Setup'
+WHEN A.DOWNTIMETYPEID IN ('Electrical BD','Mechanical BD','Scheduled','Utilities','Power cut off') THEN 'Maintenance'
+WHEN A.DOWNTIMETYPEID = 'Preventive' THEN  'Preventive'
+WHEN A.DOWNTIMETYPEID IN ('Manpower','Material Shortage','Missing Docs') THEN ('Other')
+ELSE 'Production'
+END AS  [Production Downtime Reason Type],
+
+CASE 
+WHEN A.DOWNTIMETYPEID IN ('Color Matching','Set Up') THEN  'Setup'
+WHEN A.DOWNTIMETYPEID IN ('Electrical BD','Mechanical BD','Scheduled','Utilities','Power cut off') THEN 'Maintenance'
+WHEN A.DOWNTIMETYPEID = 'Preventive' THEN  'Preventive'
+WHEN A.DOWNTIMETYPEID IN ('Manpower','Material Shortage','Missing Docs') THEN ('Other')
+ELSE 'Production'
+END AS [Production Downtime Reason Family],
+
+A.DOWNTIMETYPEID as [Production Downtime Reason],
+
+CASE 
+WHEN A.DOWNTIMETYPEID IN ('Setup','Set Up','Color Matching','Scheduled') THEN 'Planned Stop'
+ELSE 'Unplanned Stop'
+END AS [Production Downtime Reason Group]
+
+from RouteDownTimeType A WHERE A.DATAAREAID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M')
+
+UNION ALL  
+
+SELECT ID+'.'+'Setup' as  [Production Downtime Reason Mix Key],
+'Production' as [Production Downtime Reason Place],
+'Setup' as [Production Downtime Reason Type],
+'Setup' as [Production Downtime Reason Family],
+'Setup' as [Production Downtime Reason],
+'Planned Stop' as [Production Downtime Reason Group]
+FROM DATAAREA WHERE ID IN ('310','312','313','320','322','210','211','212','213','222','223','324','96E','EG1','96K','96M'); 
+
+
+STORE Production_Downtime_Reasons INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Downtime_Reasons_NEW.qvd];
+DROP TABLE Production_Downtime_Reasons;
+
+ 
+LIB CONNECT TO 'STAGING DAMMAM BI2 (indevco_georges.raad)';
+
+Production_Costs_MNT_DEP_NSI:
+NoConcatenate
+Load *;
+SQL
+
+SELECT  [Machine Key],
+		[Master Calendar Date Key],
+		[Maintenance Expenses USD],
+		[Depreciation Expenses USD],
+		[NSI Consumption Cost USD],
+		'MNT-NSI-DEP-' + cast(Row_Number() over (order by [Machine Key]) as nvarchar(20))  AS [MNT-DEP-NSI Line Key]
+FROM [NAPAX-9-STAGING].[dbo].[Qlik_Production_Maint_NSI_Deprecation];
+ 
+STORE Production_Costs_MNT_DEP_NSI INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Costs_MNT_DEP_NSI.qvd];
+DROP TABLE Production_Costs_MNT_DEP_NSI;  
+
+
+QualityOrders:
+NoConcatenate
+LOAD *
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/QualityOrders.qvd]
+(qvd) where [TRANSDATE] < '$(vMinFetchDate)';
+
+
+Concatenate(QualityOrders) 
+Load *; 
+SQL    
+
+SELECT 
+
+	  UPPER(DATAAREAID) + '.' + UPPER(WRKTRID) as [Machine Key],
+      UPPER(DATAAREAID) + '.' + UPPER([ITEMID]) as [Item Key],
+      UPPER(DATAAREAID) + '.' + UPPER([PRODID]) as [Order Key]
+	  ,[QOID]
+      ,[DATAAREAID]
+      ,[PRODID]
+      ,[ITEMID]
+      ,[TRANSDATE]
+      ,[WRKTRID]
+      ,[QO Reference Type]
+      ,[QO Test Group ID]
+      ,[QO Order Status]
+      ,[QO Qty]
+      ,[QO Acceptable Quality Level]
+      ,[QO Item Sampling ID]
+      ,[QL Test Sequence]
+      ,[QL Test ID]
+      ,[QL Test Result]
+      ,[QL Standard Value]
+      ,[QL Lower Limmit]
+      ,[QL Upper Limit]
+      ,[QL Upper Tolerance]
+      ,[QL Lower Tolerance]
+      ,[QL Variable ID]
+      ,[QL Varibale Outcome ID Standard]
+      ,[QL Test Instrument ID]
+      ,[QL Test Unit]
+      ,[QL Include Results]
+      ,[QL Acceptable Quality Level]
+      ,[QR Test Result Value Outcome]
+      ,[QR Test Result]
+      ,[QR Test Result Quantity]
+      ,[QR Test Real Test Result]
+	  ,'QualityOrders|'   + CAST((ROW_NUMBER() OVER (ORDER BY [DATAAREAID])) AS nvarchar(30)) + '|' + [QOID]    AS [QO Line Key]
+  FROM [NAPAX-9-STAGING].[dbo].[Qlik_ProductionQualityOrders]
+  
+  where  TRANSDATE  >= '$(vMinFetchDate)';
+
+
+
+STORE QualityOrders INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/QualityOrders.qvd];
+DROP TABLE QualityOrders; 
+
+
+
+
+SparePartsConsumption:
+NoConcatenate
+Load *;
+SQL select * From [dbo].[Qlik_ProductionSPConsumption];
+
+STORE SparePartsConsumption INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/SparePartsConsumption_NEW.qvd];
+DROP TABLE SparePartsConsumption;
+
+
+
+
+Production_Running_Modes:
+NoConcatenate
+LOAD *
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Running_Modes_NEW.qvd]
+(qvd) where [Master Calendar Date Key] < '$(vMinFetchDate)';
+
+
+
+Concatenate(Production_Running_Modes) 
+Load *; 
+SQL    
+SELECT 
+	pj.DATAAREAID + '.' + WRKCTRID 			AS [Machine Key],
+	pj.DATAAREAID+'.'+pj.PRODID + '.' + cast(JOBTYPE as NVARCHAR(1)) + '.' + PJ.ITEMID + '.' + WRKCTRID  AS [Production Running Mode Key] ,
+	pj.DATAAREAID+'.'+pj.PRODID 					AS [Production Running Mode Population Key], 
+	pj.DATAAREAID+'.'+pj.PRODID					AS [Production Job Key],
+	pj.DATAAREAID+'.'+pj.PRODID					AS [Production Shared Key],
+	pj.DATAAREAID + '.' + 'A' + '.' + pj.PRODID + '.' + PJ.ITEMID + '.' + WRKCTRID   AS [Production Shift Key],
+	TRANSDATE 								AS [Master Calendar Date Key],
+	pj.DATAAREAID + '.' + PJ.ITEMID			AS [Item Key],
+	0 as [Production Labor Cost USD],
+
+	TRANSDATE AS [Production Running Mode Start Date],
+	TRANSDATE  AS [Production Running Mode End Date],
+	CASE WHEN JOBTYPE = '0' THEN 'Qued Before' when JOBTYPE = '1' then 'Setup' when JOBTYPE = '2' then 'Run' else '' end as [Production Running Mode Type],
+	HOURS * 60 AS  [Production Running Mode Minutes],
+	case when JOBTYPE = 1 then 1 else 0 end as [NB Of Setups]
+from  Qlik_ProductionOutput_N PJ 
+where  TRANSDATE  >= '$(vMinFetchDate)';
+
+STORE Production_Running_Modes INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Running_Modes_NEW.qvd];
+DROP TABLE Production_Running_Modes;
+
+
+
+Production_Items_Details:
+NoConcatenate
+Load * ;
+SQL 
+SELECT 
+	UPPER(DATAAREAID + '.' + ITEMID) AS [Item Details Key],
+	[Number Of Colors] AS [Item Number Of Colors PBA],
+	Color_1  AS [Item Color_1],
+	Color_2  AS [Item Color_2],
+	Color_3  AS [Item Color_3],
+	Color_4  AS [Item Color_4],
+	Color_5  AS [Item Color_5],
+	Color_6  AS [Item Color_6],
+	Color_7  AS [Item Color_7],
+	Color_8  AS [Item Color_8],
+	Color_9  AS [Item Color_9],
+	Color_10 AS [Item Color_10],
+    [Colors Concatenation],
+    [Substrait Concatenation],
+	[Printing Mode] AS [Item Printing Mode],
+	Thickness AS [Item Thickness PBA],
+	Width AS [Item Width PBA],
+	Substrait_1 AS [Item Substrait_1],
+	Substrait_2 AS [Item Substrait_2],
+	Substrait_3 AS [Item Substrait_3],
+	Substrait_4 AS [Item Substrait_4]
+ FROM [dbo].[Qlik_PBAInstance];
+ 
+STORE Production_Items_Details INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Items_Details_NEW.qvd];
+DROP TABLE Production_Items_Details;
+
+
+
+
+
+Master_Production_Orders_Data:
+NoConcatenate
+Load 
+
+Upper([Production Order Key])					AS [Master WO - Production Order Key],
+[Production Order Item Number] 					AS [Master WO - Production Order Item Number],
+[Production Order Production Unit] 				AS [Master WO - Production Order Production Unit],
+[Production Order Number] 						AS [Master WO - Production Order Number],
+[Production Order Name] 						AS [Master WO - Production Order Name],
+[Production Order Height] 						AS [Master WO - Production Order Height],
+[Production Order Width]						AS [Master WO - Production Order Width],
+[Production Order Depth] 						AS [Master WO - Production Order Depth],
+[Production Order Density] 						AS [Master WO - Production Order Density],
+[Production Order PoolId] 						AS [Master WO - Production Order PoolId],
+[Production Order Number Of Lines] 				AS [Master WO - Production Order Number Of Lines],
+[Production Order Reference] 					AS [Master WO - Production Order Reference];
+
+SQL select * From Qlik_ProductionOrdersDetails;
+STORE Master_Production_Orders_Data INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Master_Production_Orders_Data.qvd];
+DROP TABLE Master_Production_Orders_Data;
+
+
+ 
+Production_Outputs_Classification:
+NoConcatenate
+Load * ;
+SQL
+
+SELECT 
+WO.[PRODID] AS [Work Order Number],
+Upper(WO.[DATAAREAID]+'.'+WO.[PRODID]) as [Production Order Master Key]
+	  , ISNULL(A.WOLength,'None') as WOLength
+  FROM [Qlik_ProductionOrders] as WO LEFT OUTER JOIN 
+  (SELECT  tOTALWO.DATAAREAID , TOTALWO.PRODID ,
+		CASE  WHEN TOTALWO.TotalWOLinearMeters < 5000 THEN '0 - 4999'
+			  WHEN TOTALWO.TotalWOLinearMeters < 10000 THEN '5000 - 9999'
+              WHEN TOTALWO.TotalWOLinearMeters < 15000 THEN '10,000 - 14,999'
+		     Else '15,000 +' END AS WOLength
+
+ FROM ( SELECT PRODID , DATAAREAID , SUM([Actual Linear Meters]) AS TotalWOLinearMeters  FROM Qlik_ProductionOutput_N GROUP BY PRODID , DATAAREAID) AS TOTALWO) 
+ AS A ON WO.DATAAREAID = A.DATAAREAID AND WO.PRODID = A.PRODID;
+
+STORE Production_Outputs_Classification INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Outputs_Classification_NEW.qvd];
+DROP TABLE Production_Outputs_Classification; 
+
+
+
+
+LIB CONNECT TO 'NAPAX-12-PROD-DEV (indevco_georges.raad)';
+
+
+ProductionNonConformance:
+NoConcatenate
+LOAD *
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/NonConformances.qvd]
+(qvd) where [Master Calendar Date Key] < '$(vMinFetchDate)';
+
+
+
+
+Concatenate(ProductionNonConformance) 
+Load *; 
+SQL    
+
+SELECT     
+Upper(I.DATAAREAID + '|' +   I.INVENTNONCONFORMANCEID) as [Non Conformance Key], 
+Upper(I.DATAAREAID + '|' +   I.INVENTNONCONFORMANCEID) as [Non Conformance Diagnostic Key], 
+Upper(I.DATAAREAID + '|' +   I.INVENTNONCONFORMANCEID) as [Non Conformance Operation Type Key], 
+upper(I.DATAAREAID + '.' +i.ITEMID) as [Item Key],
+UPPER(i.inventrefid) AS [Non Conformance Order Number], 
+case when PRODROUTE.WRKCTRID IS null
+then I.DATAAREAID + '.NOMACHINE' 
+else 
+I.DATAAREAID + '.' +PRODROUTE.WRKCTRID end as [Machine Key],
+I.TESTDEFECTQTY AS [Defective Quantity],
+ISNULL(NCRQ.QTY,0) AS [NCR Scrapped Qty],
+ISNULL(NCRQ.COSTAMOUNT,0)*LT.[From Local To USD Conversion] AS [NCR Scrapped Amount USD],
+'No RCA' AS [Non Conformance - RCA],
+INVENTTESTPROBLEMTYPEID as [Non Conformance - Problem Type ID], 
+ CASE  WHEN INVENTNONCONFORMANCETYPE = '1'  THEN 'Customer' 
+       WHEN INVENTNONCONFORMANCETYPE = '2'   THEN 'Vendor' 
+       WHEN INVENTNONCONFORMANCETYPE = '3'   THEN 'Service'
+       WHEN INVENTNONCONFORMANCETYPE = '4'  THEN 'Production' 
+       WHEN INVENTNONCONFORMANCETYPE = '5'  THEN 'Internal' 
+       ELSE 'No Type'  END  AS [Non Conformance - Type], 
+   CASE  WHEN INVENTNONCONFORMANCEAPPROVAL = '0'  THEN 'New' 
+          WHEN INVENTNONCONFORMANCEAPPROVAL = '1'  THEN 'Approved' 
+           WHEN INVENTNONCONFORMANCEAPPROVAL= '2'   THEN 'Refused' 
+            ELSE ''   END AS [Non Conformance - Approval Status],
+           NONCONFORMANCEDATE as [Master Calendar Date Key]
+FROM         [NAPAX-12-PROD-DEV].dbo.INVENTNONCONFORMANCETABLE as I 
+left outer join  [NAPAX-12-PROD-DEV].dbo.INVENTTABLE IT on it.ITEMID = i.ITEMID and i.DATAAREAID = it.DATAAREAID
+left outer join [NAPAX-12-PROD-DEV].dbo.PRODROUTE on PRODROUTE.PRODID = I.INVENTREFID and prodroute.DATAAREAID = i.DATAAREAID
+LEFT OUTER join [NAPAX-12-PROD-DEV].dbo.INVENTQUARATINEQTY_TABLE NCRQ ON NCRQ.INVENTREFTRANSID = ISNULL(I.QUARANTINEID,'-') COLLATE DATABASE_DEFAULT 
+			AND I.DATAAREAID = NCRQ.DATAAREAID AND I.QUARANTINEID <> ''
+left outer JOIN LOCALTOUSD_TABLE LT ON LT.DATAAREAID = I.DATAAREAID AND NONCONFORMANCEDATE = LT.DATEKEY
+
+where  NONCONFORMANCEDATE  >= '$(vMinFetchDate)'; 
+
+
+STORE ProductionNonConformance INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/NonConformances.qvd];
+DROP TABLE ProductionNonConformance; 
+
+
+
+ProductionNonConformanceDiagnostic:
+NoConcatenate
+Load * ;
+SQL
+
+SELECT     
+Upper(I.DATAAREAID + '|' +   I.INVENTNONCONFORMANCEID) as [Non Conformance Diagnostic Key], 
+isnull(cor.DIAGNOSTICTYPEID,'No Diagnostic Type') as [Non Conformance Diagnostic Type],
+isnull(IDT.DESCRIPTION,'No Diagnostic Type description') as [Non Conformance Diagnostic Type Description]
+
+FROM         [NAPAX-12-PROD-DEV].dbo.INVENTNONCONFORMANCETABLE as I 
+left outer join [NAPAX-12-PROD-DEV].dbo.INVENTTESTCORRECTION as COR ON COR.DATAAREAID = I.DATAAREAID AND I.INVENTNONCONFORMANCEID = COR.INVENTNONCONFORMANCEID AND  COR.CORRECTIONCOMPLETED = '1'
+left outer join [NAPAX-12-PROD-DEV].dbo.INVENTTESTDIAGNOSTICTYPE idt on IDT.DATAAREAID = COR.DATAAREAID AND COR.DIAGNOSTICTYPEID = IDT.DIAGNOSTICTYPEID;
+
+
+STORE ProductionNonConformanceDiagnostic INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/NonConformancesDiagnostic.qvd];
+DROP TABLE ProductionNonConformanceDiagnostic; 
+
+
+
+ProductionNonConformanceOperationType:
+NoConcatenate
+Load * ;
+SQL
+
+SELECT     
+Upper(I.DATAAREAID + '|' +   I.INVENTNONCONFORMANCEID) as [Non Conformance Operation Type Key], 
+isnull(OP.INVENTTESTOPERATIONID,'No Operation Type') AS [Non Conformance Operation Type]
+
+FROM         [NAPAX-12-PROD-DEV].dbo.INVENTNONCONFORMANCETABLE as I 
+left outer join [NAPAX-12-PROD-DEV].dbo.INVENTTESTRELATEDOPERATIONS OP ON I.DATAAREAID = OP.DATAAREAID and I.INVENTNONCONFORMANCEID = OP.INVENTNONCONFORMANCEID;
+
+
+STORE ProductionNonConformanceOperationType INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/NonConformancesOperationType.qvd];
+DROP TABLE ProductionNonConformanceOperationType; 
+
+
+
+
+END SUB

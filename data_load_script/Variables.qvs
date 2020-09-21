@@ -1,0 +1,6 @@
+///$tab Variables
+Let vSelectedDay = '1';
+Let vSelectedMonth = '1';
+Let vSelectedYear = '2020';
+
+Let vMinFetchDate = MakeDate(vSelectedYear,vSelectedMonth,vSelectedDay);

@@ -1,0 +1,677 @@
+///$tab Main Tables
+Sub CEO_QVD
+
+/*****Production Outputs**********************************************/
+/*********************************************************************/
+Production_Outputs:
+NoConcatenate
+Load
+     'Output|' &   UPPER([Production Item Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Item Key]	
+      ,UPPER([Production Std Setup Key]) as [Production Std Setup Key]
+      ,UPPER([Production Job Waste Output Key]) as [Production Job Waste Output Key]
+      ,[Good Qty] as [Production Good Qty]
+      ,[Production Start Date]
+      ,[Production End Date]
+      ,[Production Output FG Qty]
+      ,[Production Output FG Qty Unit]
+      ,[Production Output FG Qty Pcs]
+      ,[Production Output FG Qty Kg]
+      ,[Production Output FG Qty MT]
+      ,[Production Output FG Qty US Ton]
+      ,[Production Output FG Qty Lbp]
+      ,[Production Output FG Qty SQM]		
+      ,[Production Output FG Qty MSF]
+      ,[Production Output FG Qty LM]
+      ,[Production Output FG Qty LF]
+      ,[Production Output FG Sales Amount USD]
+      ,[Production Output FG Cost Amount USD]
+      ,[Production Output WIP Qty]
+      ,[Production Output WIP Qty Unit]
+      ,[Production Output WIP Qty Pcs]
+      ,[Production Output WIP Qty Kg]
+      ,[Production Output WIP Qty MT]
+      ,[Production Output WIP Qty US Ton]
+      ,[Production Output WIP Qty Lbp]
+      ,[Production Output WIP Qty SQM]		
+      ,[Production Output WIP Qty MSF]		
+      ,[Production Output WIP Qty LM]
+      ,[Production Output WIP Qty LF]	
+      ,[Production Output WIP Sales Amount USD]
+      ,[Production Output WIP Cost Amount USD]
+      ,[Production FG Hits]
+      ,[Production WIP Hits]
+      ,[Production Waste Hits]
+      ,[Production Job Qty LM]
+      ,[Production Job Qty FG LM]
+      ,[Production Job Qty WIP LM]
+      ,[Production Output InterstateInks]
+      ,[Std Run Hours]
+      ,[HOURS] - ([Std Run Hours]/60) as [Production Lost Due To Speed - Hours]
+      ,([HOURS] - ([Std Run Hours]/60)) * ApplyMap('ProductionConversionCost',Upper([Production Job Key]),0) as [Production Cost Due To Speed - USD] 
+      
+      
+      , ([HOURS] - ([Std Run Hours]/60)) *  ApplyMap('ProductionWOSpeed',Upper([Production Job Key]),0) *  ApplyMap('ItemCopMapping',Upper([Production Output Item COP Key]),0)  AS [Production Speed Loss Opp Cost - USD]
+      
+      ,([HOURS] - ([Std Run Hours]/60)) * ApplyMap('MachineDepreciationHoursMapping',Upper([ProductionByMachineBUMonthKey]),0) as [Production Depreciation Cost Due To Speed - USD] 
+       
+      ,([HOURS]  /  ApplyMap('ProductionHoursByMonthBUMachine', UPPER([ProductionByMachineBUMonthKey]),0))  * ApplyMap('NSI_Consumption_Mapping', UPPER([ProductionByMachineBUMonthKey]),0) 	as [Production NSI Cost USD Proration]
+      ,([HOURS]  /  ApplyMap('ProductionHoursByMonthBUMachine', UPPER([ProductionByMachineBUMonthKey]),0))  * ApplyMap('SP_Consumption_Mapping', UPPER([ProductionByMachineBUMonthKey]),0) 		as [Production SP Cost USD Proration]
+      
+      ,[Production Qty Production Unit]
+      ,[Work Center ID]
+      ,UPPER([Production Cost Key]) as [Production Cost Key]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Output_NEW.qvd]
+(qvd);
+
+Production_Outputs:
+Concatenate
+Load
+	 
+    'OutputWaste|' &   UPPER([Production Waste Item Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Item Key],
+     UPPER([Production Job Key]) as [Production Cost Key],
+     
+         
+    if( [ItemWasteId] = 'WIP',0,[Production Waste Qty]*(-1))  as [Production Output FG Qty]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty Unit]*(-1))  as [Production Output FG Qty Unit]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty Pcs]*(-1))  as [Production Output FG Qty Pcs]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty Kg]*(-1))  as [Production Output FG Qty Kg]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty MT]*(-1))  as [Production Output FG Qty MT]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty MT]*(-1))  as [Production Output FG Qty US Ton]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty Lbp]*(-1))  as [Production Output FG Qty Lbp]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty SQM]*(-1))  as [Production Output FG Qty SQM]		
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty MSF]*(-1))  as [Production Output FG Qty MSF]
+    ,if([ItemWasteId] = 'WIP',0,[Production Waste Qty LM]*(-1))  as [Production Output FG Qty LM]
+	,if([ItemWasteId] = 'WIP',0,[Production Waste Qty LF]*(-1))  as [Production Output FG Qty LF]
+    ,if([ItemWasteId] = 'WIP',0,0)  as [Production Output FG Sales Amount USD]
+    ,if([ItemWasteId] = 'WIP',0,0)  as [Production Output FG Cost Amount USD]
+    
+    
+    ,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty]*(-1))  as [Production Output WIP Qty]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty Unit]*(-1))  as [Production Output WIP Qty Unit]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty Pcs]*(-1))  as [Production Output WIP Qty Pcs]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty Kg]*(-1))  as [Production Output WIP Qty Kg]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty MT]*(-1))  as [Production Output WIP Qty MT]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty MT]*(-1))  as [Production Output WIP Qty US Ton]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty Lbp]*(-1))  as [Production Output WIP Qty Lbp]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty SQM]*(-1))  as [Production Output WIP Qty SQM]		
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty MSF]*(-1))  as [Production Output WIP Qty MSF]
+    ,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty LM]*(-1))  as [Production Output WIP Qty LM]
+	,if([ItemWasteId] <> 'WIP',0,[Production Waste Qty LF]*(-1))  as [Production Output WIP Qty LF]
+    ,if([ItemWasteId] <> 'WIP',0,0)  as [Production Output WIP Sales Amount USD]
+    ,if([ItemWasteId] <> 'WIP',0,0)  as [Production Output WIP Cost Amount USD]
+      
+    ,[Production Waste Qty] 		as [Production Output Waste Qty]
+	,[Production Waste Qty Unit] 	as [Production Output Waste Qty Unit]
+	,[Production Waste Qty Pcs] 	as [Production Output Waste Qty Pcs]
+	,[Production Waste Qty Kg] 		as [Production Output Waste Qty Kg] 
+	,[Production Waste Qty MT] 		as [Production Output Waste Qty MT] 
+	,[Production Waste Qty MT] 		as [Production Output Waste Qty US Ton]
+	,[Production Waste Qty Lbp] 	as [Production Output Waste Qty Lbp]	
+	,[Production Waste Qty SQM] 	as [Production Output Waste Qty SQM]
+	,[Production Waste Qty MSF] 	as [Production Output Waste Qty MSF] 	
+	,[Production Waste Qty LM] 		as [Production Output Waste Qty LM]
+	,[Production Waste Qty LF] 		as [Production Output Waste Qty LF]
+    ,0 as [Production Output Waste Sales Amount USD]
+    ,0 as [Production Output Waste Cost Amount USD]
+    
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Wastes_NEW.qvd]
+(qvd);
+
+
+
+Production_Labor_Cost:
+ NoConcatenate
+ Load
+ 	 [Production Shared Key]
+     , [Production Labor Cost USD] as [Production Labor Cost USD1]
+ From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Labor_Cost.qvd]
+(qvd);
+
+
+
+// ProductionLaborCount:
+//  NoConcatenate
+//  Load
+//  	  [Business Unit Labour Count Key] + '.' + [Master Calendar Date Num] as [ProductionLaborCountKey]
+//     , [Plant Section]
+//     , [Labor Count] 
+//  From [lib://Folder_IFP_Admin_Group/QVD/Production/ProductionLaborCount.qvd]
+// (qvd);
+
+
+
+
+/*****Production Shifts***********************************************/
+/*********************************************************************/
+Production_Shifts:
+ NoConcatenate
+ Load
+ 	 UPPER([Production Shift Key]) as [Production Shift Key]
+     ,UPPER([Production Shift Link Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Shift Link Key]
+ 	,'A' AS [Production Shift]
+	,'TL 1' AS [Production Shift Team Leader]
+ 	,'' AS [Production Shift Start Date]
+ 	,'' AS [Production Shift End Date]
+ 	, HOURS *60 AS  [Production Shift Planned Time Minutes]
+ 	, 0 AS [Production Shift Idle Time Minutes]
+    , 0 AS [Production Shift PM Cleaning Time Minutes]
+    ,UPPER([Production Shift Key]) As [Production Shift Labor Cost Key]
+ From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Output_NEW.qvd]
+ (qvd);
+
+
+/*****Production Wastes***********************************************/
+/*********************************************************************/
+Production_Wastes:
+NoConcatenate
+Load
+	'Wastes|' &  UPPER([Production Waste Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Waste Key]
+	,[Production Waste Start Date]
+	,[Production Waste End Date]	
+	,UPPER([Production Waste Reason Mix Key]) as [Production Waste Reason Mix Key]	
+	,[Production Waste Qty]
+	,[Production Waste Qty Unit]
+	,[Production Waste Qty Pcs]			
+    ,[Production Waste Qty Kg]
+    ,[Production Waste Qty MT]
+    ,[Production Waste Qty US Ton]
+    ,[Production Waste Qty Lbp] 
+	,[Production Waste Qty SQM]
+	,[Production Waste Qty MSF]	
+	,[Production Waste Qty LM]
+	,[Production Waste Qty LF]
+    , [Production Waste Qty Kg] / ApplyMap('ProductionWOSpeed',Upper([Production Job Key]),0) as [Production Waste Lost Hours]
+    , ([Production Waste Qty Kg] / ApplyMap('ProductionWOSpeed',Upper([Production Job Key]),0)) * ApplyMap('ProductionConversionCost',Upper([Production Job Key]),0) as [Production Waste Lost Cost USD - From Hours]
+    
+    
+    ,([Production Waste Qty Kg] / ApplyMap('ProductionWOSpeed',Upper([Production Job Key]),0))  
+    			* ApplyMap('MachineDepreciationHoursMapping',Upper([Production Waste Depreciation Key]),0) 
+     AS [Production Depreciation Cost Due To Waste Production - USD] 
+    
+ 
+    
+    ,  ApplyMap('ItemCopMapping',Upper([Production Waste Item COP Key]),0) *  [Production Waste Qty Kg] as [Production Waste COP USD]
+    
+    
+    
+    
+    ,[Production Waste Lost Cost USD - From Qty]
+    
+    
+    
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Wastes_NEW.qvd]
+(qvd);
+
+
+/*****Production Waste Reasons****************************************/
+/*********************************************************************/
+Production_Waste_Reasons:
+NoConcatenate
+Load
+	UPPER([Production Waste Reason Mix Key]) as [Production Waste Reason Mix Key]
+	,[Production Waste Reason Place]
+	,[Production Waste Reason Type]
+	,[Production Waste Reason Family]
+	,[Production Waste Reason Category]
+	,[Production Waste Reason]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Waste_Reasons_NEW.qvd]
+(qvd);
+
+
+/*****Production Downtimes********************************************/
+/*********************************************************************/
+Production_Downtimes:
+NoConcatenate
+Load
+	 UPPER([Production Downtime Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Downtime Key]
+	,[Production Downtime Start Date]
+	,[Production Downtime End Date]
+	,[Production Downtime Source]
+	,UPPER([Production Downtime Reason Mix Key]) as [Production Downtime Reason Mix Key]
+	,[Production Downtime Minutes]
+    ,[Production Downtime Cost USD] 
+    ,[Production Downtime Count]
+    ,([Production Downtime Minutes] / 60 )  * ApplyMap('MachineDepreciationHoursMapping',Upper([Production Downtime Depreciation Key]),0)  AS [Production Depreciation Cost Due To Downtime - USD]
+    ,  
+      if (WildMatch([DTTYPE],'*Electrical BD*','*Mechanical BD*','*Scheduled*','*Utilities*') ,
+      		 ([Production Downtime Minutes] / 60 )  * ApplyMap('MaintenanceRatePerHourMapping',Upper([ProductionMaintenanceRateKey]),0) , 0)    AS [Production Maintenance Cost USD Proration],
+             
+    ([Production Downtime Minutes] / 60 ) *  ApplyMap('ProductionWOSpeed',Upper([Production Job Key]),0) *  ApplyMap('ItemCopMapping',Upper([Production Downtime Item COP Key]),0)  AS [Production Downtime Opp Cost - USD]          
+     
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Downtimes_NEW.qvd]
+(qvd);
+
+
+/*****Production Downtime Reasons*************************************/
+/*********************************************************************/
+Production_Downtime_Reasons:
+NoConcatenate
+Load
+	UPPER([Production Downtime Reason Mix Key]) as [Production Downtime Reason Mix Key]
+	,[Production Downtime Reason Place]
+	,[Production Downtime Reason Type]
+	,[Production Downtime Reason Family]
+	//,[Production Downtime Reason Category]
+	,[Production Downtime Reason]
+    ,[Production Downtime Reason Group]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Downtime_Reasons_NEW.qvd]
+(qvd);
+
+
+/*****Production Running Modes****************************************/
+/*********************************************************************/
+
+Production_Running_Modes:
+NoConcatenate
+Load
+    'RM' as [PRMTYPE],
+	 UPPER([Production Running Mode Key] & '|' & Num(DayStart([Master Calendar Date Key])) ) as [Production Running Mode Key]
+    ,UPPER([Production Running Mode Key] & '|' & Num(DayStart([Master Calendar Date Key])) ) As [Production Running Mode Shared Key]
+    ,UPPER([Production Running Mode Population Key]) as [Production Running Mode Population Key]
+	,[Production Running Mode Start Date]
+	,[Production Running Mode End Date]
+	,[Production Running Mode Type]
+	,[Production Running Mode Minutes]
+    ,[Production Labor Cost USD]
+    ,[NB Of Setups]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Running_Modes_NEW.qvd]
+(qvd);
+
+
+Production_Running_Modes:
+Concatenate
+Load
+    'DT' as [PRMTYPE],
+	 UPPER([Downtime Running Mode Key] & '|' & Num(DayStart([Master Calendar Date Key])) ) 		as [Production Running Mode Key]
+    ,UPPER([Downtime Running Mode Key] & '|' & Num(DayStart([Master Calendar Date Key])) ) 		As [Production Running Mode Shared Key]
+    ,UPPER([Production Job Key]) 				as [Production Running Mode Population Key]
+	,[Production Downtime Start Date]	as [Production Running Mode Start Date]
+	,[Production Downtime End Date]		as [Production Running Mode End Date]
+	,'Run' 								as [Production Running Mode Type]
+	,if([DTTYPE] = 'Setup',0,[Production Downtime Minutes]*(-1)) as [Production Running Mode Minutes]
+    //,[Production Downtime Minutes]*(-1) as [Production Running Mode Minutes]
+    ,0 as [NB Of Setups]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Downtimes_NEW.qvd]
+(qvd);
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+Production_Std_Setup:
+NoConcatenate
+Load
+	 UPPER([Production Std Setup Key]) as [Production Std Setup Key]
+ 	 ,[Machine Std Setup Minute]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Std_Setup_NEW.qvd]
+(qvd);
+
+
+/*****Production Allowances*******************************************/
+/*********************************************************************/
+Production_Allowances:
+NoConcatenate
+Load
+	UPPER([Machine Allowance Key]) as [Machine Allowance Key]
+	,[Allowance Type]
+	,[Machine Speed]	
+	,[Machine Speed Unit]	
+	,[Machine Speed Per Minute]
+    //,[Machine Std Setup Minute]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Allowances_NEW.qvd]
+(qvd);
+
+
+/*****Production Returns*************************************/
+/*********************************************************************/
+// Production_Returns:
+// NoConcatenate
+// Load
+// 	 [Production Return Key]
+//     ,[Production Return Creation Date]
+//     ,[Production Return Qty]
+//     ,[Production Return Qty Unit]
+//     ,[Production Return Qty Pcs]
+//     ,[Production Return Qty Kg]
+//     ,[Production Return Qty MT]
+//     ,[Production Return Qty US Ton]
+//     ,[Production Return Qty Lbp]
+//     ,[Production Return Qty SQM]
+//     ,[Production Return Qty MSF]
+//     ,[Production Return Qty LM]
+//     ,[Production Return Qty LF]
+// From [lib://QVD_Conn/Production_Returns.qvd]
+// (qvd);
+
+
+/*****Production Materials Inspections********************************/
+/*********************************************************************/
+Production_On_Hold:
+NoConcatenate
+Load
+	 UPPER([Production On Hold Key]) as [Production On Hold Key]
+    ,[Production On Hold Issuing Date]
+    ,[Production On Hold Status]
+    ,[Production On Hold FG Qty]
+    ,[Production On Hold FG Qty Unit]
+    ,[Production On Hold FG Qty Pcs]
+    ,[Production On Hold FG Qty Kg]
+    ,[Production On Hold FG Qty MT]
+    ,[Production On Hold FG Qty US Ton]
+    ,[Production On Hold FG Qty Lbp]
+    ,[Production On Hold FG Qty SQM]
+    ,[Production On Hold FG Qty MSF]
+    ,[Production On Hold FG Qty LM]
+    ,[Production On Hold FG Qty LF]
+    ,[Production On Hold WIP Qty]
+    ,[Production On Hold WIP Qty Unit]
+    ,[Production On Hold WIP Qty Pcs]
+    ,[Production On Hold WIP Qty Kg]
+    ,[Production On Hold WIP Qty MT]
+    ,[Production On Hold WIP Qty US Ton]
+    ,[Production On Hold WIP Qty Lbp]
+    ,[Production On Hold WIP Qty SQM]
+    ,[Production On Hold WIP Qty MSF]
+    ,[Production On Hold WIP Qty LM]
+    ,[Production On Hold WIP Qty LF]    
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_On_Hold.qvd]
+(qvd);
+
+
+/*****Production Machine Time Capacity********************************/
+/*********************************************************************/
+Production_Machine_Time_Capacity:
+NoConcatenate
+Load
+	UPPER([Machine Type Capacity Key])
+    ,UPPER(Num(DayStart([Capacity Calendar Date])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,[Capacity Calendar Date]
+    ,UPPER([Machine Key]) As [Capacity Machine Key]
+    ,[Open Day Minutes]
+    ,[Full Day Minutes]
+    ,[Machine Target OEE]
+    ,[Machine Target Availability Minutes]
+    ,[Machine Target Capacity Utilization]
+    ,[Machine Target Rate]
+    ,[Machine Target Quality]
+    ,1 As [Machine Hold Goods Percentage Allocation]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Machine_Time_Capacity_NEW.qvd]
+(qvd);
+
+/*****Items***********************************************************/
+/*********************************************************************/
+Items:
+NoConcatenate
+Load
+   UPPER([Item Key]) as [Item Key], 
+   UPPER([Item Key]) as [Item Details Key],
+   [Item Code], 
+   [Item Name], 
+   [Item Description], 
+   [Item Inventory Unit], 
+   [Item Group],
+   [Application], 
+   [Market Sector],
+   [Sector],
+   [Industry], 
+   [End Use], 
+   [Sub Industry],
+   [Building Block], 
+   [Product Line], 
+   [Structure], 
+   [Product Type],
+   [Item Number Of Colors] as  [Item Number Of Colors],
+   [Item Thickness] as  [Item Thickness],
+   [Item Width] as  [Item Width],
+   [ItemProductionNumberOfLines] as [Item Production Number of Lines]
+   
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Items_NEW.qvd]
+(qvd);
+
+
+Consumption_Items:
+NoConcatenate
+Load
+  UPPER([Item Key]) 	AS [Consumption Item Key], 
+  [Item Code] 			AS [Consumption Item Code], 
+  [Item Name] 			AS [Consumption Item Name], 
+  [Item Description]  	AS [Consumption Item Description], 
+  [Item Inventory Unit] AS [Consumption Item Inventory Unit], 
+  [Item Group]          AS [Consumption Item Item Group],
+  [Application] 		AS [Consumption Item Application], 
+  [Market Sector] 		AS [Consumption Item Market Sector],
+  [Sector] 				AS [Consumption Item Sector],
+  [Industry] 			AS [Consumption Item Industry], 
+  [End Use] 			AS [Consumption Item End Use], 
+  [Sub Industry] 		AS [Consumption Item Sub Industry],
+  [Building Block] 		AS [Consumption Item Building Block], 
+  [Product Line] 		AS [Consumption Item Product Line], 
+  [Structure] 			AS [Consumption Item Structure], 
+  [Product Type] 		AS [Consumption Item Product Type]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Items_NEW.qvd]
+(qvd);
+
+
+Consumption_Items:
+Concatenate
+LOAD
+  Upper([Business Unit Key] & '.Conversion') as [Consumption Item Key],
+  'CONVERSION' 			AS [Consumption Item Code], 
+  'CONVERSION' 			AS [Consumption Item Name], 
+  'CONVERSION' 			AS [Consumption Item Description], 
+  'CONVERSION' 			AS [Consumption Item Inventory Unit],
+  'CONVERSION'          AS [Consumption Item Item Group],
+  'Conversion' 			AS [Consumption Item Application], 
+  'Conversion' 			AS [Consumption Item Market Sector],
+  'Conversion' 			AS [Consumption Item Sector],
+  'Conversion' 			AS [Consumption Item Industry], 
+  'Conversion' 			AS [Consumption Item End Use], 
+  'Conversion' 			AS [Consumption Item Sub Industry],
+  'Conversion' 			AS [Consumption Item Building Block], 
+  'Conversion' 			AS [Consumption Item Product Line], 
+  'Conversion' 			AS [Consumption Item Structure], 
+  'Conversion' 			AS [Consumption Item Product Type]
+FROM [LIB://Folder_IFP_Admin_Group/QVD/Production/Business_Units_NEW.qvd]
+(qvd);
+
+
+Production_Items_Details:
+NoConcatenate
+Load  *,
+if( IsNull([Substrait Concatenation]), 'No Substrait', [Substrait Concatenation]) as [Substrait Combination],
+if( IsNull([Colors Concatenation]), 'No Colors', [Colors Concatenation]) as [Item Colors Combination]
+
+
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Items_Details_NEW.qvd]
+(qvd);
+
+
+
+Production_Machines:
+NoConcatenate
+LOAD
+    UPPER([Business Unit Key]) as [Business Unit Key],
+    "Division Machine Group",
+    "Division Machine Group Filter",
+    "Machine Capacity Unit" AS [Machine Capacity Unit Name],
+    "Machines Standard Capacity",
+     Machine,
+    "Machine Family",
+    "Machine Group",
+    "Machine Group Converting",
+    "Machine Group Corrugator",
+    UPPER([Machine Key]) as [Machine Key],
+    Upper([Machine Allowance Key]) as [Machine Allowance Key], 
+    "Machine Section",
+    "Machine Type",
+    "Machine Status",
+    Upper([Business Unit Key])&'|'&upper("Machine Group") As "Production Shared Security Key"
+FROM [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Machines_NEW.qvd]
+(qvd);
+
+
+
+
+
+/*****Business Units**************************************************/
+/*********************************************************************/
+Business_Units:
+NoConcatenate
+LOAD
+     Branch,
+    "Business Unit", 
+    "Business Unit Account",
+    "Business Unit Currency Code",
+    UPPER("Business Unit Key") as [Business Unit Key],
+    //UPPER("Business Unit Key") as [Mixed Security Key],
+    UPPER("Business Unit Local Security Key")  as [Business Unit Local Security Key],
+    "Business Unit Location",
+    "Business Unit Type",
+    Division,
+    Holding
+FROM [LIB://Folder_IFP_Admin_Group/QVD/Production/Business_Units_NEW.qvd]
+(qvd);
+
+
+/*****Production_Output_Costing***********************************************/
+/*********************************************************************/
+
+Production_Output_Costing:
+Noconcatenate
+Load	
+	UPPER([Production Cost Key]) & '|' & [RN] As "Production Cost Key Shared Key", 
+    "Production Cost Element", 
+    "Production FG Element Cost Amount USD", 
+    "Production WIP Element Cost Amount USD", 
+    "Production Waste Element Cost Amount USD",
+    "Production FG Element Estimated Cost Amount USD",
+	"Production WIP Element Estimated Cost Amount USD",
+	"Production Estimated Consumption Net Weight",
+	"Production Real Consumption Net Weight"    
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Output_Costing_NEW.qvd]
+(qvd);
+ 
+ 
+ 
+Production_Output_Costing_Total_Temp:
+Noconcatenate
+Load	
+	UPPER([Production Cost Key]) As "Production Cost Key Shared Key Total", 
+    SUM("Production Estimated Consumption Net Weight") as "Production Estimated Consumption Net Weight Total",
+	SUM("Production Real Consumption Net Weight") as "Production Real Consumption Net Weight Total"    
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Output_Costing_NEW.qvd]
+(qvd)  
+Group by UPPER([Production Cost Key]);
+
+
+
+ 
+Production_Output_Costing_Total:
+Noconcatenate
+Load	
+	 "Production Cost Key Shared Key Total" & '|WOTotal' as "Production Cost Key Shared Key Total", 
+     "Production Estimated Consumption Net Weight Total",
+	 "Production Real Consumption Net Weight Total"    
+Resident Production_Output_Costing_Total_Temp;
+
+DROP Table Production_Output_Costing_Total_Temp;
+
+ 
+SparePartsConsumption:
+NoConcatenate
+Load 
+	UPPER([Item Key] & '|' & [Machine Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [SP Consumption Key],
+  	 [SP Consumprion Qty],
+     [SP Consumption Cost] as [SP Consumption Cost],
+     [SP Consumption Cost USD] as [SP Consumption Cost USD],
+     [SP Consumption Unit]  
+	
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/SparePartsConsumption_NEW.qvd]
+(qvd);
+
+
+NonConformances:
+NoConcatenate
+Load 
+		UPPER([Non Conformance Key]) as [Non Conformance Key],
+        UPPER([Non Conformance Diagnostic Key]) as [Non Conformance Diagnostic Key],
+        UPPER([Non Conformance Operation Type Key]) as [Non Conformance Operation Type Key],
+        [Defective Quantity],
+        [NCR Scrapped Qty],
+ 		[NCR Scrapped Amount USD],
+        [Non Conformance Order Number] as [Non Conformance - Order Number],
+        [Non Conformance - RCA],
+        [Non Conformance - Problem Type ID],
+        [Non Conformance - Type],
+        [Non Conformance - Approval Status],
+		1 AS [Non Conformance Count]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/NonConformances.qvd]
+(qvd);
+
+
+NonConformancesDiagnostic:
+NoConcatenate
+Load 
+		UPPER([Non Conformance Diagnostic Key]) as [Non Conformance Diagnostic Key],
+        [Non Conformance Diagnostic Type],
+ 		[Non Conformance Diagnostic Type Description]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/NonConformancesDiagnostic.qvd]
+(qvd);
+
+
+
+NonConformancesOperationType:
+NoConcatenate
+Load 
+		UPPER([Non Conformance Operation Type Key]) as [Non Conformance Operation Type Key],
+        [Non Conformance Operation Type]
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/NonConformancesOperationType.qvd]
+(qvd);
+
+
+
+Production_Outputs_Classification:
+NoConcatenate
+Load *
+From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Outputs_Classification_NEW.qvd]
+(qvd);
+
+
+
+
+Master_Production_Orders_Data:
+NoConcatenate
+Load 
+
+ [Master WO - Production Order Key],
+ [Master WO - Production Order Item Number],
+ [Master WO - Production Order Production Unit],
+ [Master WO - Production Order Number],
+ [Master WO - Production Order Name],
+ [Master WO - Production Order Height],
+ [Master WO - Production Order Width],
+ [Master WO - Production Order Depth],
+ [Master WO - Production Order Density],
+ [Master WO - Production Order PoolId],
+ [Master WO - Production Order Number Of Lines],
+ [Master WO - Production Order Reference],
+ ApplyMap('ProductionOrdersWorkerMapping',Upper([Master WO - Production Order Key]),'No Worker Name') as [Master WO - Production Order Worker]
+ 
+FROM [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Master_Production_Orders_Data.qvd](qvd);
+
+
+Production_Costs_NSI_DEP_MNT:
+NoConcatenate
+LOAD 
+    "Maintenance Expenses USD",
+    "Depreciation Expenses USD",
+    "NSI Consumption Cost USD" * -1									as "NSI Consumption Cost USD",
+    "Maintenance Expenses USD" + ("NSI Consumption Cost USD" * -1) 	as "Total Maintenance Cost USD",
+    "MNT-DEP-NSI Line Key"
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Costs_MNT_DEP_NSI.qvd]
+(qvd);
+
+
+
+ 
+
+End Sub

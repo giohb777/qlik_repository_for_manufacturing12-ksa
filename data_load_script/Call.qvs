@@ -1,0 +1,11 @@
+///$tab Call
+CALL QVD_Load
+Call Active_BOMS
+Call DropTables
+Call Currency_Rates
+Call CEO_QVD
+Call CEO_Production_Shared_Dim_QVD
+Call Master_Calendar
+Call Reason_Categories
+Call Synthetic_Dimensions
+Call Apply_Security

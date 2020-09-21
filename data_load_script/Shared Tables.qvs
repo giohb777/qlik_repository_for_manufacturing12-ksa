@@ -1,0 +1,339 @@
+///$tab Shared Tables
+Sub CEO_Production_Shared_Dim_QVD
+
+ /*****Production Outputs**********************************************/
+ /*********************************************************************/
+ Production_Shared_Dimensions:
+ NoConcatenate
+ Load
+   'Output|' &   UPPER([Production Item Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Item Key] 				
+	,UPPER([Production Shared Key]) as 	[Production Shared Key]			
+    ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+    ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+	,UPPER([Item Key]) as [Item Key]
+	,UPPER([Production Job Key]) As [Link Production Job Key]
+	,UPPER([Order Key]) as [Order Key]
+    ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+	,UPPER([Production Shift Key]& '|'& [Production Job Key] & '|' & Num(DayStart([Master Calendar Date Key]))) As [Production Shift Link Key]
+	,UPPER([Machine Key]) as [Machine Key]
+	,[Production Job NB] 
+    ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,'Output' As [Production Type]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+    ,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+  From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Output_NEW.qvd]
+  (qvd);
+  
+
+ Production_Shared_Dimensions:
+  Concatenate
+  Load
+   'OutputWaste|' &   UPPER([Production Waste Item Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Item Key] 	
+    ,UPPER([Production Shared Key])	 as [Production Shared Key]
+    ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+    ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+	,UPPER([Item Key]) as [Item Key]
+	,UPPER([Production Job Key]) As [Link Production Job Key]
+	,UPPER([Order Key]) as [Order Key]
+    ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+    ,UPPER([Production Shift Key]& '|'& [Production Job Key] & '|' & Num(DayStart([Master Calendar Date Key]))) As [Production Shift Link Key]
+	,UPPER([Machine Key]) as [Machine Key]
+	,[Production Job NB]
+    ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,'Output' As [Production Type]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+  From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Wastes_NEW.qvd]
+  (qvd);
+  
+  
+  
+  
+  
+  
+  
+  
+	
+  /*****Production Shifts***********************************************/
+  /*********************************************************************/  
+  Production_Shared_Dimensions:
+  Concatenate
+  Load
+     
+  	 UPPER([Production Shift Key] & '|' & Num(DayStart([Master Calendar Date Key]))) As [Production Shift Link Key]
+    ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+    ,UPPER([Production Shared Key]) as 	[Production Shared Key]	
+    ,UPPER([Item Key]) as [Item Key]
+    ,[Production Job NB]
+    ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+    ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+    ,UPPER([Machine Key]) as [Machine Key]
+    ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,'Shift' As [Production Type]
+    , UPPER([Production Job NB]) as [Production Order Master Key]
+	,UPPER([Production Job NB]) as [Master WO - Production Order Key]
+  From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Output_NEW.qvd]
+  (qvd);
+  
+  
+  
+  /*****Production Wastes***********************************************/
+  /*********************************************************************/  
+  Production_Shared_Dimensions:
+  Concatenate
+  Load
+  	'Wastes|' & UPPER([Production Waste Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Waste Key]
+    ,UPPER([Production Shared Key])	 as [Production Shared Key]
+    ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+    ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+	,UPPER([Item Key]) as [Item Key]
+	,UPPER([Production Job Key]) As [Link Production Job Key]
+	,UPPER([Order Key]) as [Order Key]
+    ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+	,UPPER([Production Shift Key]& '|'& [Production Job Key]) As [Production Shift Link Key]
+	,UPPER([Machine Key]) as [Machine Key]
+	,[Production Job NB]
+    ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,'Waste' As [Production Type]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+  From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Wastes_NEW.qvd]
+  (qvd);
+  
+  /*****Production Downtimes********************************************/
+  /*********************************************************************/  
+  Production_Shared_Dimensions:
+  Concatenate
+  Load
+  	 UPPER([Production Downtime Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [Production Downtime Key]
+    ,UPPER([Production Shared Key]) as [Production Shared Key]
+    ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+    ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+	,UPPER([Production Job Key]) As [Link Production Job Key]
+    ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+	,UPPER([Production Shift Key]& '|'& [Production Job Key]) As [Production Shift Link Key]
+	,UPPER([Machine Key]) as [Machine Key]
+    ,UPPER([Item Key]) as [Item Key]
+	,[Production Job NB]
+    ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,'Downtime' As [Production Type]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+  From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Downtimes_NEW.qvd]
+  (qvd);
+  
+	
+  /*****Production Running Modes****************************************/
+  /*********************************************************************/  
+  Production_Shared_Dimensions:
+  Concatenate
+  Load
+     UPPER([Production Running Mode Key] & '|' & Num(DayStart([Master Calendar Date Key]))) As [Production Running Mode Shared Key]
+    ,UPPER([Production Shared Key]) as 	[Production Shared Key]
+    ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+    ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+	,UPPER([Production Job Key]) As [Link Production Job Key]
+    ,UPPER([Production Job Key]) as [Production Job NB]
+    ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+	,UPPER([Production Shift Key]& '|'& [Production Job Key]) As [Production Shift Link Key]
+	,UPPER([Machine Key]) as [Machine Key]
+    ,UPPER([Item Key]) as [Item Key]
+    ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,'Running Mode' As [Production Type]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+  From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Running_Modes_NEW.qvd]
+  (qvd);
+  
+  
+  Production_Shared_Dimensions:
+  Concatenate
+  Load
+     UPPER([Downtime Running Mode Key] & '|' & Num(DayStart([Master Calendar Date Key]))) As [Production Running Mode Shared Key]
+    ,UPPER([Production Shared Key]) as 	[Production Shared Key]
+    ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+    ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+	,UPPER([Production Job Key]) As [Link Production Job Key]
+    ,UPPER([Production Job Key]) as [Production Job NB]
+    ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+	,UPPER([Production Shift Key]& '|'& [Production Job Key]) As [Production Shift Link Key]
+	,UPPER([Machine Key]) as [Machine Key]
+    ,UPPER([Item Key]) as [Item Key]
+    ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+    ,'Running Mode' As [Production Type]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+  From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Downtimes_NEW.qvd]
+  (qvd);
+  
+
+
+/*On Hold*/
+	Production_Shared_Dimensions:
+    Concatenate
+    Load
+      UPPER([Production On Hold Key]) as [Production On Hold Key]
+      ,UPPER([Production Shared Key]) as 	[Production Shared Key]
+      ,Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num]
+      ,Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+      ,UPPER([Item Key]) as [Item Key]
+      ,UPPER([Production Job Key]) As [Link Production Job Key]
+      ,UPPER([Production Shift Key]) As [Link Production Shift Key]
+      ,UPPER([Production Shift Key]& '|'& [Production Job Key]) As [Production Shift Link Key]
+      ,UPPER([Machine Key]) as [Machine Key]
+      ,UPPER(Num(DayStart([Master Calendar Date Key])) & '|' & [Machine Key]) As [Machine Capacity Key]
+      ,'Hold' As [Production Type]
+      ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+    From [lib://Folder_IFP_Admin_Group/QVD/Production/Production_On_Hold.qvd]
+    (qvd);
+    
+    
+    /*Costing*/
+   Production_Shared_Dimensions:
+	Concatenate
+	Load	
+	UPPER([Production Cost Key]) & '|' & [RN] As "Production Cost Key Shared Key", 
+    Num(DayStart([CALCDATE])) As [Master Calendar Date Num],
+    Num(DayStart([CALCDATE])) As [Currency Conversion Rate Date Num],
+    upper([Machine Key]) as [Machine Key],
+    UPPER([Item Key]) as [Item Key],
+    UPPER([Consumption Item Key]) as [Consumption Item Key],
+    [Production Job Key] as [Production Job NB]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+	From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Output_Costing_NEW.qvd]
+	(qvd);
+    
+    
+    
+     Production_Shared_Dimensions:
+	Concatenate
+	Load	
+	UPPER([Production Cost Key]) & '|WOTotal'   As "Production Cost Key Shared Key Total", 
+    Num(DayStart([CALCDATE])) As [Master Calendar Date Num],
+    Num(DayStart([CALCDATE])) As [Currency Conversion Rate Date Num],
+    upper([Machine Key]) as [Machine Key],
+    UPPER([Item Key]) as [Item Key],
+    UPPER([Consumption Item Key]) as [Consumption Item Key],
+    [Production Job Key] as [Production Job NB]
+    ,UPPER([Production Job Key]) as [Production Order Master Key]
+	,UPPER([Production Job Key]) as [Master WO - Production Order Key]
+	From [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_Output_Costing_NEW.qvd]
+	(qvd);
+    
+
+    
+
+	/*Capacity*/
+  Production_Shared_Dimensions:
+  Concatenate
+  Load
+	UPPER([Machine Capacity Key]) as [Machine Capacity Key]
+    ,Num(DayStart([Capacity Calendar Date])) As [Master Calendar Date Num]
+    ,Num(DayStart([Capacity Calendar Date])) As [Currency Conversion Rate Date Num]
+    ,UPPER([Capacity Machine Key])  As [Machine Key]
+    ,'Capacity' As [Production Type]
+  Resident
+  	Production_Machine_Time_Capacity;
+    
+    
+    
+  Production_Shared_Dimensions:
+  Concatenate
+  Load 
+      UPPER([Item Key] & '|' & [Machine Key] & '|' & Num(DayStart([Master Calendar Date Key]))) as [SP Consumption Key],
+      UPPER([Item Key]) as [Item Key],
+      UPPER([Machine Key]) as [Machine Key],
+      Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num],
+      Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+
+  From [LIB://Folder_IFP_Admin_Group/QVD/Production/SparePartsConsumption_NEW.qvd]
+  (qvd); 
+  
+  
+  Production_Shared_Dimensions:
+  Concatenate
+  Load 
+      UPPER([Machine Key]) as [Machine Key],
+      UPPER([Non Conformance Key]) as [Non Conformance Key],
+      UPPER([Item Key]) as [Item Key],
+      Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num],
+      Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+
+  From [LIB://Folder_IFP_Admin_Group/QVD/Production/NonConformances.qvd]
+  (qvd); 
+  
+  
+  Production_Shared_Dimensions:
+  Concatenate
+  LOAD 
+    "Invoice Kg",
+    Num([Invoice Amount USD])+Num([Invoice Discount Amount USD])-Num([Invoice Misc Charges Provision By Weight Amount USD]) As [Invoice Amount USD], 
+    "Invoice Cost USD",
+    UPPER([Item Key]) as [Item Key],
+    Num(DayStart([Master Calendar Date])) As [Currency Conversion Rate Date Num],
+    Num(DayStart([Master Calendar Date])) As [Master Calendar Date Num],
+    Upper(Replace("Business Unit Key",'2.','') & '.NoMachine') as [Machine Key]
+  FROM [lib://Folder_IFP_Admin_Group/QVD\AX2012\Invoices.qvd]
+  (qvd);
+  
+  
+  
+ Production_Shared_Dimensions:
+  Concatenate
+  LOAD  
+      'Quality Orders' As [Production Type],
+      UPPER(DATAAREAID) + '.' + UPPER(QOID) + '.' + UPPER(WRKTRID) + '.' + UPPER([ITEMID]) + '.' + UPPER([PRODID]) as [Quality Order Key],
+      [Machine Key],
+      [Item Key],
+      [Order Key],
+      Num(DayStart([TRANSDATE])) As [Currency Conversion Rate Date Num],
+      Num(DayStart([TRANSDATE])) As [Master Calendar Date Num]
+      ,[QOID]								AS     [Quality Order ID]
+      ,[QO Reference Type]					AS     [QO Reference Type]
+      ,[QO Test Group ID]					AS	   [QO Test Group ID]
+      ,[QO Order Status]					AS     [QO Order Status]
+      ,[QO Qty]								AS     [QO Qty]
+      ,[QO Acceptable Quality Level]		AS	   [QO Acceptable Quality Level]
+      ,[QO Item Sampling ID]				AS	   [QO Item Sampling ID]
+      ,[QL Test Sequence]					AS	   [QL Test Sequence]
+      ,[QL Test ID]							AS     [QL Test ID]	
+      ,[QL Test Result]						AS     [QL Test Result]	
+      ,[QL Standard Value]					AS     [QL Standard Value]	
+      ,[QL Lower Limmit]					AS     [QL Lower Limmit]	
+      ,[QL Upper Limit]						AS     [QL Upper Limit]	
+      ,[QL Upper Tolerance]					AS     [QL Upper Tolerance]	
+      ,[QL Lower Tolerance]					AS     [QL Lower Tolerance]	
+      ,[QL Variable ID]						AS     [QL Variable ID]	
+      ,[QL Varibale Outcome ID Standard]	AS     [QL Varibale Outcome ID Standard]
+      ,[QL Test Instrument ID]				AS     [QL Test Instrument ID]
+      ,[QL Test Unit]						AS     [QL Test Unit]
+      ,[QL Include Results]					AS     [QL Include Results]	
+      ,[QL Acceptable Quality Level]		AS     [QL Acceptable Quality Level]	
+      ,[QR Test Result Value Outcome]		AS     [QR Test Result Value Outcome]
+      ,[QR Test Result]						AS     [QR Test Result]		
+      ,[QR Test Result Quantity]			AS     [QR Test Result Quantity]
+      ,[QR Test Real Test Result]			AS     [QR Test Real Test Result]
+      ,[QO Line Key]
+
+  FROM [LIB://Folder_IFP_Admin_Group/QVD/Production/QualityOrders.qvd]
+  (qvd);
+  
+   
+   
+  Production_Shared_Dimensions:
+Concatenate
+LOAD
+	 "MNT-DEP-NSI Line Key",
+      UPPER([Machine Key]) as [Machine Key],
+      Num(DayStart([Master Calendar Date Key])) As [Master Calendar Date Num],
+      Num(DayStart([Master Calendar Date Key])) As [Currency Conversion Rate Date Num]
+FROM [lib://Folder_IFP_Admin_Group/QVD/Production/Production_Costs_MNT_DEP_NSI.qvd]
+(qvd);
+  
+  
+  
+  
+  
+End Sub

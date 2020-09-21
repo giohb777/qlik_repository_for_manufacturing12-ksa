@@ -1,0 +1,34 @@
+///$tab Downtime Reason Categories
+Sub Reason_Categories
+
+LIB CONNECT TO 'STAGING DAMMAM BI2 (indevco_georges.raad)';
+
+Reason_Categories:
+NoConcatenate
+Load 
+  Production_Downtime_Reason AS [Production Downtime Reason],
+  Production_Downtime_Reason_Category AS [Production Downtime Reason Category];  
+SQL SELECT  
+
+distinct
+
+A.DOWNTIMETYPEID as Production_Downtime_Reason,
+
+CASE 
+WHEN A.DOWNTIMETYPEID = 'Color Matching' THEN  'Setup'
+WHEN A.DOWNTIMETYPEID IN ('Electrical BD','Mechanical BD','Scheduled','Utilities','Power cut off') THEN 'Maintenance'
+WHEN A.DOWNTIMETYPEID = 'Preventive' THEN  'Preventive'
+WHEN A.DOWNTIMETYPEID IN ('Manpower','Material Shortage','Missing Docs') THEN ('Other')
+ELSE 'Production'
+END AS  Production_Downtime_Reason_Category
+
+FROM RouteDownTimeType A
+
+union all 
+
+select 'Setup' as [Production_Downtime_Reason],
+'Setup' as [Production_Downtime_Reason_Category];
+
+
+
+End Sub

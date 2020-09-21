@@ -1,0 +1,33 @@
+///$tab Currency Rates
+Sub Currency_Rates
+
+  Currency_Rates:
+  NoConcatenate
+  Load 
+      [Currency Key],
+    //  [Currency Sorting Key],
+      [Currency Symbol],
+      [Currency],
+      [Currency Conversion Rate Date Num],
+      [Currency Average Rate],
+      [Currency EOD Rate]
+  From [lib://Folder_IFP_Admin_Group/QVD/AX2012/Currency_Rates.qvd]
+  (qvd);  
+   
+  CurrencySortingList:
+  NoConcatenate
+  LOAD
+    'USER' as ACCESS, 
+    Upper(Username) as USERID,
+    CurrencyCode as [Currency Key],
+    CurrencySortingKey as [Currency Sorting Key]
+FROM [lib://Folder_IFP_Admin_Group/IFP_EXCEL/SECURITY/Currencies.xlsx]
+(ooxml, embedded labels, table is [Currencies]);
+
+Inner Join(Currency_Rates)
+Load * Resident CurrencySortingList;
+
+Drop Table CurrencySortingList;
+
+
+End Sub

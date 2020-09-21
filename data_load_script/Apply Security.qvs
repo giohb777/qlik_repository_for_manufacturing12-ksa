@@ -1,0 +1,58 @@
+///$tab Apply Security
+Sub Apply_Security
+
+
+Tmp_Shared_Security:
+NoConcatenate
+Load Distinct	
+	Upper("Business Unit Key")&'|'&upper("Machine Group") As "Production Shared Security Key",
+    Upper("Business Unit Key") as [Business Unit Security Key],
+    upper("Machine Group") as [Machine Group Security Key]
+    
+Resident	
+	Production_Machines;
+
+
+
+Shared_Security_Dimensions:
+NoConcatenate
+Load	
+	"Production Shared Security Key",
+    Upper("Business Unit Security Key")&'|'&UPPER("Machine Group Security Key") As "Local Mixed Security Key"
+
+Resident	
+	Tmp_Shared_Security;
+
+
+
+Shared_Security:
+NoConcatenate
+Load Distinct	
+	Upper("Business Unit Security Key")&'|'&UPPER("Machine Group Security Key") As "Local Mixed Security Key",
+	Upper("Business Unit Security Key")&'|'&UPPER("Machine Group Security Key") As "Mixed Security Key"
+Resident
+Tmp_Shared_Security;
+
+
+Shared_Security:
+Concatenate
+Load Distinct	
+	Upper("Business Unit Security Key")&'|'&UPPER("Machine Group Security Key") As "Local Mixed Security Key",
+	Upper("Business Unit Security Key") & '|' & 'ALL'  As "Mixed Security Key"
+Resident
+Tmp_Shared_Security;
+    
+    
+Shared_Security:
+Concatenate
+Load Distinct	
+	Upper("Business Unit Security Key")&'|'&UPPER("Machine Group Security Key") As "Local Mixed Security Key",
+	'ALL'&'|'&'ALL' As "Mixed Security Key"
+Resident
+Tmp_Shared_Security;
+
+
+Drop Table Tmp_Shared_Security;
+
+
+End Sub

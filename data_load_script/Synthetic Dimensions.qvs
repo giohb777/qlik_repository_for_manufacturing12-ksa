@@ -1,0 +1,140 @@
+///$tab Synthetic Dimensions
+Sub Synthetic_Dimensions
+  
+  
+  [%SynTimeAllocation]:
+  Load dual('Setup Time',1) As %SynTimeAllocation
+  AutoGenerate(1);
+  Load dual('Run Time',2) As %SynTimeAllocation
+  AutoGenerate(1);
+  Load dual('Idle Time',3) As %SynTimeAllocation
+  AutoGenerate(1);
+  Load dual('Down Time',4) As %SynTimeAllocation
+  AutoGenerate(1);
+  Load dual('None Reported Time',5) As %SynTimeAllocation
+  AutoGenerate(1); 
+  Load dual('Remaining Capacity',6) As %SynTimeAllocation
+  AutoGenerate(1); 
+  
+  
+  
+  
+// Machine Performance Synthetic Dimensions  
+  [%SynMachinePerformance]:
+  Load dual('Quality',1) As %SynMachinePerformance
+  AutoGenerate(1);
+  Load dual('Up Time',2) As %SynMachinePerformance
+  AutoGenerate(1);
+  Load dual('Perfomance',3) As %SynMachinePerformance
+  AutoGenerate(1);
+  Load dual('OEE',4) As %SynMachinePerformance
+  AutoGenerate(1);
+  
+  
+// Cost loss Matrix Synthetic Dimensions  
+  [%SynCostLossMatrixYDimensions]:
+  Load dual('Input Material Waste',1) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Speed Losses',2) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Production DT',3) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Production Waste',4) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Production Waste (Conversion)',5) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Setup DT',6) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Setup Waste',7) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Maintenance Labour Cost',8) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Maintenance DT',9) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('NSI',10) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Other DT ',11) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  Load dual('Totals',12) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1);
+  Load dual('% of Total Losses',13) As %SynCostLossMatrixYDimensions
+  AutoGenerate(1); 
+  
+  
+  // Cost loss Matrix Synthetic X Dimensions ( Direct Material , Conversion , Maintenance )
+  [%SynCostLossMatrixXDimensions]:
+  Load dual('Direct Material',1) As %SynCostLossMatrixXDimensions
+  AutoGenerate(1); 
+  Load dual('Conversion Cost',2) As %SynCostLossMatrixXDimensions
+  AutoGenerate(1); 
+  Load dual('Maintenance Cost',3) As %SynCostLossMatrixXDimensions
+  AutoGenerate(1); 
+  
+  
+  // Cost loss Matrix Synthetic X Dimensions ( Direct Material , Conversion , Maintenance , Depreciation )
+  [%SynCostLossMatrixXDimensionsPlusDepreciation]:
+  Load dual('Direct Material',1) As %SynCostLossMatrixXDimensionsPlusDepreciation
+  AutoGenerate(1); 
+  Load dual('Conversion Cost',2) As %SynCostLossMatrixXDimensionsPlusDepreciation
+  AutoGenerate(1); 
+  Load dual('Maintenance Cost',3) As %SynCostLossMatrixXDimensionsPlusDepreciation
+  AutoGenerate(1); 
+  Load dual('Depreciation Cost',4) As %SynCostLossMatrixXDimensionsPlusDepreciation
+  AutoGenerate(1); 
+  
+  
+    // Cost loss Matrix Synthetic X Dimensions ( All With TOTALS )
+  [%SynCostLossMatrixXDimensionsWithTotals]:
+  Load dual('Direct Material',1) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('Conversion Cost',2) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('Maintenance Cost',3) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('Operational Total',4) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('Depreciation Cost',5) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('Sub Total',6) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('Opportunity Cost',7) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('Total',8) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  Load dual('% of Total Cost',9) As %SynCostLossMatrixXDimensionsWithTotals
+  AutoGenerate(1); 
+  
+  
+  // Cost loss Matrix Synthetic Y Dimensions + Total Costs
+  [%SynCostLossMatrixYDimensionsWithTotalCosts]:
+  Load dual('Input Material Waste',1) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Speed Losses',2) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Production DT',3) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Production Waste',4) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Setup DT',5) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Setup Waste',6) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Maintenance Labour Cost',7) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Maintenance DT',8) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('NSI',9) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Other DT ',10) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Totals',11) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1);
+  Load dual('% of Total Losses',12) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  Load dual('Total Cost',13) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1);
+  Load dual('% of Total Cost',14) As %SynCostLossMatrixYDimensionsWithTotalCosts
+  AutoGenerate(1); 
+  
+  
+End Sub

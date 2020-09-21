@@ -1,0 +1,281 @@
+///$tab Mappings
+LIB CONNECT TO 'STAGING DAMMAM BI2 (indevco_georges.raad)';
+
+
+//Mapping to the conversion cost related to Each Work Order
+ProductionConversionCost:
+Mapping
+Load [WOKEY] , [Conversion Cost USD]  ;
+SQL 
+SELECT UPPER(DATAAREAID) + '.' + PRODID as [WOKEY]  , [Production Labor Cost USD] as [Conversion Cost USD] FROM Qlik_ProductionDowntimesCost;
+
+
+// Actual Speed based on KG Output for Each Work Order
+ProductionWOSpeed:
+Mapping
+Load [ProductionWOSpeedKey], SPEED;
+SQL 
+SELECT  DATAAREAID + '.' +PRODID as [ProductionWOSpeedKey], 
+	SUM([ACTUAL NET WEIGHT])/NULLIF(SUM([HOURS]),0)  AS SPEED FROM [QLIK_PRODUCTIONOUTPUT_N]
+GROUP BY DATAAREAID,PRODID;
+
+
+
+// NSI and SP Consumption amounts by Month by Machines
+Production_NSI_SP_Consumption:
+NoConcatenate
+Load * ;
+SQL 
+
+SELECT 
+	sp_nsi.[Consumption Date],
+	sp_nsi.[Machine Key],
+	Upper(cast(Year(sp_nsi.[Consumption Date]) as nvarchar(20)) + '|' + cast(Month(sp_nsi.[Consumption Date]) as nvarchar(20)) + '|' + sp_nsi.[Machine Key])  AS [ProductionConsumptionSPNSIKey],
+	sum(sp_nsi.[NSI Consumption Cost USD]) AS [NSI Consumption Cost USD],
+	sum(sp_nsi.[SP Consumption Cost USD]) AS [SP Consumption Cost USD]
+
+FROM (
+
+SELECT  DATEADD(mm, DATEDIFF(mm, 0, [Master Calendar Date Key]) + 1, 0) AS [Consumption Date],
+	[Machine Key] , 
+	SUM([NSI Consumption Cost USD]*-1) as [NSI Consumption Cost USD],
+	0 as [SP Consumption Cost USD]
+FROM Qlik_ProductionNSIConsumption
+GROUP BY DATEADD(mm, DATEDIFF(mm, 0, [Master Calendar Date Key]) + 1, 0)  ,
+	[Machine Key]
+
+union all 
+
+
+SELECT  DATEADD(mm, DATEDIFF(mm, 0, [Master Calendar Date Key]) + 1, 0) AS [Consumption Date],
+	[Machine Key] , 
+	0 as [NSI Consumption Cost USD],
+	SUM([SP Consumption Cost USD]) as [SP Consumption Cost]
+
+FROM Qlik_ProductionSPConsumption
+GROUP BY DATEADD(mm, DATEDIFF(mm, 0, [Master Calendar Date Key]) + 1, 0)  ,
+	[Machine Key]) 
+
+	AS sp_nsi 
+GROUP BY 
+sp_nsi.[Consumption Date] ,
+sp_nsi.[Machine Key];
+
+STORE Production_NSI_SP_Consumption INTO [LIB://Folder_IFP_Admin_Group/QVD/Production/Production_NSI_SP_Consumption.qvd];
+DROP TABLE Production_NSI_SP_Consumption; 
+
+
+// NSI Consumption Mapping
+NSI_Consumption_Mapping:
+Mapping 
+LOAD 
+    ProductionConsumptionSPNSIKey,
+    "NSI Consumption Cost USD"
+FROM [lib://Folder_IFP_Admin_Group/QVD\Production\Production_NSI_SP_Consumption.qvd]
+(qvd);
+
+
+// SP Consumption Mapping
+SP_Consumption_Mapping:
+Mapping 
+LOAD 
+    ProductionConsumptionSPNSIKey,
+    "SP Consumption Cost USD"
+FROM [lib://Folder_IFP_Admin_Group/QVD\Production\Production_NSI_SP_Consumption.qvd]
+(qvd);
+
+
+
+
+
+
+ProductionHoursByMonthBUMachine:
+Mapping
+Load   [ProductionByMachine]  AS  [ProductionByMachineBUMonthKey],
+	  [Total Production Hours] as [Total Production Hours - BU Month Machine];
+SQL 
+SELECT 
+    Upper(cast(Year(Production.TRANSDATE) as nvarchar(20)) 
+		+ '|' + cast(Month(Production.TRANSDATE) as nvarchar(20)) 
+		+ '|' + Upper(Production.DATAAREAID+'.'+Production.WRKCTRID))  
+	AS [ProductionByMachine],
+
+	SUM(Hours) AS [Total Production Hours]  FROM [QLIK_PRODUCTIONOUTPUT_N] AS Production
+GROUP BY 
+cast(Year(Production.TRANSDATE) as nvarchar(20)) + '|' + cast(Month(Production.TRANSDATE) as nvarchar(20)) + '|' + Upper(Production.DATAAREAID+'.'+Production.WRKCTRID);
+
+
+
+
+
+ProductionHoursByMonthByBU:
+Mapping
+Load [ProductionByMachine] AS [ProductionByBUMonthKey],
+		[Total Production Hours] as [Total Production Hours - BU Month];
+SQL 
+SELECT 
+    Upper(cast(Year(Production.TRANSDATE) as nvarchar(20)) 
+		+ '|' + cast(Month(Production.TRANSDATE) as nvarchar(20)) 
+		+ '|' + Upper(Production.DATAAREAID))
+	AS [ProductionByMachine],
+
+	SUM(Hours) AS [Total Production Hours]  FROM [QLIK_PRODUCTIONOUTPUT_N] AS Production
+GROUP BY 
+cast(Year(Production.TRANSDATE) as nvarchar(20)) + '|' + cast(Month(Production.TRANSDATE) as nvarchar(20)) + '|' + Upper(Production.DATAAREAID);
+
+
+
+
+
+MaintenanceExpensesMapping:
+Mapping
+Load  "ProductionMaintenanceBUMonthKey",	
+		[Maintenance Expenses USD];
+SQL 
+
+SELECT 
+Upper(cast(Year(A.TRANSDATE) as nvarchar(20)) + '|' 
+		+ cast(MONTH(A.TRANSDATE) as nvarchar(20)) + '|'  
+		+  A.DATAAREAID) 
+	AS [ProductionMaintenanceBUMonthKey],
+SUM(A.[Maintenance Expenses USD]) as [Maintenance Expenses USD]
+FROM Qlik_MaintenanceExpenses A
+group by Upper(cast(Year(A.TRANSDATE) as nvarchar(20)) + '|' + cast(MONTH(A.TRANSDATE) as nvarchar(20)) + '|'  +  A.DATAAREAID);
+
+
+
+
+ProductionWasteItemWeightedAverage:
+Mapping
+	Load  [Production Waste Item Cost Key] , [Production Waste Item Cost USD];
+SQL
+SELECT  
+
+CAST(YEAR(DATEFINANCIAL) as NVARCHAR(20))  + '|' +
+CAST(Month(DATEFINANCIAL) as NVARCHAR(20)) + '|' +  
+UPPER(DATAAREAID) +
+UPPER(ITEMID) as [Production Waste Item Cost Key],
+COSTPRICE as  [Production Waste Item Cost USD]
+FROM Qlik_ProductionWAC ;
+
+
+
+
+ProductionDepreciationMapping:
+Mapping
+Load [ProductionDepreciationKey] , [Machine Depreciation Amount USD] ;
+SQL
+SELECT 
+Upper(A.DATAAREAID + '.' + A.WRKCTRID) AS [Machine Key],
+Upper(cast(Year(A.TRANSDATE) as nvarchar(20)) + '|' 
+		+ cast(Month(a.TRANSDATE) as nvarchar(20)) 
+			+ '|' + A.DATAAREAID + '.' + A.WRKCTRID)  AS [ProductionDepreciationKey],
+cast(AMOUNTMST as numeric(38,4)) as [Machine Depreciation Amount USD]
+FROM Qlik_ProductionMachinesDepreciation A 
+where a.TRANSDATE > '12/31/2014'
+Order by A.DATAAREAID;
+
+
+
+/// COP / KG GOES HERE 
+
+
+
+Invoices_Aggregated:
+NoConcatenate
+LOAD
+    "Item Key", 
+    Year("Master Calendar Date") as [InvoiceYear],
+    Month("Master Calendar Date") as [InvoiceMonth],
+    "Business Unit Key",
+     Sum("Invoice Kg") as [Invoice KG], 
+   	 SUM(Num([Invoice Amount USD])+Num([Invoice Discount Amount USD])-Num([Invoice Misc Charges Provision By Weight Amount USD])) - SUM("Invoice Cost USD")  as [Invoice Amount COP USD]
+   
+FROM [lib://Folder_IFP_Admin_Group/QVD\AX2012\Invoices.qvd]
+(qvd) 
+GROUP BY "Item Key", 
+    	 Year("Master Calendar Date")  ,
+    	 Month("Master Calendar Date") ,
+    	 "Business Unit Key";
+         
+STORE Invoices_Aggregated INTO [LIB://Folder_IFP_Admin_Group/QVD/AX2012/Invoices_Aggregated.qvd];
+DROP TABLE Invoices_Aggregated;   
+         
+
+
+
+
+ItemCopMapping:
+Mapping
+Load  Upper(InvoiceYear & '|' & Num(InvoiceMonth) & '|' & "Item Key") as [Production Item COP Key],	
+			 if( FABS("Invoice Amount COP USD" /  "Invoice KG") > 1000 , 1 , "Invoice Amount COP USD" /  "Invoice KG") as [Item COP/KG]
+         
+FROM [lib://Folder_IFP_Admin_Group/QVD\AX2012\Invoices_Aggregated.qvd]
+(qvd) where  "Invoice Amount COP USD" <> 0;
+
+
+
+
+MachineDepreciationHoursMapping:
+Mapping
+Load MachineDepreciationKey,MachineDepreciationHourCostUSD;
+SQL 
+SELECT  Upper(Cast(Year(A.Transdate) AS NVARCHAR(20)) 
+                     + '|' 
+                     + Cast(Month(A.Transdate) AS NVARCHAR(20)) 
+                     + '|' 
+                     + Upper(A.Dataareaid+'.'+A.Wrkctrid))           AS 
+               MachineDepreciationKey, 
+               Amountusd / dbo.[Date_getmonthnumberhours](Transdate) AS 
+               MachineDepreciationHourCostUSD 
+FROM   qlik_productionmachinesdepreciation A ;
+
+
+
+
+MaintenanceRatePerHourMapping:
+Mapping
+Load Upper(ProductionMaintenanceRateKey) as ProductionMaintenanceRateKey  , MaintenanceRatePerHour_USD ;
+
+SQL 
+SELECT  cast(year(m.TRANSDATE) as nvarchar(20)) + '|' + cast(Month(m.TRANSDATE) as nvarchar(20)) + '|' + m.DATAAREAID as [ProductionMaintenanceRateKey] , 
+       M.[Maintenance expenses usd] / 
+       NULLIF(( A.[Employee count this month] * 176 ), 0) AS 
+       MaintenanceRatePerHour_USD 
+FROM   qlik_maintenanceexpenses M 
+       LEFT OUTER JOIN (SELECT Dataareaid, 
+                               Currentdate,  
+                               Sum([Count this month]) AS 
+                               [Employee Count This Month] 
+                        FROM   [oracleemployees_count_usedforproduction] 
+                        WHERE  [Employee cost_center] LIKE '%PLANT%MNT%' 
+                        GROUP  BY Dataareaid, 
+                                  Currentdate) AS A 
+                    ON Year(A.Currentdate) = Year(M.Transdate) 
+                       AND Year(A.Currentdate) = Year(M.Transdate) 
+                       AND M.Dataareaid = A.Dataareaid 
+WHERE  M.Transdate < Getdate() ;
+
+ 
+ItemBaseCostMapping:
+Mapping
+Load UPPER("Item Key") as [Base Cost Item Key],
+	 [Item Base Cost Price USD] ;
+
+SQL
+SELECT [Item Key]
+      ,[Item Base Cost Price USD]
+  FROM [NAPAX-9-STAGING].[dbo].[Qlik_ProductionItems];
+  
+  
+  
+  
+ProductionOrdersWorkerMapping:
+Mapping
+Load UPPER("DATAAREAID" & '.' & "PRODID") as [Production Order Worker Key],
+	 Capitalize([WORKERNAME]) as  [WORKERNAME];
+
+SQL
+
+SELECT PRODID, DATAAREAID, WORKERNAME
+  FROM [NAPAX-9-STAGING].[dbo].[Qlik_ProductionOrdersWorker];
